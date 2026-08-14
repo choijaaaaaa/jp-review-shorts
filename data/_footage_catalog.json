@@ -2842,8 +2842,8 @@
     {
       "id": "day2d_20260810_171933_05",
       "clip": "raw_footage/폴더 1/20260810_171933.mp4",
-      "in": 88.0,
-      "out": 92.0,
+      "in": 51.0,
+      "out": 54.5,
       "tags": [
         "product_examine",
         "hand_holding",
@@ -2852,11 +2852,11 @@
         "no_people",
         "safe"
       ],
-      "brand": null,
+      "brand": "アイファクトリー(i Factory)",
       "product_line": "梅ぼしのシート(우메보시 시트)",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["우메보시시트_JP_1"],
       "footage_role": "hero"
     },
     {
