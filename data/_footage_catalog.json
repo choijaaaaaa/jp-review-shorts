@@ -823,7 +823,7 @@
       "product_line": "에비스바시_오사카_랜드마크거리",
       "scent": null,
       "source": "own",
-      "used_in": ["케어리브관절패치_JP_1", "콜라겐씨젤리_JP_1", "낫토균영양제_JP_1"],
+      "used_in": ["케어리브관절패치_JP_1", "콜라겐씨젤리_JP_1", "낫토균영양제_JP_1", "스벅사쿠라스트로베리스틱_JP_1"],
       "footage_role": "broll"
     },
     {
@@ -14776,7 +14776,7 @@
       "product_line": "STARBUCKS SAKURA STRAWBERRY LATTE(사쿠라 스트로베리 라떼) - 돈키호테 한정, 시즌한정",
       "scent": "딸기/사쿠라",
       "source": "own",
-      "used_in": [],
+      "used_in": ["스벅사쿠라스트로베리스틱_JP_1"],
       "footage_role": "hero"
     },
     {
@@ -15084,7 +15084,7 @@
       "product_line": "스타벅스 抹茶ラテ(말차라떼) 박스 - 돈키호테 한정(ドン・キホーテ限定)",
       "scent": "말차라떼",
       "source": "own",
-      "used_in": [],
+      "used_in": ["스벅사쿠라스트로베리스틱_JP_1"],
       "footage_role": "supporting"
     },
     {
