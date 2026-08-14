@@ -6845,7 +6845,7 @@
       "product_line": "1滴消臭元 トイレの消臭剤 (원드롭 소취원, 변기용 탈취제 20ml)",
       "scent": "抹茶の香り (말차 향)",
       "source": "own",
-      "used_in": [],
+      "used_in": ["소취원변기탈취제_JP_1"],
       "footage_role": "hero"
     },
     {
@@ -6866,7 +6866,7 @@
       "product_line": "1滴消臭元 トイレの消臭剤 (원드롭 소취원, 변기용 탈취제 20ml)",
       "scent": "スウィートローズの香り (스위트 로즈 향)",
       "source": "own",
-      "used_in": [],
+      "used_in": ["소취원변기탈취제_JP_1"],
       "footage_role": "hero"
     },
     {
