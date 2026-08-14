@@ -823,7 +823,7 @@
       "product_line": "에비스바시_오사카_랜드마크거리",
       "scent": null,
       "source": "own",
-      "used_in": ["케어리브관절패치_JP_1"],
+      "used_in": ["케어리브관절패치_JP_1", "콜라겐씨젤리_JP_1"],
       "footage_role": "broll"
     },
     {
@@ -1848,7 +1848,9 @@
       "product_line": "화장품_선물박스_매대",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": [
+        "콜라겐씨젤리_JP_1"
+      ],
       "footage_role": "broll"
     },
     {
@@ -1868,7 +1870,9 @@
       "product_line": "コラーゲンCゼリー PremiumRich(콜라겐 젤리)",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": [
+        "콜라겐씨젤리_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
