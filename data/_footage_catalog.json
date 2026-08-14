@@ -3388,7 +3388,9 @@
       "product_line": "킷캣 사쿠라 키나코맛(桜きなこ, 벚꽃&콩고물)",
       "scent": "사쿠라 키나코(벚꽃 콩가루)",
       "source": "own",
-      "used_in": [],
+      "used_in": [
+        "킷캣사쿠라키나코_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
