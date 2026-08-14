@@ -823,7 +823,7 @@
       "product_line": "에비스바시_오사카_랜드마크거리",
       "scent": null,
       "source": "own",
-      "used_in": ["케어리브관절패치_JP_1", "콜라겐씨젤리_JP_1"],
+      "used_in": ["케어리브관절패치_JP_1", "콜라겐씨젤리_JP_1", "낫토균영양제_JP_1"],
       "footage_role": "broll"
     },
     {
@@ -2569,7 +2569,7 @@
       "product_line": "낫토균 효소(NATTO-KIN ENZYME) 영양제",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["낫토균영양제_JP_1"],
       "footage_role": "hero"
     },
     {
@@ -7328,7 +7328,7 @@
       "product_line": "소화효소 영양제 매대 클로즈업",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["낫토균영양제_JP_1"],
       "footage_role": "supporting"
     },
     {
