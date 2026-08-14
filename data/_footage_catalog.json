@@ -823,7 +823,7 @@
       "product_line": "에비스바시_오사카_랜드마크거리",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["케어리브관절패치_JP_1"],
       "footage_role": "broll"
     },
     {
@@ -1946,7 +1946,7 @@
       "product_line": "관절/근육 패치(반창고류)",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["케어리브관절패치_JP_1"],
       "footage_role": "hero"
     },
     {
@@ -7221,7 +7221,7 @@
       "product_line": "파스/반창고 매대(BAND-AID 및 관절 패치류)",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["케어리브관절패치_JP_1"],
       "footage_role": "supporting"
     },
     {
