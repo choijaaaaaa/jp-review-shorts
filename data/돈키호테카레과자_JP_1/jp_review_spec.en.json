@@ -1,0 +1,68 @@
+{
+  "hook_lines": [
+    "This Korean brand curry",
+    "is only sold at Japan's Don Quijote?!"
+  ],
+  "product_tag": "Samyang Buldak Curry",
+  "product_photo": {
+    "clip": "raw_footage/폴더 1/20260810_153542.mp4",
+    "at": 104.0
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 1.0,
+      "out": 4.5
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_153542.mp4",
+      "in": 712.0,
+      "out": 717.0
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_153542.mp4",
+    "in": 102.2,
+    "out": 105.5,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "25x spicier than Curry LEE, near Buldak-level heat",
+      "5 spices blended: cumin, coriander seed, fenugreek, and more",
+      "Spicy + sweet combo, addictive like Buldak fire noodles",
+      "Pair with tonkatsu or karaage to cut the heat"
+    ],
+    "usage_steps": [
+      "Microwave for about 1 minute",
+      "Pour over rice, or pair with tonkatsu or karaage"
+    ],
+    "usage_label": "How to Eat It"
+  },
+  "usage_placeholder": {
+    "description": "실제로 삼양 불닭카레를 먹는 리액션 영상. 매운맛에 반응하는 표정/땀 나는 모습 위주 클로즈업, 10~15초 분량이면 충분. 돈까스나 가라아게를 얹어 먹는 장면이 있으면 더 좋음.",
+    "xiaohongshu_query": "三养 咖喱 火鸡面 挑战 试吃",
+    "source_url": "https://youpouch.com/2026/06/02/1373982/",
+    "quotes": [
+      {
+        "japanese": "そのままフリーズしちゃうぐらいに辛い、辛い、辛い～～～っ!!!",
+        "translation": "So spicy I basically froze on the spot — spicy, spicy, SPICY!!!"
+      },
+      {
+        "japanese": "口にした瞬間にパッとかなり華やかな風味が広がります",
+        "translation": "The moment it hits your mouth, this bold, vivid flavor just bursts out."
+      },
+      {
+        "japanese": "激辛＋甘味というのがいかにも韓国フレーバーらしく、それがこのカレーの大きな特徴",
+        "translation": "That intense-spicy-plus-sweet combo feels so Korean — it's the biggest feature of this curry."
+      },
+      {
+        "japanese": "ブルダック炒め麺同様に中毒性あり。汗をかきながらも食べ進める手が止まりませんでした",
+        "translation": "Just as addictive as Buldak fire noodles — I kept eating even while sweating through it."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}

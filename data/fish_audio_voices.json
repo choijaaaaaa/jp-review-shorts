@@ -1,0 +1,14 @@
+[
+  { "name": "보이스1", "gender": "남", "tone": "밝고 활기참", "reference_id": "8cf5ee4cb0224c109852a206f185a05f" },
+  { "name": "20대 여자_나긋나긋 쇼츠", "gender": "여", "tone": "나긋나긋함", "reference_id": "4e118bfbb83e401c84699c09b5f08257" },
+  { "name": "20대 여성", "gender": "여", "tone": "차분하고 명료함", "reference_id": "0ccd4dc7f23d4935956e225e158484c9" },
+  { "name": "일반여성2", "gender": "여", "tone": "밝고 명랑함", "reference_id": "4a81bbbb5cd44f22922bf934cb93b369" },
+  { "name": "나레이션", "gender": "여", "tone": "차분한 내레이션", "reference_id": "750e0d05ab944e9ba6a4d41aa999021e" },
+  { "name": "20대여성쇼츠(인플루언서스타일)", "gender": "여", "tone": "밝고 친근함", "reference_id": "54f52a4d2b994612a30306b4a2a95758" },
+  { "name": "2,30대 남성(정보성 유튜버)", "gender": "남", "tone": "빠르고 자신감있음", "reference_id": "8f554770038046a382259c8871cc325d" },
+  { "name": "쇼핑_남성", "gender": "남", "tone": "따뜻하고 전문적임", "reference_id": "61c15a82fe964c76b01313035b81d4ce" },
+  { "name": "30대 남자 인터뷰어", "gender": "남", "tone": "차분하고 친근함", "reference_id": "50e39eaaf046410698c9f803f23474f3" },
+  { "name": "여자 성우 A", "gender": "여", "tone": "부드럽고 차분함", "reference_id": "ff2945cbfd274c85b440bd39d8cb3729" },
+  { "name": "20대 여자 성우 수정용", "gender": "여", "tone": "밝고 표현력있음", "reference_id": "03a79d68ca184930a1215f9b1b8eb5b5" },
+  { "name": "똑부러지는 긍정 아나운서 여자", "gender": "여", "tone": "명료하고 전문적임", "reference_id": "d74f023d1525420797aed41b5d421c05" }
+]

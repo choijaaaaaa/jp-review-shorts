@@ -1,0 +1,63 @@
+{
+  "hook_lines": [
+    "오사카 돈키호테 킷캣인데",
+    "진짜 술 맛이 난다?!"
+  ],
+  "product_tag": "킷캣 사쿠라니혼슈",
+  "product_photo": {
+    "clip": "output/_segment_previews/day2d_20260810_165808_03.mp4",
+    "at": 1.5
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 1.0,
+      "out": 4.5
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
+      "in": 207.0,
+      "out": 211.0
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_165808.mp4",
+    "in": 15.8,
+    "out": 19.6,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "후기 모음",
+    "bullets": [
+      "알코올 0.09%, 법정 기준 1%엔 못 미침",
+      "화이트초콜릿+니혼슈향, 벚잎크림 웨하스",
+      "실제 사케 양조장 콜라보 아니고 네슬레 자체 조향",
+      "원래 봄 시즌 신상인데 기념품으로 자리잡아 여름에도 종종 보임"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 킷캣 사쿠라니혼슈맛을 먹는 리액션 영상. 한 입 베어물고 술 향에 놀라거나 음미하는 표정 위주 클로즈업, 10~15초 분량이면 충분. 화이트초콜릿을 베어무는 순간과 향을 맡는 표정이 있으면 더 좋음.",
+    "xiaohongshu_query": "日本 KitKat 樱花 日本酒味 试吃",
+    "source_url": "https://news39.hatenablog.com/entry/nestlekitkat-sakuranihoncyu",
+    "quotes": [
+      {
+        "japanese": "食べるとやはり日本酒の味がぶわっと広がる。結構日本酒の香りがすごい。",
+        "translation": "먹자마자 니혼슈 맛이 확 퍼져요. 향도 꽤 강해요."
+      },
+      {
+        "japanese": "ヤバ。まじ日本酒を飲んだ時の風味です。",
+        "translation": "헐. 진짜 니혼슈 마실 때 그 향이에요."
+      },
+      {
+        "japanese": "これは辛口の日本酒と言うか、癖のある日本酒の香り、味。",
+        "translation": "이건 그냥 드라이한 니혼슈라고 해야 하나, 특유의 향과 맛이 있어요."
+      },
+      {
+        "japanese": "私は日本酒好きだけど、キットカットの日本酒はどうかとおもう。あまり好きじゃない。",
+        "translation": "저 니혼슈 좋아하는데도, 이 킷캣 버전은 좀 별로였어요."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}

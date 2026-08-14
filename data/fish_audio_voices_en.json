@@ -1,0 +1,8 @@
+[
+  { "name": "Energetic Male", "gender": "male", "tone": "밝고 활기참", "reference_id": "802e3bc2b27e49c2995d23ef70e6ac89" },
+  { "name": "Friendly Women", "gender": "female", "tone": "친근하고 따뜻함", "reference_id": "b545c585f631496c914815291da4e893" },
+  { "name": "Voice DL", "gender": "male", "tone": "차분하고 명료함", "reference_id": "1936333080804be19655c6749b2ae7b2" },
+  { "name": "BOOK RECORD REGULAR", "gender": "male", "tone": "안정적인 내레이션", "reference_id": "f8dfe9c83081432386f143e2fe9767ef" },
+  { "name": "Sleepless historian", "gender": "male", "tone": "차분한 다큐멘터리풍", "reference_id": "beb44e5fac1e4b33a15dfcdcc2a9421d" },
+  { "name": "ton", "gender": "male", "tone": "자연스러운 대화체", "reference_id": "b97618c195814c9fb7558ea34093cd28" }
+]

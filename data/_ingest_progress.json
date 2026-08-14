@@ -1,0 +1,1306 @@
+{
+  "source_batch": "2026-08-10_osaka_day2",
+  "files": [
+    {
+      "path": "raw_footage/폴더 1/20260810_205623.mp4",
+      "duration": 3.84,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_205623_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 3.84
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_205006.mp4",
+      "duration": 4.38,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_205006_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 4.38
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_202940.mp4",
+      "duration": 4.67,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_202940_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 4.67
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_205607.mp4",
+      "duration": 5.4,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_205607_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 5.4
+    },
+    {
+      "path": "raw_footage/ojmo/DJI_20260810140738_0001_D.MP4",
+      "duration": 6.74,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_DJI_20260810140738_0001_D_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 6.74
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_204345.mp4",
+      "duration": 7.17,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_204345_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 7.17
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_174436.mp4",
+      "duration": 7.43,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_174436_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 7.43
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_203004.mp4",
+      "duration": 7.47,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_203004_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 7.47
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_204032.mp4",
+      "duration": 8.67,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_204032_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 8.67
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_204944.mp4",
+      "duration": 9.33,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_204944_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 9.33
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_203311.mp4",
+      "duration": 11.02,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_203311_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 11.02
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_204103.mp4",
+      "duration": 11.08,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_204103_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 11.08
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_203603.mp4",
+      "duration": 11.33,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_203603_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 11.33
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_205355.mp4",
+      "duration": 12.32,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_205355_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 12.32
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_174545.mp4",
+      "duration": 12.5,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_174545_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 12.5
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_211057.mp4",
+      "duration": 12.6,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_211057_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 12.6
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_165307.mp4",
+      "duration": 13.47,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_165307_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 13.47
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_173706.mp4",
+      "duration": 13.63,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_173706_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 13.63
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_203638.mp4",
+      "duration": 13.89,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_203638_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 13.89
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_203543.mp4",
+      "duration": 14.23,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_203543_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 14.23
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_140938.mp4",
+      "duration": 14.7,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_140938_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 14.7
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_152455.mp4",
+      "duration": 15.57,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_152455_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 15.57
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_165738.mp4",
+      "duration": 15.68,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_165738_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 15.68
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_174838.mp4",
+      "duration": 16.33,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_174838_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 16.33
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_205748.mp4",
+      "duration": 17.11,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_205748_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 17.11
+    },
+    {
+      "path": "raw_footage/ojmo/DJI_20260810180355_0004_D.MP4",
+      "duration": 19.37,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_DJI_20260810180355_0004_D_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 19.37
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_152404.mp4",
+      "duration": 20.82,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_152404_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 20.82
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_204356.mp4",
+      "duration": 21.62,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_204356_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 21.62
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_172940.mp4",
+      "duration": 21.63,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_172940_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 21.63
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_174515.mp4",
+      "duration": 21.76,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_174515_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 21.76
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_174341.mp4",
+      "duration": 23.35,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_174341_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 23.35
+    },
+    {
+      "path": "raw_footage/ojmo/DJI_20260810181150_0005_D.MP4",
+      "duration": 24.19,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_DJI_20260810181150_0005_D_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 24.19
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_164949.mp4",
+      "duration": 24.77,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_164949_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 24.77
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_171358.mp4",
+      "duration": 31.34,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_171358_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 31.34
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_164859.mp4",
+      "duration": 31.64,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_164859_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 31.64
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_160027.mp4",
+      "duration": 32.37,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_160027_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 32.37
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_174607.mp4",
+      "duration": 35.17,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_174607_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 35.17
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_171533.mp4",
+      "duration": 35.7,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_171533_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 35.7
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_165214.mp4",
+      "duration": 37.27,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_165214_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 37.27
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_172855.mp4",
+      "duration": 38.95,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_172855_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 38.95
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_164028.mp4",
+      "duration": 40.3,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_164028_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 40.3
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_203334.mp4",
+      "duration": 43.09,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_203334_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 43.09
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_164758.mp4",
+      "duration": 47.0,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_164758_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 47.0
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_165045.mp4",
+      "duration": 47.07,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_165045_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 47.07
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_170215.mp4",
+      "duration": 50.67,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_170215_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 50.67
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_170331.mp4",
+      "duration": 51.07,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_170331_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 51.07
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_170946.mp4",
+      "duration": 51.27,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_170946_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 51.27
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_175327.mp4",
+      "duration": 53.8,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_175327_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 53.8
+    },
+    {
+      "path": "raw_footage/ojmo/DJI_20260810144631_0003_D.MP4",
+      "duration": 56.96,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_DJI_20260810144631_0003_D_01"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 56.96
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_173729.mp4",
+      "duration": 57.97,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2d_20260810_173729_05",
+        "day2d_20260810_173729_01",
+        "day2d_20260810_173729_03",
+        "day2_20260810_173729_01",
+        "day2d_20260810_173729_04",
+        "day2d_20260810_173729_06",
+        "day2d_20260810_173729_02"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_165808.mp4",
+      "duration": 62.2,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_165808_01",
+        "day2d_20260810_165808_03",
+        "day2d_20260810_165808_01",
+        "day2d_20260810_165808_06",
+        "day2d_20260810_165808_08",
+        "day2d_20260810_165808_05",
+        "day2d_20260810_165808_07",
+        "day2d_20260810_165808_02",
+        "day2d_20260810_165808_09",
+        "day2d_20260810_165808_04"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_152819.mp4",
+      "duration": 75.0,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_152819_01",
+        "day2d_20260810_152819_01",
+        "day2d_20260810_152819_02",
+        "day2d_20260810_152819_03",
+        "day2d_20260810_152819_04",
+        "day2d_20260810_152819_05",
+        "day2d_20260810_152819_06"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_174011.mp4",
+      "duration": 77.84,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_174011_01",
+        "day2d_20260810_174011_01",
+        "day2d_20260810_174011_02",
+        "day2d_20260810_174011_03",
+        "day2d_20260810_174011_04",
+        "day2d_20260810_174011_05",
+        "day2d_20260810_174011_06",
+        "day2d_20260810_174011_07"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_175117.mp4",
+      "duration": 84.87,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_175117_01",
+        "day2d_20260810_175117_01",
+        "day2d_20260810_175117_02",
+        "day2d_20260810_175117_03",
+        "day2d_20260810_175117_04",
+        "day2d_20260810_175117_05",
+        "day2d_20260810_175117_06",
+        "day2d_20260810_175117_07"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_171658.mp4",
+      "duration": 90.11,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_171658_01",
+        "day2d_20260810_171658_01",
+        "day2d_20260810_171658_02",
+        "day2d_20260810_171658_03",
+        "day2d_20260810_171658_04"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_164308.mp4",
+      "duration": 94.85,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_164308_01",
+        "day2_20260810_164308_02"
+      ],
+      "note": "09~15번 프레임 구간(피임용품 매대)은 콘텐츠 성격상 등록 제외",
+      "dense_status": "done",
+      "dense_processed_until": 94.85
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_172429.mp4",
+      "duration": 107.47,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_172429_01",
+        "day2_20260810_172429_02",
+        "day2_20260810_172429_03"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 107.47
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_173053.mp4",
+      "duration": 107.74,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_173053_01",
+        "day2_20260810_173053_02",
+        "day2_20260810_173053_03",
+        "day2_20260810_173053_04"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 107.74
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_161448.mp4",
+      "duration": 110.01,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_161448_01",
+        "day2_20260810_161448_02",
+        "day2_20260810_161448_03"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 110.01
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_155819.mp4",
+      "duration": 112.97,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_155819_01",
+        "day2_20260810_155819_02"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 112.97
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_170524.mp4",
+      "duration": 116.64,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2d_20260810_170524_08",
+        "day2d_20260810_170524_10",
+        "day2d_20260810_170524_05",
+        "day2d_20260810_170524_07",
+        "day2d_20260810_170524_04",
+        "day2_20260810_170524_02",
+        "day2d_20260810_170524_06",
+        "day2d_20260810_170524_09",
+        "day2d_20260810_170524_01",
+        "day2d_20260810_170524_03",
+        "day2_20260810_170524_01",
+        "day2d_20260810_170524_11",
+        "day2d_20260810_170524_02"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_172636.mp4",
+      "duration": 123.01,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_172636_01",
+        "day2_20260810_172636_02",
+        "day2_20260810_172636_03"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 123.01
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_162627.mp4",
+      "duration": 126.1,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_162627_01",
+        "day2_20260810_162627_02",
+        "day2_20260810_162627_03"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 126.1
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_170728.mp4",
+      "duration": 129.57,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2d_20260810_170728_12",
+        "day2_20260810_170728_02",
+        "day2d_20260810_170728_06",
+        "day2d_20260810_170728_01",
+        "day2d_20260810_170728_04",
+        "day2d_20260810_170728_05",
+        "day2d_20260810_170728_07",
+        "day2d_20260810_170728_11",
+        "day2d_20260810_170728_08",
+        "day2d_20260810_170728_10",
+        "day2d_20260810_170728_09",
+        "day2_20260810_170728_01",
+        "day2d_20260810_170728_02",
+        "day2d_20260810_170728_13",
+        "day2d_20260810_170728_03"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_173349.mp4",
+      "duration": 145.47,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_173349_01",
+        "day2_20260810_173349_02",
+        "day2_20260810_173349_03",
+        "day2_20260810_173349_04"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 145.47
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_160217.mp4",
+      "duration": 149.12,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_160217_01",
+        "day2_20260810_160217_02",
+        "day2_20260810_160217_03"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 149.12
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_165933.mp4",
+      "duration": 149.16,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_165933_01",
+        "day2_20260810_165933_02",
+        "day2_20260810_165933_03"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 149.16
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_171100.mp4",
+      "duration": 157.58,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_171100_01",
+        "day2_20260810_171100_02",
+        "day2d_20260810_171100_01",
+        "day2d_20260810_171100_02",
+        "day2d_20260810_171100_03",
+        "day2d_20260810_171100_04",
+        "day2d_20260810_171100_05",
+        "day2d_20260810_171100_06",
+        "day2d_20260810_171100_07",
+        "day2d_20260810_171100_08"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/ojmo/DJI_20260810141200_0002_D.MP4",
+      "duration": 205.55,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_DJI_20260810141200_0002_D_01",
+        "day2_DJI_20260810141200_0002_D_02",
+        "day2_DJI_20260810141200_0002_D_03",
+        "day2_DJI_20260810141200_0002_D_04"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 205.55
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_154859.mp4",
+      "duration": 208.3,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_154859_01",
+        "day2_20260810_154859_02",
+        "day2_20260810_154859_03",
+        "day2d_20260810_154859_04",
+        "day2d_20260810_154859_05",
+        "day2d_20260810_154859_06",
+        "day2d_20260810_154859_07",
+        "day2d_20260810_154859_08",
+        "day2d_20260810_154859_09",
+        "day2d_20260810_154859_10",
+        "day2d_20260810_154859_11"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_163545.mp4",
+      "duration": 263.62,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_163545_01",
+        "day2_20260810_163545_02",
+        "day2_20260810_163545_03",
+        "day2d_20260810_163545_01",
+        "day2d_20260810_163545_02",
+        "day2d_20260810_163545_03",
+        "day2d_20260810_163545_04",
+        "day2d_20260810_163545_05",
+        "day2d_20260810_163545_06",
+        "day2d_20260810_163545_07"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 263.62
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_171933.mp4",
+      "duration": 267.62,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_171933_01",
+        "day2_20260810_171933_02",
+        "day2_20260810_171933_03",
+        "day2d_20260810_171933_01",
+        "day2d_20260810_171933_02",
+        "day2d_20260810_171933_03",
+        "day2d_20260810_171933_04",
+        "day2d_20260810_171933_05",
+        "day2d_20260810_171933_06",
+        "day2d_20260810_171933_07",
+        "day2d_20260810_171933_08"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 267.62
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_155252.mp4",
+      "duration": 277.75,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_155252_01",
+        "day2_20260810_155252_02",
+        "day2_20260810_155252_03",
+        "day2d_20260810_155252_01",
+        "day2d_20260810_155252_02",
+        "day2d_20260810_155252_03",
+        "day2d_20260810_155252_04",
+        "day2d_20260810_155252_05",
+        "day2d_20260810_155252_06",
+        "day2d_20260810_155252_07",
+        "day2d_20260810_155252_08",
+        "day2d_20260810_155252_09",
+        "day2d_20260810_155252_10",
+        "day2d_20260810_155252_11",
+        "day2d_20260810_155252_12",
+        "day2d_20260810_155252_13",
+        "day2d_20260810_155252_14",
+        "day2d_20260810_155252_15"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/ojmo/DJI_20260810204150_0006_D.MP4",
+      "duration": 300.95,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_DJI_20260810204150_0006_D_01",
+        "day2_DJI_20260810204150_0006_D_02",
+        "day2_DJI_20260810204150_0006_D_03",
+        "day2_DJI_20260810204150_0006_D_04",
+        "day2_DJI_20260810204150_0006_D_05"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 300.95
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_162854.mp4",
+      "duration": 392.62,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_162854_01",
+        "day2_20260810_162854_02",
+        "day2_20260810_162854_03",
+        "day2d_20260810_162854_01",
+        "day2d_20260810_162854_02",
+        "day2d_20260810_162854_03",
+        "day2d_20260810_162854_04",
+        "day2d_20260810_162854_05",
+        "day2d_20260810_162854_06",
+        "day2d_20260810_162854_07",
+        "day2d_20260810_162854_08",
+        "day2d_20260810_162854_09"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 392.62
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_161812.mp4",
+      "duration": 411.92,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_161812_01",
+        "day2_20260810_161812_02",
+        "day2_20260810_161812_03",
+        "day2_20260810_161812_04",
+        "day2_20260810_161812_05",
+        "day2_20260810_161812_06"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 411.92
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_150659.mp4",
+      "duration": 424.79,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_150659_01",
+        "day2_20260810_150659_02",
+        "day2_20260810_150659_03",
+        "day2_20260810_150659_04",
+        "day2_20260810_150659_05",
+        "day2_20260810_150659_06"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 424.79
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_145811.mp4",
+      "duration": 503.91,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_145811_01",
+        "day2_20260810_145811_02",
+        "day2_20260810_145811_03",
+        "day2_20260810_145811_04",
+        "day2_20260810_145811_05",
+        "day2_20260810_145811_06"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 503.91
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_160543.mp4",
+      "duration": 519.33,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2d_20260810_160543_41",
+        "day2d_20260810_160543_46",
+        "day2d_20260810_160543_50",
+        "day2d_20260810_160543_53",
+        "day2d_20260810_160543_05",
+        "day2d_20260810_160543_54",
+        "day2d_20260810_160543_15",
+        "day2d_20260810_160543_01",
+        "day2d_20260810_160543_23",
+        "day2d_20260810_160543_38",
+        "day2d_20260810_160543_20",
+        "day2d_20260810_160543_45",
+        "day2d_20260810_160543_11",
+        "day2d_20260810_160543_32",
+        "day2d_20260810_160543_36",
+        "day2d_20260810_160543_10",
+        "day2_20260810_160543_05",
+        "day2_20260810_160543_02",
+        "day2d_20260810_160543_33",
+        "day2d_20260810_160543_37",
+        "day2d_20260810_160543_47",
+        "day2d_20260810_160543_44",
+        "day2d_20260810_160543_52",
+        "day2d_20260810_160543_03",
+        "day2d_20260810_160543_08",
+        "day2d_20260810_160543_09",
+        "day2d_20260810_160543_51",
+        "day2d_20260810_160543_17",
+        "day2d_20260810_160543_35",
+        "day2d_20260810_160543_13",
+        "day2d_20260810_160543_42",
+        "day2d_20260810_160543_39",
+        "day2d_20260810_160543_29",
+        "day2d_20260810_160543_04",
+        "day2_20260810_160543_01",
+        "day2d_20260810_160543_07",
+        "day2d_20260810_160543_16",
+        "day2d_20260810_160543_49",
+        "day2_20260810_160543_06",
+        "day2d_20260810_160543_40",
+        "day2d_20260810_160543_26",
+        "day2d_20260810_160543_43",
+        "day2d_20260810_160543_12",
+        "day2d_20260810_160543_27",
+        "day2d_20260810_160543_02",
+        "day2d_20260810_160543_48",
+        "day2d_20260810_160543_28",
+        "day2d_20260810_160543_25",
+        "day2d_20260810_160543_19",
+        "day2d_20260810_160543_14",
+        "day2d_20260810_160543_24",
+        "day2_20260810_160543_03",
+        "day2d_20260810_160543_22",
+        "day2d_20260810_160543_31",
+        "day2_20260810_160543_04",
+        "day2d_20260810_160543_18",
+        "day2d_20260810_160543_21",
+        "day2d_20260810_160543_30",
+        "day2d_20260810_160543_34",
+        "day2d_20260810_160543_06"
+      ],
+      "dense_status": "done"
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_151422.mp4",
+      "duration": 560.43,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_151422_01",
+        "day2_20260810_151422_02",
+        "day2_20260810_151422_03",
+        "day2_20260810_151422_04",
+        "day2_20260810_151422_05",
+        "day2_20260810_151422_06",
+        "day2d_20260810_151422_01",
+        "day2d_20260810_151422_02",
+        "day2d_20260810_151422_03",
+        "day2d_20260810_151422_04",
+        "day2d_20260810_151422_05",
+        "day2d_20260810_151422_06",
+        "day2d_20260810_151422_07",
+        "day2d_20260810_151422_08"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 560.43
+    },
+    {
+      "path": "raw_footage/폴더 1/20260810_153542.mp4",
+      "duration": 781.84,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "status": "done",
+      "registered_segments": [
+        "day2_20260810_153542_01",
+        "day2_20260810_153542_02",
+        "day2_20260810_153542_03",
+        "day2_20260810_153542_04",
+        "day2_20260810_153542_05",
+        "day2_20260810_153542_06",
+        "day2_20260810_153542_07",
+        "day2_20260810_153542_08",
+        "day2_20260810_153542_09",
+        "day2_20260810_153542_10",
+        "day2_20260810_153542_11",
+        "day2_20260810_153542_12"
+      ],
+      "dense_status": "done",
+      "dense_processed_until": 781.84
+    }
+  ],
+  "total_files": 81,
+  "total_duration_sec": 8328.1,
+  "dense_pass_note": "1차 패스는 파일당 대표 하이라이트만 sparse하게 뽑음(day2_ 세그먼트) - 사용자 피드백으로 2차 dense 패스 진행: 연속 매대훑기 구간도 시각적으로 바뀌는 지점마다(매대 구역/상품 전환) 세그먼트 추가 등록. dense_status로 파일별 진행 추적, 세그먼트 id는 day2d_ 접두어."
+}

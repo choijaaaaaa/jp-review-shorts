@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.venv/
+.claude/settings.local.json
+.claude-locks/
+
+# WHY 대용량 미디어는 로컬 전용(health-shorts와 동일 원칙, 2026-08-05 결정
+# 이식): 사용자가 촬영한 원본 영상·추출 프레임 후보·완성 mp4는 git에 안 올림 —
+# 로컬 output/ 폴더에서 직접 SNS 업로드하므로 git으로 서빙할 필요가 없음.
+raw_footage/
+output/**/_footage_frames/
+output/**/*.mp4
+
+.vercel
+.env*

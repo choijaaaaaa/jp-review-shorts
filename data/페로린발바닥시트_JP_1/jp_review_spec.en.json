@@ -1,0 +1,84 @@
+{
+  "hook_lines": [
+    "This Japan foot patch from Don Quijote",
+    "turns pitch black overnight"
+  ],
+  "product_tag": "Perorin Foot Detox Sheet",
+  "product_photo": {
+    "clip": "output/_segment_previews/day2d_20260810_162627_16.mp4",
+    "at": 1.0
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_142016.mp4",
+      "in": 2.5,
+      "out": 6.0
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_163545.mp4",
+      "in": 76.0,
+      "out": 80.0
+    }
+  ],
+  "item_clip": {
+    "clips": [
+      {
+        "clip": "raw_footage/폴더 1/20260810_162627.mp4",
+        "in": 113.7,
+        "out": 115.6
+      },
+      {
+        "clip": "raw_footage/폴더 1/20260810_162627.mp4",
+        "in": 116.6,
+        "out": 118.6
+      },
+      {
+        "clip": "raw_footage/폴더 1/20260810_162627.mp4",
+        "in": 120.7,
+        "out": 123.6
+      },
+      {
+        "clip": "raw_footage/폴더 1/20260810_162627.mp4",
+        "in": 123.7,
+        "out": 125.9
+      }
+    ]
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "Adds wood vinegar (missing from Daiso's mugwort version) — absorbs sweat and visibly darkens",
+      "Adhesive + patch are one piece — no separate tape needed",
+      "The browning is a sweat reaction, not toxin removal — per Japanese verification blogs",
+      "Time to notice results varies a lot — 1 to 10 weeks"
+    ],
+    "usage_steps": [
+      "Apply directly to clean, dry feet",
+      "Stick it on before bed, leave it on until morning",
+      "Each sheet is single-use — swap in a new one next time",
+      "If the peeled-off sheet feels damp, rinse with lukewarm water"
+    ],
+    "usage_label": "How to Use"
+  },
+  "usage_placeholder": {
+    "description": "실제로 밤에 발바닥에 시트를 붙이고 자고 일어나서 떼어보는 영상. 붙이는 손동작 + 다음날 아침 시트가 갈변한 모습을 보여주는 클로즈업. 10~15초.",
+    "xiaohongshu_query": "PERORIN 足底树液贴 使用测评",
+    "source_url": "https://www.cosme.net/products/10064612/review/",
+    "quotes": [
+      {
+        "japanese": "ツルツルになって、ゴワゴワしていたのが柔らかくなります",
+        "translation": "My skin got smooth, and the rough parts turned soft."
+      },
+      {
+        "japanese": "1週間くらい、何かガサガサしてるので、やっぱり10週間ぐらい経ってから効果が出ました",
+        "translation": "For about a week it still felt kind of rough, but the real effect only showed up after about ten weeks."
+      },
+      {
+        "japanese": "簡単に履くケアができるのが魅力",
+        "translation": "The appeal is that it's care you can do just by wearing it — nothing complicated."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 2
+}

@@ -1,0 +1,64 @@
+{
+  "hook_lines": [
+    "這是日本唐吉訶德的Pocky",
+    "怎麼會這麼大支?!"
+  ],
+  "product_tag": "Pocky甘王草莓",
+  "product_photo": {
+    "clip": "output/_segment_previews/day2d_20260810_165808_06.mp4",
+    "at": 1.0
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_141943.mp4",
+      "in": 3.0,
+      "out": 6.5
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_165307.mp4",
+      "in": 3.77,
+      "out": 7.27
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_165808.mp4",
+    "in": 36.5,
+    "out": 39.2,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "網友心得整理",
+    "bullets": [
+      "「甘王」取自紅、圓、大、好吃的字首，2002年福岡居民徵名1913件投稿中選出",
+      "只有通過標準的福岡草莓能用這個名字（商標由JA全農持有）",
+      "甜度12~13brix算普通，但20克以上大顆草莓比例比舊品種多近一倍",
+      "這款Pocky實際加了8%甘王草莓果肉",
+      "評價兩極：口感溫和派 vs 認為原味草莓Pocky更好吃派"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 포키 아마오우 딸기맛을 먹는 리액션 영상. 한 입 베어물고 새콤달콤한 맛에 반응하는 표정 위주 클로즈업, 스틱을 반으로 갈라서 딸기색 크림 단면을 보여주는 장면이 있으면 더 좋음. 10~15초 분량이면 충분.",
+    "xiaohongshu_query": "日本限定 Pocky 甘王草莓 试吃",
+    "source_url": "https://monolog.r-n-i.jp/item/4901005560352",
+    "quotes": [
+      {
+        "japanese": "あまおう苺🍓味のポッキーデカイ‼️ビックリするよ。",
+        "translation": "甘王草莓口味的Pocky超大支‼️會嚇一跳。"
+      },
+      {
+        "japanese": "うすピンクでまろやかなイチゴミルクみたいな味、酸味が少なくってマイルド苺でした",
+        "translation": "淡粉色、口感溫和的草莓牛奶味，酸味少，是溫和系草莓味。"
+      },
+      {
+        "japanese": "サクサクのプレッツェル生地は、ビスケットを食べているかのような満足感",
+        "translation": "酥脆的餅乾棒吃起來像在吃餅乾一樣有滿足感。"
+      },
+      {
+        "japanese": "味は普通のいちごポッキーの方がおいしいかも。。。",
+        "translation": "老實說，原味草莓Pocky可能還比較好吃……"
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}

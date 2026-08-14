@@ -1,0 +1,29 @@
+[
+  {
+    "file": "raw_footage/xiaohongshu/kracie_hachimijiogan_a_01.mp4",
+    "source_url": "https://www.rednote.com/explore/68de762e0000000003036f15?xsec_token=AB0Rpl21DOl25Wi_TzhLBD4cQSuSj6dYIltKCQB_bEjAk=&xsec_source=pc_search&source=web_search_result_notes",
+    "brand": "クラシエ(Kracie)",
+    "product_line": "八味地黄丸A(하치미지오간A)",
+    "scent": "540정(45일분)",
+    "license_note": "사용자 라이선스 확보 확인 링크, 2026-08-09",
+    "imported_at": "2026-08-09"
+  },
+  {
+    "file": "raw_footage/xiaohongshu/joshin_hobby_01.mp4",
+    "source_url": "https://www.rednote.com/explore/6a3f378b000000000e021800?xsec_token=AB21nvnnYqsCsRLD4X0LTxgDUpdh-3Ok_k2dTNqilDuxU=&xsec_source=pc_search&source=web_search_result_notes",
+    "brand": null,
+    "product_line": "피규어_프라모델_매장(Super Kids Land Joshin)",
+    "scent": null,
+    "license_note": "사용자 라이선스 확보 확인 링크, 2026-08-09 — 단일 상품이 아닌 매장 투어 영상이라 brand/product_line/scent 계층에 강제로 맞추지 않고 _stores 계열로 등록",
+    "imported_at": "2026-08-09"
+  },
+  {
+    "file": "raw_footage/xiaohongshu/itoya_ginza_01.mp4",
+    "source_url": "https://www.rednote.com/explore/6a4cfe5d000000000803cef6?xsec_token=ABJuE3dYbFI5vOyxJ5jbOcKfPMMQV8Ci6GkahDSzP52aw=&xsec_source=pc_search&source=web_search_result_notes",
+    "brand": "伊東屋(Itoya)",
+    "product_line": "문구_잡화_매장(긴자 본점)",
+    "scent": null,
+    "license_note": "사용자 라이선스 확보 확인 링크, 2026-08-09 — 원본에 중국어/영어 자막이 80초 내내 박혀있음. video-subtitle-remover(STTN-auto, LAMA)로 제거 시도했으나 정지 위주 매대 샷이라 배경 재구성 실패 → 지우는 대신 자막 자리(고정 밴드, y 72~89%)를 불투명 바로 덮는 방식으로 전환해서 자막 있는 원본 그대로 저장. 카탈로그 세그먼트의 subtitle_band 필드가 실제 커버 좌표",
+    "imported_at": "2026-08-09"
+  }
+]

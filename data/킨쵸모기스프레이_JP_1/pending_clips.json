@@ -1,0 +1,8 @@
+{
+  "usage_clip": {
+    "status": "fulfilled_via_research",
+    "description": "실제로 방 안에서 천장·벽 방향으로 스프레이를 한 번 누르는 사용 장면. 사람 얼굴은 안 나와도 되고 손+스프레이+분사 방향(천장 쪽)이 보이면 충분, 10~15초.",
+    "xiaohongshu_query": "日本金鸟KINCHO 灭蚊喷雾 喷天花板 使用测评",
+    "target_path": "raw_footage/user_trim/킨쵸모기스프레이_JP_1_usage.mp4"
+  }
+}

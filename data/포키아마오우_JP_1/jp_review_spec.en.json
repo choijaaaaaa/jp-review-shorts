@@ -1,0 +1,64 @@
+{
+  "hook_lines": [
+    "This Pocky is from Japan's Don Quijote",
+    "why is it THIS big?!"
+  ],
+  "product_tag": "Pocky Amaou Strawberry",
+  "product_photo": {
+    "clip": "output/_segment_previews/day2d_20260810_165808_06.mp4",
+    "at": 1.0
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 2.0,
+      "out": 5.5
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_165307.mp4",
+      "in": 3.77,
+      "out": 7.27
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_165808.mp4",
+    "in": 36.5,
+    "out": 39.2,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "\"Amaou\" = red, round, big, delicious — picked from 1,913 entries in a 2002 Fukuoka contest",
+      "Only Fukuoka strawberries meeting the standard can use the name (trademark held by JA Zennoh)",
+      "12–13 Brix sweetness is average, but large berries (20g+) are nearly double older varieties",
+      "This Pocky uses 8% real Amaou strawberry pulp",
+      "Reviews split: mild/low-acid taste vs. some preferring regular strawberry Pocky"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 포키 아마오우 딸기맛을 먹는 리액션 영상. 한 입 베어물고 새콤달콤한 맛에 반응하는 표정 위주 클로즈업, 스틱을 반으로 갈라서 딸기색 크림 단면을 보여주는 장면이 있으면 더 좋음. 10~15초 분량이면 충분.",
+    "xiaohongshu_query": "日本限定 Pocky 甘王草莓 试吃",
+    "source_url": "https://monolog.r-n-i.jp/item/4901005560352",
+    "quotes": [
+      {
+        "japanese": "あまおう苺🍓味のポッキーデカイ‼️ビックリするよ。",
+        "translation": "This Amaou strawberry Pocky is huge!! You'll be shocked."
+      },
+      {
+        "japanese": "うすピンクでまろやかなイチゴミルクみたいな味、酸味が少なくってマイルド苺でした",
+        "translation": "Pale pink, mellow strawberry-milk flavor — low on tartness, very mild strawberry taste."
+      },
+      {
+        "japanese": "サクサクのプレッツェル生地は、ビスケットを食べているかのような満足感",
+        "translation": "The crisp pretzel stick gives you the satisfaction of eating an actual biscuit."
+      },
+      {
+        "japanese": "味は普通のいちごポッキーの方がおいしいかも。。。",
+        "translation": "Honestly, the regular strawberry Pocky might taste better..."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}

@@ -1,0 +1,63 @@
+{
+  "hook_lines": [
+    "This KitKat is from Don Quijote Osaka",
+    "It actually tastes like real alcohol?!"
+  ],
+  "product_tag": "Sakura Nihonshu KitKat",
+  "product_photo": {
+    "clip": "output/_segment_previews/day2d_20260810_165808_03.mp4",
+    "at": 1.5
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 1.0,
+      "out": 4.5
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
+      "in": 207.0,
+      "out": 211.0
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_165808.mp4",
+    "in": 15.8,
+    "out": 19.6,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "0.09% alcohol — below Japan's 1% legal alcohol threshold",
+      "White chocolate + nihonshu aroma, cherry-blossom cream wafer",
+      "Not an actual sake brewery collab — Nestlé's own flavor blend",
+      "Originally a spring release, now a year-round souvenir item"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 킷캣 사쿠라니혼슈맛을 먹는 리액션 영상. 한 입 베어물고 술 향에 놀라거나 음미하는 표정 위주 클로즈업, 10~15초 분량이면 충분. 화이트초콜릿을 베어무는 순간과 향을 맡는 표정이 있으면 더 좋음.",
+    "xiaohongshu_query": "日本 KitKat 樱花 日本酒味 试吃",
+    "source_url": "https://news39.hatenablog.com/entry/nestlekitkat-sakuranihoncyu",
+    "quotes": [
+      {
+        "japanese": "食べるとやはり日本酒の味がぶわっと広がる。結構日本酒の香りがすごい。",
+        "translation": "Once you eat it, the sake flavor really spreads out. The sake aroma is pretty intense."
+      },
+      {
+        "japanese": "ヤバ。まじ日本酒を飲んだ時の風味です。",
+        "translation": "Whoa. This genuinely tastes like drinking real sake."
+      },
+      {
+        "japanese": "これは辛口の日本酒と言うか、癖のある日本酒の香り、味。",
+        "translation": "This is more like a dry sake — it's got that distinct, slightly rough sake aroma and taste."
+      },
+      {
+        "japanese": "私は日本酒好きだけど、キットカットの日本酒はどうかとおもう。あまり好きじゃない。",
+        "translation": "I like sake, but I'm not really sure about this KitKat version. Not a big fan."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}

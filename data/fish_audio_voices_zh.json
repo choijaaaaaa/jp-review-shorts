@@ -1,0 +1,11 @@
+[
+  { "name": "AD学姐", "gender": "female", "tone": "광고 홍보톤, 발랄함", "reference_id": "7f92f8afb8ec43bf81429cc1c9199cb1" },
+  { "name": "女大学生", "gender": "female", "tone": "밝고 친근함", "reference_id": "5c353fdb312f4888836a9a5680099ef0" },
+  { "name": "影视解说A", "gender": "male", "tone": "차분한 해설톤", "reference_id": "b4bdf5dc66004241a21ff2df165bf442" },
+  { "name": "影视解说B", "gender": "male", "tone": "차분한 해설톤", "reference_id": "39ea63baf6c0480cb8148dc7955db78e" },
+  { "name": "仿真人(男声广告)", "gender": "male", "tone": "자연스러운 광고 내레이션", "reference_id": "21082ac382d945e29aea354e90380f11" },
+  { "name": "老女人快速版", "gender": "female", "tone": "빠른 템포, 연륜있는 톤", "reference_id": "ce22ffa5f03a40d9b06ad8e9ae8dc893" },
+  { "name": "工商旅游005女", "gender": "female", "tone": "안내·정보성 톤", "reference_id": "a616236f5e874bcd84fceae68410680f" },
+  { "name": "温柔动听女声", "gender": "female", "tone": "부드럽고 다정함", "reference_id": "faccba1a8ac54016bcfc02761285e67f" },
+  { "name": "大眼妹", "gender": "female", "tone": "밝고 명랑함", "reference_id": "c7cf5edb46474146b80938e29f7fcda7" }
+]

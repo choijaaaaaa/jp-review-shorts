@@ -1,0 +1,63 @@
+{
+  "hook_lines": [
+    "這是大阪唐吉訶德的KitKat",
+    "居然真的有酒味?!"
+  ],
+  "product_tag": "櫻花日本酒 KitKat",
+  "product_photo": {
+    "clip": "output/_segment_previews/day2d_20260810_165808_03.mp4",
+    "at": 1.5
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 1.0,
+      "out": 4.5
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
+      "in": 207.0,
+      "out": 211.0
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_165808.mp4",
+    "in": 15.8,
+    "out": 19.6,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "網友心得整理",
+    "bullets": [
+      "酒精濃度0.09%，低於日本法定1%酒類標準",
+      "白巧克力＋日本酒香氣，櫻花奶油夾心餅",
+      "不是清酒酒廠聯名，是雀巢自己調的風味",
+      "原本是春季限定，現在常年都能當伴手禮買到"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 킷캣 사쿠라니혼슈맛을 먹는 리액션 영상. 한 입 베어물고 술 향에 놀라거나 음미하는 표정 위주 클로즈업, 10~15초 분량이면 충분. 화이트초콜릿을 베어무는 순간과 향을 맡는 표정이 있으면 더 좋음.",
+    "xiaohongshu_query": "日本 KitKat 樱花 日本酒味 试吃",
+    "source_url": "https://news39.hatenablog.com/entry/nestlekitkat-sakuranihoncyu",
+    "quotes": [
+      {
+        "japanese": "食べるとやはり日本酒の味がぶわっと広がる。結構日本酒の香りがすごい。",
+        "translation": "吃下去清酒味整個散開，香氣真的蠻濃的。"
+      },
+      {
+        "japanese": "ヤバ。まじ日本酒を飲んだ時の風味です。",
+        "translation": "哇靠，真的是喝清酒的那種風味。"
+      },
+      {
+        "japanese": "これは辛口の日本酒と言うか、癖のある日本酒の香り、味。",
+        "translation": "這比較像辛口清酒，帶點特殊香氣跟味道。"
+      },
+      {
+        "japanese": "私は日本酒好きだけど、キットカットの日本酒はどうかとおもう。あまり好きじゃない。",
+        "translation": "我自己是喜歡清酒啦，但這款KitKat的日本酒味，老實說不太喜歡。"
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}

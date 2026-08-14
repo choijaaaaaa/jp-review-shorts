@@ -1,0 +1,71 @@
+{
+  "hook_lines": [
+    "This Japan mosquito spray",
+    "you don't spray it on yourself?!"
+  ],
+  "product_tag": "KINCHO Mosquito Spray",
+  "product_photo": {
+    "clip": "output/_segment_previews/day2d_20260810_163545_13.mp4",
+    "at": 1.5
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_141943.mp4",
+      "in": 1.5,
+      "out": 5.0
+    },
+    {
+      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
+      "in": 180.0,
+      "out": 185.0
+    }
+  ],
+  "item_clip": {
+    "clips": [
+      {
+        "clip": "raw_footage/폴더 1/20260810_163545.mp4",
+        "in": 212.0,
+        "out": 215.5
+      },
+      {
+        "clip": "raw_footage/폴더 1/20260810_163545.mp4",
+        "in": 208.0,
+        "out": 211.5
+      }
+    ]
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "Sprayed on ceilings/walls, not skin — a space-treatment mosquito spray",
+      "One spray covers about 15–26m² (roughly one room), lasts ~12 hours",
+      "Active ingredient: metofluthrin (pyrethroid) — no fire or electricity, once a day",
+      "Made by KINCHO, founded 1885 — Japan's original mosquito-coil pioneer brand"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 방 안에서 천장·벽 방향으로 스프레이를 한 번 누르는 사용 장면. 사람 얼굴은 안 나와도 되고 손+스프레이+분사 방향(천장 쪽)이 보이면 충분, 10~15초.",
+    "xiaohongshu_query": "日本金鸟KINCHO 灭蚊喷雾 喷天花板 使用测评",
+    "source_url": "https://iizo.blog/kagainakunaru-2/",
+    "quotes": [
+      {
+        "japanese": "1プッシュで蚊がいなくなるって…これが本当に蚊の姿を見なくなる。恐ろしいほどに全く見ない。",
+        "translation": "One push and the mosquitoes are gone, they said... and it's true, you genuinely stop seeing them. It's almost frighteningly effective."
+      },
+      {
+        "japanese": "窓を開けているのに蚊が入らない！",
+        "translation": "The window's open and mosquitoes still don't get in!"
+      },
+      {
+        "japanese": "夕飯を食べ終わったらワンプッシュして、そのまま寝ても朝まで蚊に刺されることなく起きることができる",
+        "translation": "I press it once after dinner, go straight to sleep, and wake up without a single bite."
+      },
+      {
+        "japanese": "ひと夏どころか、次の夏の分くらいまで持ったりします。",
+        "translation": "It doesn't just last one summer — sometimes it carries over into the next one."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 2
+}
