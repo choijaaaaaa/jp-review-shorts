@@ -1278,7 +1278,9 @@
       "product_line": "베리스 아몬드 코팅 마카다미아",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": [
+        "베리스마카다미아_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -3312,7 +3314,9 @@
       "product_line": "베리스 아몬드 코팅 마카다미아",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": [
+        "베리스마카다미아_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
