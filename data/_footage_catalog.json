@@ -34,7 +34,7 @@
       "product_line": null,
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["스이사이효소세안_JP_1"],
       "footage_role": "broll"
     },
     {
@@ -1013,10 +1013,10 @@
         "safe"
       ],
       "brand": "Kanebo",
-      "product_line": "suisai 뷰티클리어 파우더워시(효소세안)",
+      "product_line": "suisai 뷰티클리어 페이스트워시(練り酵素洗顔, 효소세안)",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["스이사이효소세안_JP_1"],
       "footage_role": "hero"
     },
     {
@@ -4224,7 +4224,7 @@
       "product_line": "남성/스킨케어 매대 파노라마 (HAKU 등 진열)",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["스이사이효소세안_JP_1"],
       "footage_role": "supporting"
     },
     {
