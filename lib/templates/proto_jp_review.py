@@ -29,9 +29,9 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from lib.bgm import mix_bgm  # noqa: E402
 from lib.video_assembler import (  # noqa: E402
-    _build_ad_tag_badge, _make_caption_png, _NO_SPACE_WRAP_LANGS, _parse_srt,
-    _split_long_caption_entries, _title_font_for_lang, _wrap_text_for_lang,
-    build_instagram_safe_video,
+    _assert_title_glyph_coverage, _build_ad_tag_badge, _make_caption_png, _NO_SPACE_WRAP_LANGS,
+    _parse_srt, _split_long_caption_entries, _title_font_for_lang, _wrap_text_for_lang,
+    AD_TAG_TEXT_BY_LANG, build_instagram_safe_video,
 )
 
 W, H = 1080, 1920
@@ -1269,6 +1269,57 @@ def compute_scene_durations(spec: dict, srt_path: str, audio_path: str) -> dict:
     }
 
 
+def _validate_spec_glyphs(spec: dict, lang: str, srt_path: str, ad_tag: bool) -> None:
+    """render_single_product()이 실제로 화면에 그릴 텍스트 전부를 렌더링(ffmpeg
+    호출) 시작 전에 검사한다(2026-08-14, health-shorts card_news.py
+    `_validate_spec_glyphs`/lib/video_assembler.py `_validate_assemble_glyphs`와
+    같은 원칙 — WHY는 그쪽 주석 참고: 여러 ffmpeg 단계를 거친 뒤에야 tofu box를
+    발견하면 중간 산출물이 낭비되고 결국 사람이 영상을 끝까지 재생해봐야만
+    발견된다). 이 파일은 draw.text가 전부 `_load_font`(=`_title_font_for_lang`)
+    하나만 쓴다 — video_assembler.py의 chalk 폰트(`_chalk_font_for_lang`)는
+    이 템플릿(단일 상품 딥다이브 포맷)에서 아예 안 쓰이므로 검사할 폰트
+    체계가 하나뿐이다."""
+    checks = [
+        ("훅 칩 1줄", spec["hook_lines"][0]),
+        ("훅 칩 2줄", spec["hook_lines"][1]),
+        ("상품 태그(필/뱃지)", spec["product_tag"]),
+        ("칠판 제목", spec["chalkboard"]["title"]),
+    ]
+    for i, bullet in enumerate(spec["chalkboard"]["bullets"], start=1):
+        checks.append((f"칠판 불릿 {i}", bullet))
+    usage_steps = spec["chalkboard"].get("usage_steps") or []
+    if usage_steps:
+        # WHY 기본값도 명시적으로 검사(2026-08-14): usage_label을 안 주면
+        # _build_chalkboard_slab이 한국어 "사용법"으로 기본 폴백하는데, lang이
+        # kor가 아니면 그 기본값도 그 언어 폰트로 그려진다 — spec이
+        # usage_label을 빠뜨린 비한국어 topic이 있으면 여기서 바로 잡힌다.
+        checks.append(("사용법 라벨", spec["chalkboard"].get("usage_label", "사용법")))
+        for i, step in enumerate(usage_steps, start=1):
+            checks.append((f"사용법 {i}단계", step))
+    for label, text in checks:
+        _assert_title_glyph_coverage(label, text, lang)
+
+    for i, q in enumerate(spec.get("usage_placeholder", {}).get("quotes") or [], start=1):
+        # WHY japanese 원문은 lang이 아니라 "ja" 고정으로 검사(_build_quote_card_png
+        # 참고): 인용 원문은 타깃 언어와 무관하게 항상 일본어로 그려진다 — 번역
+        # (translation)만 lang을 따라간다.
+        _assert_title_glyph_coverage(f"인용구 {i} 원문(일본어)", q["japanese"], "ja")
+        _assert_title_glyph_coverage(f"인용구 {i} 번역", q["translation"], lang)
+
+    for _start, _end, text in _parse_srt(srt_path):
+        _assert_title_glyph_coverage(
+            f"나레이션 자막(원문: {text[:24]}{'...' if len(text) > 24 else ''})", text, lang)
+
+    # 칠판 씬 마지막 "Summary" 카드의 CTA 한 줄(_build_summary_frame) — 언어별
+    # 고정 딕셔너리라 매 topic 검사할 필요는 없어 보이지만, _CTA_BY_LANG에 없는
+    # lang은 한국어 문구로 폴백하면서 폰트만 그 lang을 따라가는 구조라 매핑에
+    # 없는 언어를 쓰면 조용히 깨질 수 있다 — 값싼 검사라 항상 확인한다.
+    _assert_title_glyph_coverage("Summary 카드 CTA", _CTA_BY_LANG.get(lang, _CTA_BY_LANG["kor"]), lang)
+
+    if ad_tag:
+        _assert_title_glyph_coverage("광고 태그", AD_TAG_TEXT_BY_LANG.get(lang, "AD"), lang)
+
+
 def render_single_product(topic_dir: str, audio_path: str, srt_path: str, spec_path: str,
                            out_path: str, ad_tag: bool = False, lang: str = "kor") -> None:
     """jp_review_spec.json 하나(단일 상품 딥다이브 스펙)를 최종 mp4로 렌더링한다.
@@ -1298,6 +1349,10 @@ def render_single_product(topic_dir: str, audio_path: str, srt_path: str, spec_p
     if not audio_path.exists():
         raise FileNotFoundError(f"narration audio not found: {audio_path}")
     spec = json.loads(spec_path.read_text(encoding="utf-8"))
+
+    # WHY 어떤 ffmpeg/ffprobe 호출보다도 먼저(2026-08-14): _validate_spec_glyphs
+    # WHY 주석 참고 — 렌더링을 시작하기 전에 못 그리는 문자가 있으면 여기서 막는다.
+    _validate_spec_glyphs(spec, lang, srt_path, ad_tag)
 
     durations = compute_scene_durations(spec, srt_path, audio_path)
     total_duration = durations["narration_total"]

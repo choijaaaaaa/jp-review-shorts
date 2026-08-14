@@ -11,6 +11,7 @@
 # 피할 수 있다(2026-07-29 cat-fight 작업에서 확인).
 from __future__ import annotations
 
+import functools
 import math
 import random
 import re
@@ -19,6 +20,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+from fontTools.ttLib import TTFont
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 # WHY sys.path 조작: 이 파일은 `python3 lib/video_assembler.py`로 직접 실행되는
@@ -115,6 +117,69 @@ def _title_font_for_lang(lang: str) -> tuple[str, int]:
     쌍으로 고른다 — `_chalk_font_for_lang`과 같은 매핑 원칙, FONT_PATH 전용으로
     ttc index 처리만 다르다."""
     return _TITLE_FONT_BY_LANG.get(lang, _TITLE_FONT_LATIN_CYRILLIC)
+
+
+# WHY 폰트 글리프 커버리지 자동 검사(2026-08-14, health-shorts card_news.py의
+# 동일 사고 조사에서 실측 검증된 방법을 이식): 폰트에 없는 문자를 PIL로 그리면
+# 에러 없이 조용히 tofu box(빈 네모)로 렌더링된다 — 그동안은 사람이 완성된
+# 영상을 재생해서 육안으로 확인해야만 발견됐다. fontTools로 폰트가 실제
+# 지원하는 코드포인트(cmap)를 직접 읽어서, 렌더링을 시작하기 전에 못 그리는
+# 문자가 있으면 ValueError로 막는다. 이 프로젝트는 폰트 체계가 두 갈래
+# (chalk/title)라 health-shorts와 달리 "현재 언어"를 가리키는 전역 상태 대신
+# 호출부가 검사할 폰트를 매번 명시한다.
+@functools.lru_cache(maxsize=None)
+def _font_cmap(font_path: str, font_number: int = 0) -> frozenset[int]:
+    """그 폰트 파일(.ttc 컬렉션이면 font_number번째 face)이 실제로 그릴 수 있는
+    유니코드 코드포인트 집합. WHY fontTools인지: Pillow의 ImageFont.getmask()는
+    지원 안 하는 글리프도 .notdef(빈 네모, 사각형 bbox가 실제로 있음)를 조용히
+    그려서 bbox 존재 여부로는 "글리프가 있다"와 "없어서 tofu box가 나온다"를
+    구분할 수 없다 — 폰트의 cmap 테이블을 직접 읽는 fontTools만 정확하게 판별
+    가능하다. WHY font_number 파라미터(health-shorts의 kor 처리와 같은 원리):
+    `_title_font_for_lang`이 (경로, ttc index) 쌍을 반환해서 같은 .ttc 파일
+    안에서도 실제로 렌더링에 쓰는 face가 언어마다 다르다(kor는
+    AppleSDGothicNeo.ttc index=6) — 렌더링에 쓰는 face와 다른 face의 cmap을
+    읽으면 오탐/누락이 생길 수 있어 항상 실제 index를 그대로 넘긴다.
+    (font_path, font_number) 조합별로 캐싱해서 폰트당 한 번만 파싱한다."""
+    tt = TTFont(font_path, fontNumber=font_number, lazy=True)
+    codepoints: set[int] = set()
+    for table in tt["cmap"].tables:
+        codepoints |= set(table.cmap.keys())
+    return frozenset(codepoints)
+
+
+def _missing_glyphs(text: str, font_path: str, font_number: int = 0) -> str:
+    """text 안에서 그 폰트가 못 그리는 문자만 중복 없이 뽑아 반환(빈 문자열이면
+    전부 지원). 공백은 애초에 안 그려지므로 검사 대상에서 뺀다."""
+    cmap = _font_cmap(font_path, font_number)
+    return "".join(sorted({ch for ch in text if not ch.isspace() and ord(ch) not in cmap}))
+
+
+def _assert_glyph_coverage(label: str, text: str, font_path: str, font_number: int = 0,
+                            lang: str = "kor") -> None:
+    """text에 그 폰트가 못 그리는 문자가 있으면 즉시 에러로 막는다 —
+    health-shorts card_news.py의 `_assert_glyph_coverage`와 같은 목적(렌더링
+    자체는 에러 없이 "성공"하기 때문에, 그동안은 사람이 영상을 끝까지 재생해봐야만
+    발견됨)을 이 프로젝트의 두 폰트 체계(chalk/title)에 맞게 이식."""
+    missing = _missing_glyphs(text, font_path, font_number)
+    if missing:
+        raise ValueError(
+            f"[lang={lang}] {label}에 폰트({font_path}, index={font_number})가 그리지 못하는 "
+            f"문자 발견: {missing!r} (원문: {text!r}) — 언어별 폰트 매핑을 확인하거나 "
+            f"해당 언어에 이 문자가 실제로 필요한지 다시 검토할 것."
+        )
+
+
+def _assert_chalk_glyph_coverage(label: str, text: str, lang: str = "kor") -> None:
+    """`_chalk_font_for_lang`(칠판 자막·낙서·명패 등 손글씨체)로 그려질 텍스트를
+    검사한다."""
+    _assert_glyph_coverage(label, text, _chalk_font_for_lang(lang), 0, lang)
+
+
+def _assert_title_glyph_coverage(label: str, text: str, lang: str = "kor") -> None:
+    """`_title_font_for_lang`(제목 카드·상단 배너 등 굵은 산세리프)로 그려질
+    텍스트를 검사한다 — ttc index까지 실제 렌더링과 동일하게 맞춰서 확인한다."""
+    font_path, font_index = _title_font_for_lang(lang)
+    _assert_glyph_coverage(label, text, font_path, font_index, lang)
 
 
 # WHY 언어별 줄바꿈 단위(2026-08-03 버그 수정, "가슴쓰림_1/ja 제목 카드 글자가
@@ -3142,6 +3207,76 @@ def _build_background_schedule(
         )
 
 
+def _validate_assemble_glyphs(
+    lang: str,
+    title: str,
+    title_card_text: str | None,
+    end_card_text: str | None,
+    ad_tag: bool,
+    bg_style: str,
+    motion_schedule: list[tuple[float, float, str]] | list[tuple[float, float, str, str]] | None,
+    item_label_overrides: dict[str, str] | None,
+    doodle_seed: str,
+    topic_word: str | None,
+    srt_path: str,
+) -> None:
+    """assemble()이 ffmpeg 호출을 시작하기 전에, 실제로 화면에 그려질 텍스트
+    전부를 미리 검사한다(2026-08-14, health-shorts card_news.py의
+    `_validate_spec_glyphs`와 같은 목적을 이 파일에 이식) — 여러 ffmpeg 단계를
+    거친 뒤에야 자막이 tofu box로 깨진 걸 발견하면 그 전까지 만든 중간
+    산출물이 낭비되고, 결국 사람이 영상을 끝까지 재생해봐야만 발견된다.
+
+    이 파일은 폰트 체계가 두 갈래다 — title(`_title_font_for_lang`: 상단 배너·
+    제목 카드·엔딩 카드·광고 태그)와 chalk(`_chalk_font_for_lang`: 칠판 자막·
+    우상단 아이템 라벨·급훈 액자·명패, bg_style="chalkboard"일 때만). 어떤
+    텍스트가 실제로 어느 폰트로 그려지는지는 assemble() 본문의 실제 호출부를
+    그대로 따라간 것(`_make_title_png`/`_make_title_card_png`/
+    `_build_ad_tag_badge` → title, `_make_chalk_caption_png`/
+    `_make_item_label_png`/`_place_chalk_doodle` → chalk) — 잘못된 폰트로
+    검사하면 오탐/누락이 생긴다."""
+    _assert_title_glyph_coverage("상단 후킹 배너", title, lang)
+    _assert_title_glyph_coverage("제목 카드(썸네일)", title_card_text or title, lang)
+    _assert_title_glyph_coverage("엔딩 카드 CTA", end_card_text or DEFAULT_END_CARD_TEXT, lang)
+    if ad_tag:
+        _assert_title_glyph_coverage("광고 태그", AD_TAG_TEXT_BY_LANG.get(lang, "AD"), lang)
+
+    # 자막: bg_style="chalkboard"면 _make_chalk_caption_png(chalk 폰트),
+    # bg_style="photo"면 _make_caption_png(title 폰트) — assemble() 본문의
+    # 실제 분기(4번 자막 굽기 단계)와 정확히 맞춰야 한다.
+    caption_check = _assert_chalk_glyph_coverage if bg_style == "chalkboard" else _assert_title_glyph_coverage
+    for _start, _end, text in _parse_srt(srt_path):
+        caption_check(f"자막(원문: {text[:24]}{'...' if len(text) > 24 else ''})", text, lang)
+
+    # 우상단 아이템 라벨(_make_item_label_png)은 bg_style과 무관하게 항상 chalk
+    # 폰트 — motion_schedule로 캐릭터 여러 명이 번갈아 나올 때만 그려진다.
+    if motion_schedule:
+        for entry in motion_schedule:
+            motion_p = Path(entry[2])
+            base = motion_p.stem
+            if base.endswith("_motion"):
+                base = base[: -len("_motion")]
+            name = (item_label_overrides or {}).get(base, base)
+            _assert_chalk_glyph_coverage(f"칠판 우상단 아이템 라벨({name})", name, lang)
+
+    # 급훈 액자·명패는 _place_chalk_doodle 안에서만(bg_style="chalkboard") 그려진다.
+    # 실제로 어떤 명패 문구·이름이 topic-seeded 난수로 뽑히는지는 렌더링 전엔 알 수
+    # 없으므로, 그 언어 풀 전체(뽑힐 수 있는 모든 문구·이름 후보)를 검사해서 무엇이
+    # 뽑혀도 안전하게 한다.
+    if bg_style == "chalkboard":
+        motto_word = topic_word if topic_word is not None else _topic_word_from_seed(doodle_seed)
+        _assert_chalk_glyph_coverage("칠판 급훈 액자", motto_word, lang)
+
+        nameplate_pool = _NAMEPLATE_POOL if lang == "kor" else _NAMEPLATE_POOL_BY_LANG.get(lang, _NAMEPLATE_POOL_EN)
+        for fmt, _name_count, _font_size in nameplate_pool:
+            _assert_chalk_glyph_coverage(f"칠판 명패 문구({fmt})", fmt.replace("{}", ""), lang)
+        name_candidates = (
+            [f"{s}OO" for s in _SURNAMES] if lang == "kor"
+            else _FIRST_NAMES_BY_LANG.get(lang, _FIRST_NAMES_EN)
+        )
+        for name in name_candidates:
+            _assert_chalk_glyph_coverage("칠판 명패 이름", name, lang)
+
+
 def assemble(
     images: list[str] | None,
     motion_path: str | None,
@@ -3206,6 +3341,17 @@ def assemble(
         raise ValueError(f"알 수 없는 bg_style: {bg_style!r} (chalkboard 또는 photo만 가능)")
     if bg_style == "photo" and not images and not image_schedule:
         raise ValueError("bg_style='photo'면 images 또는 image_schedule 중 하나는 필요합니다")
+
+    # WHY 어떤 ffmpeg 호출보다도 먼저(2026-08-14): _validate_assemble_glyphs
+    # WHY 주석 참고 — 렌더링을 시작하기 전에 못 그리는 문자가 있으면 여기서
+    # 막는다.
+    _validate_assemble_glyphs(
+        lang=lang, title=title, title_card_text=title_card_text,
+        end_card_text=end_card_text, ad_tag=ad_tag, bg_style=bg_style,
+        motion_schedule=motion_schedule, item_label_overrides=item_label_overrides,
+        doodle_seed=Path(out_path).stem, topic_word=topic_word, srt_path=srt_path,
+    )
+
     duration_probe = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
          "-of", "default=noprint_wrappers=1:nokey=1", audio_path],
