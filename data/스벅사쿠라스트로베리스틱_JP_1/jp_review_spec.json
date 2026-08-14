@@ -10,9 +10,16 @@
   },
   "intro_broll": [
     {
-      "clip": "raw_footage/ojmo/DJI_20260810180355_0004_D.MP4",
-      "in": 9.0,
-      "out": 11.5
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 0.5,
+      "out": 6.0,
+      "tags": [
+        "street",
+        "shutter_arcade",
+        "day",
+        "no_people",
+        "safe"
+      ]
     },
     {
       "clip": "raw_footage/폴더 1/20260810_173053.mp4",

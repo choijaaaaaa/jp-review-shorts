@@ -16,7 +16,14 @@
       "product_line": null,
       "scent": null,
       "source": "own",
-      "used_in": ["포키유바리멜론_JP_1"],
+      "used_in": [
+        "포키유바리멜론_JP_1",
+        "케어리브관절패치_JP_1",
+        "콜라겐씨젤리_JP_1",
+        "낫토균영양제_JP_1",
+        "스벅사쿠라스트로베리스틱_JP_1",
+        "베리스마카다미아_JP_1"
+      ],
       "footage_role": "broll"
     },
     {
@@ -34,7 +41,9 @@
       "product_line": null,
       "scent": null,
       "source": "own",
-      "used_in": ["스이사이효소세안_JP_1"],
+      "used_in": [
+        "스이사이효소세안_JP_1"
+      ],
       "footage_role": "broll"
     },
     {
@@ -816,14 +825,14 @@
         "landmark",
         "shopping_district",
         "day",
-        "far_pedestrians_backs_only",
-        "safe"
+        "crowded",
+        "face_visible_risk"
       ],
       "brand": null,
       "product_line": "에비스바시_오사카_랜드마크거리",
       "scent": null,
       "source": "own",
-      "used_in": ["케어리브관절패치_JP_1", "콜라겐씨젤리_JP_1", "낫토균영양제_JP_1", "스벅사쿠라스트로베리스틱_JP_1"],
+      "used_in": [],
       "footage_role": "broll"
     },
     {
@@ -1016,7 +1025,9 @@
       "product_line": "suisai 뷰티클리어 페이스트워시(練り酵素洗顔, 효소세안)",
       "scent": null,
       "source": "own",
-      "used_in": ["스이사이효소세안_JP_1"],
+      "used_in": [
+        "스이사이효소세안_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -1952,7 +1963,9 @@
       "product_line": "관절/근육 패치(반창고류)",
       "scent": null,
       "source": "own",
-      "used_in": ["케어리브관절패치_JP_1"],
+      "used_in": [
+        "케어리브관절패치_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -2571,7 +2584,9 @@
       "product_line": "낫토균 효소(NATTO-KIN ENZYME) 영양제",
       "scent": null,
       "source": "own",
-      "used_in": ["낫토균영양제_JP_1"],
+      "used_in": [
+        "낫토균영양제_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -2862,7 +2877,9 @@
       "product_line": "梅ぼしのシート(우메보시 시트)",
       "scent": null,
       "source": "own",
-      "used_in": ["우메보시시트_JP_1"],
+      "used_in": [
+        "우메보시시트_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -3493,7 +3510,9 @@
       "product_line": "포키 유바리 멜론맛(夕張メロン)",
       "scent": "유바리 멜론",
       "source": "own",
-      "used_in": ["포키유바리멜론_JP_1"],
+      "used_in": [
+        "포키유바리멜론_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -4234,7 +4253,9 @@
       "product_line": "남성/스킨케어 매대 파노라마 (HAKU 등 진열)",
       "scent": null,
       "source": "own",
-      "used_in": ["스이사이효소세안_JP_1"],
+      "used_in": [
+        "스이사이효소세안_JP_1"
+      ],
       "footage_role": "supporting"
     },
     {
@@ -6855,7 +6876,9 @@
       "product_line": "1滴消臭元 トイレの消臭剤 (원드롭 소취원, 변기용 탈취제 20ml)",
       "scent": "抹茶の香り (말차 향)",
       "source": "own",
-      "used_in": ["소취원변기탈취제_JP_1"],
+      "used_in": [
+        "소취원변기탈취제_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -6876,7 +6899,9 @@
       "product_line": "1滴消臭元 トイレの消臭剤 (원드롭 소취원, 변기용 탈취제 20ml)",
       "scent": "スウィートローズの香り (스위트 로즈 향)",
       "source": "own",
-      "used_in": ["소취원변기탈취제_JP_1"],
+      "used_in": [
+        "소취원변기탈취제_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -7231,7 +7256,9 @@
       "product_line": "파스/반창고 매대(BAND-AID 및 관절 패치류)",
       "scent": null,
       "source": "own",
-      "used_in": ["케어리브관절패치_JP_1"],
+      "used_in": [
+        "케어리브관절패치_JP_1"
+      ],
       "footage_role": "supporting"
     },
     {
@@ -7332,7 +7359,9 @@
       "product_line": "소화효소 영양제 매대 클로즈업",
       "scent": null,
       "source": "own",
-      "used_in": ["낫토균영양제_JP_1"],
+      "used_in": [
+        "낫토균영양제_JP_1"
+      ],
       "footage_role": "supporting"
     },
     {
@@ -14776,7 +14805,9 @@
       "product_line": "STARBUCKS SAKURA STRAWBERRY LATTE(사쿠라 스트로베리 라떼) - 돈키호테 한정, 시즌한정",
       "scent": "딸기/사쿠라",
       "source": "own",
-      "used_in": ["스벅사쿠라스트로베리스틱_JP_1"],
+      "used_in": [
+        "스벅사쿠라스트로베리스틱_JP_1"
+      ],
       "footage_role": "hero"
     },
     {
@@ -15084,7 +15115,9 @@
       "product_line": "스타벅스 抹茶ラテ(말차라떼) 박스 - 돈키호테 한정(ドン・キホーテ限定)",
       "scent": "말차라떼",
       "source": "own",
-      "used_in": ["스벅사쿠라스트로베리스틱_JP_1"],
+      "used_in": [
+        "스벅사쿠라스트로베리스틱_JP_1"
+      ],
       "footage_role": "supporting"
     },
     {
@@ -16214,7 +16247,9 @@
       "product_line": "돈키호테 매장 입구 웰컴 사이니지 (도톤보리 지점, 매장 내 취식·흡연 금지 안내판)",
       "scent": null,
       "source": "own",
-      "used_in": ["포키유바리멜론_JP_1"],
+      "used_in": [
+        "포키유바리멜론_JP_1"
+      ],
       "footage_role": "broll"
     },
     {
