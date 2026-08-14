@@ -16,7 +16,7 @@
       "product_line": null,
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["포키유바리멜론_JP_1"],
       "footage_role": "broll"
     },
     {
@@ -3485,7 +3485,7 @@
       "product_line": "포키 유바리 멜론맛(夕張メロン)",
       "scent": "유바리 멜론",
       "source": "own",
-      "used_in": [],
+      "used_in": ["포키유바리멜론_JP_1"],
       "footage_role": "hero"
     },
     {
@@ -16206,7 +16206,7 @@
       "product_line": "돈키호테 매장 입구 웰컴 사이니지 (도톤보리 지점, 매장 내 취식·흡연 금지 안내판)",
       "scent": null,
       "source": "own",
-      "used_in": [],
+      "used_in": ["포키유바리멜론_JP_1"],
       "footage_role": "broll"
     },
     {
