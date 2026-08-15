@@ -700,6 +700,17 @@ CHROME_BIN = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 _SCROLL_CAPTURE_HEIGHT = 3600
 
 
+_DESKTOP_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+               "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+
+# WHY User-Agent 위장(2026-08-15, 우메보시시트_JP_1 실측 버그) — 크롬 헤드리스
+# 기본 UA 문자열은 서버에서 봇으로 바로 식별된다. mognavi.jp가 이걸
+# 403 Forbidden(nginx 기본 에러 페이지)으로 막는 걸 실측 확인했는데, 그
+# 에러 페이지조차 제목·구분선·"nginx" 텍스트가 있어서 24KB나 나가 아래
+# 크기 체크(>10_000)를 통과해버렸다 — pending_clips.json엔
+# "fulfilled_via_research"로 기록됐지만 실제 칠판 씬 위쪽은 텅 빈 흰 배경
+# 이었다. UA를 일반 데스크톱 브라우저로 바꾸니 같은 URL이 정상 캡처됨
+# (1.6MB, 실제 상품 사진·후기 텍스트 포함) — 직접 재현·검증함.
 def _capture_source_screenshot(url: str, out_path: Path) -> bool:
     """헤드리스 크롬으로 출처 URL을 길게(스크롤 가능한 세로 길이로) 캡처한다.
     네트워크 실패·타임아웃 등 뭐든 실패하면 조용히 False만 반환 — 렌더
@@ -708,10 +719,26 @@ def _capture_source_screenshot(url: str, out_path: Path) -> bool:
         subprocess.run(
             [CHROME_BIN, "--headless", "--disable-gpu", "--no-sandbox",
              f"--window-size={W},{_SCROLL_CAPTURE_HEIGHT}", "--hide-scrollbars",
+             f"--user-agent={_DESKTOP_UA}",
              f"--screenshot={out_path}", url],
             check=True, capture_output=True, timeout=30,
         )
-        return out_path.exists() and out_path.stat().st_size > 10_000
+        if not (out_path.exists() and out_path.stat().st_size > 10_000):
+            return False
+        # WHY 밝기 체크가 추가로 필요한지: UA 위장으로도 못 뚫는 사이트(JS
+        # 챌린지·Cloudflare 차단 등)는 여전히 있을 수 있고, 그런 차단
+        # 페이지도 크기 기준(>10_000)은 우연히 넘길 수 있다(위 사고 전례).
+        # 실제 상품 리뷰 페이지는 사진·색색의 UI가 섞여 있어 거의 흰
+        # 화면일 수가 없다는 점을 2차 안전망으로 쓴다 — 정상 캡처를
+        # 오탐할 여지를 남기려고 기준을 널널하게(98%) 잡았다.
+        with Image.open(out_path) as img:
+            gray = img.convert("L")
+            hist = gray.histogram()
+            near_white = sum(hist[250:])
+            total = gray.width * gray.height
+            if total > 0 and near_white / total > 0.98:
+                return False
+        return True
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError):
         return False
 
