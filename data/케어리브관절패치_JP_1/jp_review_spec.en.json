@@ -1,0 +1,67 @@
+{
+  "hook_lines": [
+    "This Japan drugstore bandage",
+    "has a secretly genius name"
+  ],
+  "product_tag": "Careleaves Bandage",
+  "product_photo": {
+    "clip": "raw_footage/폴더 1/20260810_151422.mp4",
+    "at": 117.7
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 0.5,
+      "out": 6.0,
+      "tags": [
+        "street",
+        "shutter_arcade",
+        "day",
+        "no_people",
+        "safe"
+      ]
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
+      "in": 150.0,
+      "out": 151.8
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_151422.mp4",
+    "in": 117.0,
+    "out": 120.0,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "The name mashes up CARE + LEAF — the bandage is even shaped like a leaf",
+      "It also echoes the English word 'leave,' as in wishing the wound goodbye — that double meaning is built into the name",
+      "Launched in 1997 after three years of development, when most Japanese bandages were still stiff PVC that didn't breathe",
+      "The fix: a high-density urethane nonwoven fabric that stretches both lengthwise and widthwise, so it flexes when you bend a finger",
+      "Reviews split — plenty say it stays put even when bent, but some warn that wearing it too long can stretch out your skin"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 손가락 마디나 팔꿈치 같은 관절 부위에 반창고를 붙이고 굽혔다 펴면서 안 떨어지는 걸 보여주는 영상. 붙이는 손동작 클로즈업 + 구부리는 동작 반복이면 좋음. 10~15초 분량.",
+    "xiaohongshu_query": "ケアリーヴ 关节创可贴 使用测评",
+    "source_url": "https://lipscosme.com/products/77708/review",
+    "quotes": [
+      {
+        "japanese": "粘着部分が伸びるから曲げても割と平気。粘着力も強くて剥がれにくいのに、剥がした後ベタベタしない！",
+        "translation": "The adhesive stretches, so it's fine even when I bend it. It sticks strong and doesn't peel off easily, but it's not sticky at all once you take it off!"
+      },
+      {
+        "japanese": "曲がるところにつけてもつけやすいしよかったです",
+        "translation": "Easy to apply even on joints that bend — I really liked it"
+      },
+      {
+        "japanese": "気をつけてほしいことがあって、めっぱこれいいけど、多分瞼伸びます。はい。すみません。",
+        "translation": "One thing to watch out for — this works great, but if you wear it on your eyelid, it'll probably stretch the skin out. Yeah. Sorry about that."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}
