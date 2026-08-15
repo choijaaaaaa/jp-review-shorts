@@ -1,0 +1,63 @@
+{
+  "hook_lines": [
+    "This KitKat is only sold at Don Quijote Japan",
+    "It's actually kinako flavored?!"
+  ],
+  "product_tag": "Sakura Kinako KitKat",
+  "product_photo": {
+    "clip": "raw_footage/폴더 1/20260810_165808.mp4",
+    "at": 1.0
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_141943.mp4",
+      "in": 1.0,
+      "out": 5.0
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_172636.mp4",
+      "in": 44.0,
+      "out": 46.5
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_165808.mp4",
+    "in": 0.3,
+    "out": 4.6,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "Confirmed \"Don Quijote exclusive\" by Nestlé's own official account",
+      "White chocolate + sakura leaf powder, with real kinako mixed into the wafer cream",
+      "Reviews split hard: \"kinako hits the second you open it\" vs \"barely any kinako taste\"",
+      "First launched around 2018, still returning to Don Quijote shelves as a seasonal item years later"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 킷캣 사쿠라 키나코맛을 먹는 리액션 영상. 한 입 베어물고 콩가루 향과 벚꽃 화이트초콜릿 맛에 반응하는 표정 위주 클로즈업, 웨하스 단면(크림 켜켜이)을 보여주는 장면이 있으면 더 좋음. 10~15초 분량이면 충분.",
+    "xiaohongshu_query": "日本 KitKat 樱花黄豆粉 桜きなこ 试吃",
+    "source_url": "https://mognavi.jp/product/35834",
+    "quotes": [
+      {
+        "japanese": "開けた瞬間からきなこの香りがふわりと香って期待大！！",
+        "translation": "The moment I opened it, the kinako aroma wafted out — got me really excited!!"
+      },
+      {
+        "japanese": "きなこがつよい 味はきなこにひっそり桜が混じってる感じです",
+        "translation": "The kinako flavor is strong — it tastes like kinako with just a hint of sakura mixed in."
+      },
+      {
+        "japanese": "小分けの袋を開けると濃厚で香ばしいきなこの香りがガッツリ",
+        "translation": "Open one of the individually wrapped pieces and you get a thick, toasty kinako smell right away."
+      },
+      {
+        "japanese": "あまりきな粉感はないけれど桜風味とホワイトチョコレートも好きなので私はとても美味しかったです",
+        "translation": "I didn't get much of a kinako taste, but I love the sakura flavor and white chocolate, so it was still really delicious to me."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}
