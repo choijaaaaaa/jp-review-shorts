@@ -1,0 +1,77 @@
+{
+  "hook_lines": [
+    "Japan's Don Quijote toilet deodorizer",
+    "just ONE drop and that's it?!"
+  ],
+  "product_tag": "Kobayashi 1-Drop Deodorizer",
+  "product_photo": {
+    "clip": "raw_footage/폴더 1/20260810_163545.mp4",
+    "at": 190.5
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 1.5,
+      "out": 5.0
+    },
+    {
+      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
+      "in": 195.0,
+      "out": 198.0
+    }
+  ],
+  "item_clip": {
+    "clips": [
+      {
+        "clip": "raw_footage/폴더 1/20260810_163545.mp4",
+        "in": 189.5,
+        "out": 192.0
+      },
+      {
+        "clip": "raw_footage/폴더 1/20260810_163545.mp4",
+        "in": 193.0,
+        "out": 196.8
+      }
+    ]
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "One or two drops go straight into the toilet water — no spray, no hanging holder, just a concentrated liquid drop",
+      "A 20-milliliter bottle lasts about 640 uses at one drop each — roughly the size of an eye-drop bottle",
+      "Official scents are Sweet Rose, Watery Green, and Kinmokusei (osmanthus); the shelf also had a matcha scent on its own",
+      "Plenty of Rakuten reviews mention repurchasing — 'I buy it again every time it runs out,' 'I can't live without this anymore'",
+      "One LIPS review calls it 'the deodorizer that's gone viral on social media more than once'"
+    ],
+    "usage_steps": [
+      "Before or after using the toilet, aim for the water and drop in one or two drops",
+      "No scrubbing or rinsing needed — the scent spreads on its own"
+    ],
+    "usage_label": "How to Use It"
+  },
+  "usage_placeholder": {
+    "description": "실제로 변기 물에 한두 방울 떨어뜨리고 향이 퍼지는 걸 확인하는 장면. 손+병+물 웅덩이 위주 클로즈업이면 충분하고 사람 얼굴은 안 나와도 됨, 10~15초 분량.",
+    "xiaohongshu_query": "日本1滴消臭元 马桶除臭 使用测评",
+    "source_url": "https://review.rakuten.co.jp/item/1/298616_10006828/1.1/",
+    "quotes": [
+      {
+        "japanese": "1滴垂らすだけで、バラの香りがひろがります。消臭スプレーや置き型も併用してますが、これが一番効果あると思います。",
+        "translation": "Just one drop and the rose scent spreads. I also use spray and stand-type deodorizers alongside it, but I think this one works best."
+      },
+      {
+        "japanese": "個人的にはローズよりグリーンの方が香りが強い気がしますが消臭力は変わらないです。もう手放せないアイテムになりました。",
+        "translation": "Personally I feel the Green scent is a bit stronger than Rose, but the deodorizing power is the same either way. This has become something I can't be without."
+      },
+      {
+        "japanese": "この香りが好きなのと、数滴垂らすだけで（１滴だけ垂らすのがなかなかできなくて。。）悪臭は無くなるので、何度もリピしてます。",
+        "translation": "I love the scent, and just a few drops — honestly getting exactly one drop out is surprisingly hard — get rid of the bad smell, so I've repurchased it many times."
+      },
+      {
+        "japanese": "良かったです。芳香剤他いろいろ使用していましたが、どれも香りがきつい感じがしていましたが、これは、ほんの一滴で香り良く気持ちいいトイレになりました。今まで知らなかったのが残念でしたわ。",
+        "translation": "Really glad I got this. I've tried all sorts of air fresheners and they always felt too strong, but with this one, just a single drop makes for a nice-smelling, pleasant bathroom. Kind of a shame I didn't know about it until now."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}
