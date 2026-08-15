@@ -25,6 +25,8 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
 
+from lib.mission_control_log import report_issue
+
 load_dotenv()
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -285,6 +287,12 @@ def upload_backlog(privacy_status: str = "private", langs: list[str] | None = No
             try:
                 upload_short(topic, privacy_status=privacy_status, publish_at=publish_at)
             except HttpError as e:
+                # mission-control에도 보고 — 미설정 세션이 대부분이라 실패해도
+                # 조용히 넘어간다(lib/mission_control_log.py 상단 WHY 참고).
+                report_issue(
+                    severity="error", category="upload_failure",
+                    entity=topic, message=str(e),
+                )
                 print(f"[youtube_upload] {topic} 실패: {e}")
                 continue
             next_slot += timedelta(days=1)

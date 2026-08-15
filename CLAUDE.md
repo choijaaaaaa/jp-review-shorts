@@ -39,6 +39,7 @@
     하루 한 개씩(`DAILY_UPLOAD_HOUR_KST=20`, 실측 근거 없는 시작값 — 데이터
     쌓이면 조정할 것) 순서대로 예약 업로드. 단일 topic은
     `python3 lib/youtube_upload.py <topic> [private|unlisted|public] [publish_at]`.
+- 이슈는 `lib/mission_control_log.py`의 `report_issue()`로 mission-control(`../../mission-control`)에도 보고됨(2026-08-15, `youtube_upload.py` 업로드 실패 시 연동 — `MISSION_CONTROL_INGEST_URL`/`_SECRET` 미설정 시 조용히 스킵).
 - **가격 비교 금지(2026-08-09, 사용자 확정)** — 한국 판매가를 실시간으로
   정확히 못 긁어오는데(네이버쇼핑 최저가 API 접근 불가) 부정확한 가격을
   콘텐츠에 넣으면 역효과라는 판단. 리서치 단계에서 참고용으로 가격을 확인해도
