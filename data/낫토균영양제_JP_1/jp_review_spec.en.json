@@ -1,9 +1,9 @@
 {
   "hook_lines": [
-    "일본 돈키호테에 있는 영양제인데",
-    "낫토는 안 먹고 낫토균만 먹는대?!"
+    "Found at Japan's Don Quijote —",
+    "skip the natto, eat just the bacteria?!"
   ],
-  "product_tag": "낫토균+효소 영양제",
+  "product_tag": "Natto Bacteria + Enzyme",
   "product_photo": {
     "clip": "raw_footage/폴더 1/20260810_174011.mp4",
     "at": 47.5
@@ -34,21 +34,21 @@
     "round_trips": 1
   },
   "chalkboard": {
-    "title": "후기 모음",
+    "title": "What People Are Saying",
     "bullets": [
-      "박스 표기: 낫토균 450억 개 + 유산균 180억 개 + 낙산균 18억 개(360정/약 3개월분)",
-      "위산에 안 죽는 유포자성 균 — 낫토균 1개가 16시간 만에 40억 개로 증식(공식 설명)",
-      "낫토균+유산균+낙산균에 파인애플·파파야·키위 과일효소까지 추가 배합",
-      "실제 후기: '가벼운 변비 체질인데 가스가 잘 안 차게 됐다'(@cosme)",
-      "같은 브랜드 다른 낫토균 제품은 아마존 평점 5점 만점에 2.4점(리뷰 4건) — '효과가 느껴지지 않는다'는 후기도",
-      "낫토 발효균 특성상 항응고제(와파린) 복용자는 섭취 비권장"
+      "Label claims: 45 billion natto bacteria + 18 billion lactic acid bacteria + 1.8 billion butyric acid bacteria (360 tablets / about 3 months)",
+      "Spore-forming bacteria that survive stomach acid — 1 natto bacterium multiplies to 4 billion in 16 hours (brand's own claim)",
+      "Natto + lactic acid + butyric acid bacteria, plus pineapple, papaya, and kiwi fruit enzymes",
+      "Real review: 'mild constipation improved, less gas' (@cosme)",
+      "Same brand's other natto bacteria product: 2.4/5 on Amazon (4 reviews) — some say 'no effect felt'",
+      "Natto-derived fermented bacteria — not recommended if you're on blood thinners like warfarin"
     ],
     "usage_steps": [
-      "매 식사 후 1정씩, 하루 4정이 기준이에요",
-      "정제 타입이라 물이랑 같이 삼켜요",
-      "360정이면 약 3개월 분량이에요"
+      "One tablet after each meal, four a day as the standard",
+      "It's a tablet, so swallow it with water",
+      "360 tablets lasts about 3 months"
     ],
-    "usage_label": "먹는 법"
+    "usage_label": "How to Take It"
   },
   "usage_placeholder": {
     "description": "실제로 HIROSOPHY 納豆菌+酵素 정제를 손에 덜어서 하루 분량(1정)을 물과 함께 삼키는 장면. 골드 정제가 삼키기 편한 소립(小粒) 타입이라는 걸 보여주는 클로즈업이 있으면 더 좋음. 5~10초 분량이면 충분.",
@@ -57,11 +57,11 @@
     "quotes": [
       {
         "japanese": "軽い便秘体質でしたがお腹の調子がよくなったと思います。ガスが溜まりにくくなったのが一番うれしいです",
-        "translation": "가벼운 변비 체질이었는데 배 상태가 좋아진 것 같아요. 가스가 잘 안 차게 된 게 제일 반가워요"
+        "translation": "I used to be a bit constipated, but I feel like my stomach's doing better now — not getting as bloated with gas is what makes me happiest."
       },
       {
         "japanese": "効果が感じられない",
-        "translation": "효과가 느껴지지 않아요"
+        "translation": "I don't feel like it's doing anything."
       }
     ]
   },
