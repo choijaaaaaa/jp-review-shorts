@@ -86,10 +86,11 @@ b-roll"처럼 특정 상품과 무관한 무드 영상은 여러 topic에서 재
 ```
 {
   "id": "설명적_슬러그_01",          // 카테고리를 이름에서 바로 알 수 있게
-  "clip": "raw_footage/...",         // 원본 파일 경로(폴더 taxonomy 참고)
-  "in": 0.0, "out": 20.0,            // 초 단위 구간
+  "clip": "raw_footage/...",         // 원본 파일 경로(폴더 taxonomy 참고, 등록 후엔 footage_clips/<id>.mp4로 자동 교체됨 — 아래 "촬영본 물리적 추출" 참고)
+  "in": 0.0, "out": 20.0,            // 초 단위 구간(등록 후 footage_clips/ 기준 0.0~구간길이로 자동 갱신)
   "tags": ["postcard_display", ...], // 카테고리·안전성 태그
   "footage_role": "hero" | "supporting" | "broll", // 아래 "footage_role 분류" 참고
+  "safety_reviewed": true | false,   // 필수 — 얼굴·번호판·신체부위 규칙대로 사람이 직접 확인했는지. 아래 "촬영본 물리적 추출" 참고
   "speed": 3.0,                      // 있을 때만 — 워킹 POV b-roll 배속(기본 1.0)
   "brand": "..." | null,
   "product_line": "..." | null,
@@ -99,6 +100,13 @@ b-roll"처럼 특정 상품과 무관한 무드 영상은 여러 topic에서 재
   "used_in": []                      // 이 세그먼트를 쓴 topic 이름 계속 추가
 }
 ```
+
+⚠️ **새 세그먼트는 `data/_footage_catalog.json`을 손으로 직접 편집하지 말고
+`lib.vet_and_extract_catalog.register_segment()`를 거칠 것(2026-08-15
+도입)** — 손편집은 `footage_role`·`safety_reviewed` 누락이나 실제 파일 없이
+카탈로그만 앞서가는 상태를 아무것도 막아주지 않는다. `register_segment()`는
+필수 필드를 파라미터로 강제하고 등록 즉시 `footage_clips/<id>.mp4`로 물리적
+추출까지 마친다. 자세한 건 아래 "촬영본 물리적 추출 파이프라인" 참고.
 
 새 topic 작업 시작 전에 **폴더를 뒤지지 말고 이 카탈로그부터** 태그
 (`street`/`safe`/`product_shelf`/`no_people` 등)·브랜드·제품으로 훑어서
@@ -136,10 +144,11 @@ b-roll"처럼 특정 상품과 무관한 무드 영상은 여러 topic에서 재
 
 **사람이 Finder로 직접 훑어볼 수 있는 뷰**: `python3 -m
 lib.build_footage_browser` 실행하면 `output/_footage_browser/{hero,
-supporting,broll}/`에 `<브랜드>__<세그먼트id>.mp4` 이름의 심볼릭 링크가
-생성된다(실제 파일 이동·복사 없음, 브랜드 알파벳순 그룹핑). 카탈로그가
-바뀔 때마다 다시 실행해서 갱신 — 이 폴더 자체는 소스오브트루스가 아니라
-매번 재생성 가능한 뷰.
+supporting,broll}/`에 `<브랜드>__<세그먼트id>.mp4`(`safety_reviewed:false`인
+세그먼트는 `UNREVIEWED__` 접두어가 붙어서 Finder에서 바로 구분됨) 이름의
+심볼릭 링크가 생성된다(실제 파일 이동·복사 없음, `footage_clips/`를 가리킴,
+브랜드 알파벳순 그룹핑). 카탈로그가 바뀔 때마다 다시 실행해서 갱신 — 이
+폴더 자체는 소스오브트루스가 아니라 매번 재생성 가능한 뷰.
 
 **긴 원본(특히 매장 투어형 샤오홍슈 클립)을 통짜 하나로 등록하지 않는다** —
 "몇 초짜리 구간이 어떤 부류의 콘텐츠인지" 기준으로 잘게 쪼개서 카테고리별로
@@ -377,28 +386,44 @@ Stage 5에서 타임스탬프를 직접 기입하던 구 방식은 없어졌다.
     "카탈로그 태그만 보고 넘겨짚지 말 것"(아래 상품 식별 규칙)과 같은
     원칙을 안전성 판단에도 그대로 적용 — 태그를 신뢰하지 말고, 새 topic에
     쓰기 전에 최소 한 번은 직접 프레임으로 재확인한다.
-  - ⚠️ **`footage_role: "broll"` 세그먼트는 재사용 시마다 확인할 필요 없이
-    이미 한 번 물리적으로 추출+검사 완료된 상태다(2026-08-15,
-    `lib/vet_and_extract_catalog.py`)** — 매번 사람이 다시 확인해야 하는
-    구조 자체가 반복 사고 원인이라는 판단으로, 190개(812개 세그먼트 중
-    broll) 전체를 `footage_clips/<id>.mp4`로 실제 잘라내고(회전 보정·
-    정확한 seek 포함, `raw_footage/` 원본과 무관하게 독립적으로 존재)
-    OpenCV YuNet(`assets_library/cv_models/face_detection_yunet.onnx`)으로
-    자동 얼굴 검사까지 마쳤다. 얼굴이 큼직하게(프레임 폭 5% 이상) 잡힌
-    120개를 사람이 직접 썸네일로 재확인해서 실제 행인 얼굴 5개만 확정
-    제외(`excluded`에 기록)했고, 나머지는 카탈로그의 `clip`/`in`/`out`을
-    `footage_clips/` 쪽으로 이미 갱신해뒀다 — **broll을 쓸 때는 더 이상
-    `raw_footage/` 원본을 열어볼 필요 없이 카탈로그 값 그대로 써도 된다.**
-    ⚠️ **범위 밖(아직 미완료)**: `hero`/`supporting`(상품 examine·매대
-    브라우징, 622개)은 아직 이 파이프라인을 안 거쳤다 — 캐릭터 인쇄
-    포장지·피규어 굿즈가 화면을 채우는 경우가 많아 자동 얼굴 검사가
-    오탐(스누피 포장지를 얼굴로 인식하는 등)을 대량 생성하는 걸 실측
-    확인했음, 사람 검토 부담이 커서 이번엔 broll만 우선 처리함. **차량
-    번호판 자동 검사는 아직 없음** — 얼굴만 자동화됐고, 번호판은 여전히
-    위 "얼굴·차량 번호판" 원칙대로 등록·재사용 시 사람이 직접 확인해야
-    한다. 새로 서베이하는 원본은 `python3 -m lib.vet_and_extract_catalog`
-    (기본 broll만, `roles=(...)`로 확장 가능)를 카탈로그 갱신 후 다시
-    돌려서 신규 broll 세그먼트도 같은 방식으로 검사할 것.
+  - ⚠️ **`safety_reviewed: true`인 세그먼트는 재사용 시마다 확인할 필요
+    없다 — `false`인 세그먼트는 topic에 쓰기 전 반드시 사람이 직접 확인
+    후 뒤집을 것(2026-08-15 도입, 2026-08-15 전체 812개로 확장)** — 매번
+    사람이 다시 확인해야 하는 구조 자체가 반복 사고 원인이라는 판단으로
+    시작했고, "확인 안 함"을 카탈로그 필드에 정직하게 남겨서 침묵 속에
+    방치되지 않게 했다.
+    - **`broll`(190개)**: 전체가 `footage_clips/<id>.mp4`로 물리적으로
+      잘려있고(회전 보정·정확한 seek 포함, `raw_footage/` 원본과 무관하게
+      독립적으로 존재) OpenCV YuNet(`assets_library/cv_models/
+      face_detection_yunet.onnx`)으로 자동 얼굴 검사까지 마쳤다. 얼굴이
+      큼직하게(프레임 폭 5% 이상) 잡힌 120개를 사람이 직접 썸네일로
+      재확인해서 실제 행인 얼굴 5개만 확정 제외(`excluded`에 기록)했고,
+      나머지 전부 `safety_reviewed: true`. **broll을 쓸 때는 더 이상
+      `raw_footage/` 원본을 열어볼 필요 없이 카탈로그 값 그대로 써도 된다.**
+      플래그된 세그먼트를 한 번에 훑어볼 땐 `python3 -m
+      lib.vet_and_extract_catalog sheet`로 `output/_face_review/_sheet_*.jpg`
+      그리드 이미지를 생성해서 확인 — id·얼굴 비율이 라벨로 박혀있어
+      `_report.json`을 따로 안 봐도 됨.
+    - **`hero`/`supporting`(622개)**: `footage_clips/`로 물리적 추출은
+      전체 완료(2026-08-15, `lib.vet_and_extract_catalog.run(roles=
+      ("hero","supporting"), detect=False)`)됐지만 **자동 얼굴 검사는
+      의도적으로 안 걸었다** — 캐릭터 인쇄 포장지·피규어 굿즈가 화면을
+      채우는 경우가 많아 자동 얼굴 검사가 오탐(스누피 포장지를 얼굴로
+      인식하는 등)을 대량 생성하는 걸 실측 확인했기 때문. 그래서 전체
+      `safety_reviewed: false`로 명시적으로 표시돼 있다 — **"파일이
+      있다"와 "안전 검증됐다"는 이 카테고리에서 별개다.** 새 topic에
+      hero/supporting 세그먼트를 쓰기 전엔 위 "얼굴·차량 번호판" 원칙대로
+      구간 시작·중간·끝을 직접 프레임으로 확인하고, 문제없으면
+      `lib.vet_and_extract_catalog.mark_reviewed(id)`로 `true`로 뒤집을
+      것 — 확인 없이 그냥 쓰지 말 것.
+    - **차량 번호판 자동 검사는 role 무관하게 아직 없음** — 얼굴만
+      자동화됐고, 번호판은 모든 role에서 여전히 사람이 직접 확인해야 한다.
+    - 새로 서베이하는 원본은 `register_segment()`(위 "세그먼트 카탈로그"
+      참고)로 등록하거나, broll이면 등록 후 `python3 -m
+      lib.vet_and_extract_catalog run`(기본 broll만)을 다시 돌려서 자동
+      얼굴 검사까지 받을 것. 카탈로그 정합성(필수 필드 누락, 파일 없이
+      카탈로그만 앞서간 상태 등)은 `python3 -m lib.vet_and_extract_catalog
+      validate`로 확인 가능 — topic 커밋 전 습관적으로 돌릴 것.
 - **손 외의 신체 부위(다리·발 등)가 프레임을 지배하는 구간은 examine
   세그먼트로 등록하지 않는다(2026-08-11, 사용자 확정)** — 매대 사이를 걸어서
   이동하는 전환 컷은 카메라가 자연히 아래(바닥·발)를 향하는데, 이걸 examine
