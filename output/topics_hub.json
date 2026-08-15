@@ -1,9 +1,79 @@
 {
   "topics": [
     {
+      "topic": "돈키호테카레과자_JP_1",
+      "title": "한국엔 없는 삼양 불닭카레, 일본 돈키호테에서만 판다 - 매운맛은 카레LEE의 25배",
+      "dashboard_path": "output/돈키호테카레과자_JP_1/dashboard.html"
+    },
+    {
+      "topic": "낫토균영양제_JP_1",
+      "title": "낫토는 안 먹어도 낫토균만 챙겨 먹는 일본 영양제 - 정체는 위산에도 안 죽는 균",
+      "dashboard_path": "output/낫토균영양제_JP_1/dashboard.html"
+    },
+    {
+      "topic": "베리스마카다미아_JP_1",
+      "title": "일본 돈키호테 마카다미아 초콜릿, 알고보니 할랄 인증받은 말레이시아 프리미엄 브랜드",
+      "dashboard_path": "output/베리스마카다미아_JP_1/dashboard.html"
+    },
+    {
+      "topic": "소취원변기탈취제_JP_1",
+      "title": "일본 돈키호테 변기 탈취제, 딱 한 방울로 640번 쓴다는 이 제품의 정체",
+      "dashboard_path": "output/소취원변기탈취제_JP_1/dashboard.html"
+    },
+    {
+      "topic": "스벅사쿠라스트로베리스틱_JP_1",
+      "title": "한국 스타벅스엔 없는 이 맛, 일본 돈키호테 사쿠라 스트로베리 라떼의 정체",
+      "dashboard_path": "output/스벅사쿠라스트로베리스틱_JP_1/dashboard.html"
+    },
+    {
+      "topic": "스이사이효소세안_JP_1",
+      "title": "일본에서 반년 만에 도쿄타워 269개 높이만큼 팔린 suisai 신제품 세안",
+      "dashboard_path": "output/스이사이효소세안_JP_1/dashboard.html"
+    },
+    {
+      "topic": "우메보시시트_JP_1",
+      "title": "일본 편의점 매실 시트 과자, 귀여운 포장 속에 진짜 신맛이 숨어있었다",
+      "dashboard_path": "output/우메보시시트_JP_1/dashboard.html"
+    },
+    {
+      "topic": "케어리브관절패치_JP_1",
+      "title": "일본 반창고 이름에 숨은 뜻, 케어리브가 나뭇잎 모양인 이유",
+      "dashboard_path": "output/케어리브관절패치_JP_1/dashboard.html"
+    },
+    {
+      "topic": "콜라겐씨젤리_JP_1",
+      "title": "일본 돈키호테 콜라겐 젤리, 15년 만에 처음 나온 프리미엄판의 정체",
+      "dashboard_path": "output/콜라겐씨젤리_JP_1/dashboard.html"
+    },
+    {
+      "topic": "킨쵸모기스프레이_JP_1",
+      "title": "박스에 '몸에 뿌리지 마세요'라고 적힌 일본 모기 스프레이, 정체가 뭘까",
+      "dashboard_path": "output/킨쵸모기스프레이_JP_1/dashboard.html"
+    },
+    {
+      "topic": "킷캣사쿠라니혼슈_JP_1",
+      "title": "오사카 돈키호테 킷캣, 진짜 술 맛이 난다는 게 사실일까 - 알코올 0.09%의 비밀",
+      "dashboard_path": "output/킷캣사쿠라니혼슈_JP_1/dashboard.html"
+    },
+    {
+      "topic": "킷캣사쿠라키나코_JP_1",
+      "title": "일본 돈키호테 한정 킷캣, 벚꽃에 콩고물맛까지 섞은 정체",
+      "dashboard_path": "output/킷캣사쿠라키나코_JP_1/dashboard.html"
+    },
+    {
       "topic": "페로린발바닥시트_JP_1",
       "title": "일본 돈키호테 발바닥시트, 다이소 버전이랑 뭐가 다를까 - 갈변의 진짜 이유",
       "dashboard_path": "output/페로린발바닥시트_JP_1/dashboard.html"
+    },
+    {
+      "topic": "포키아마오우_JP_1",
+      "title": "아무 딸기한테나 못 붙이는 이름, 포키 아마오우가 특별한 이유",
+      "dashboard_path": "output/포키아마오우_JP_1/dashboard.html"
+    },
+    {
+      "topic": "포키유바리멜론_JP_1",
+      "title": "일본 홋카이도 한정 포키, 유바리멜론 과즙 26%가 진짜인 이유",
+      "dashboard_path": "output/포키유바리멜론_JP_1/dashboard.html"
     }
   ]
 }
