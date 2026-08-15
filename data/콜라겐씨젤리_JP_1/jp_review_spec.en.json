@@ -1,0 +1,75 @@
+{
+  "hook_lines": [
+    "Found this at Don Quijote in Japan",
+    "Their first premium jelly in 15 years"
+  ],
+  "product_tag": "Collagen C Jelly PremiumRich",
+  "product_photo": {
+    "clip": "raw_footage/폴더 1/20260810_151422.mp4",
+    "at": 17.5
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 0.5,
+      "out": 6.0,
+      "tags": [
+        "street",
+        "shutter_arcade",
+        "day",
+        "no_people",
+        "safe"
+      ]
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
+      "in": 4.0,
+      "out": 8.0
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_151422.mp4",
+    "in": 16.0,
+    "out": 19.2,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "This brand's collagen jelly has sold since 2011 — the premium line only launched in October 2025",
+      "Beauty ingredients jumped from 7 to 10, with new glucosylceramide added",
+      "One box (15 sticks) packs 37,500mg of fish collagen, plus a new 20% golden pineapple juice blend",
+      "Pre-launch survey (n=100) found effect, price, and taste mattered most to buyers",
+      "The sister product released alongside it isn't collagen — it's placenta jelly (grape flavor), easy to mix up on the shelf"
+    ],
+    "usage_steps": [
+      "Just squeeze one stick straight from the pack, once a day"
+    ],
+    "usage_label": "How to Eat It"
+  },
+  "usage_placeholder": {
+    "description": "실제로 콜라겐씨젤리 프리미엄리치(골든파인애플 맛)를 뜯어서 짜 먹는 리액션 영상. 스틱을 반으로 접어 짜는 손짓, 한 입 먹고 파인애플 맛에 반응하는 표정 위주 클로즈업. 10~15초 분량이면 충분.",
+    "xiaohongshu_query": "日本 胶原蛋白果冻条 试吃",
+    "source_url": "https://lipscosme.com/products/364593",
+    "quotes": [
+      {
+        "japanese": "ややすっぱめのベリー系の味なので続けられそうです！1本あたり12kcalなのも嬉しい！",
+        "translation": "It's a slightly tart berry flavor, so I feel like I can keep taking it. Only 12 kcal per stick is a nice bonus too!"
+      },
+      {
+        "japanese": "アサイーベリー味が甘酸っぱくて美味しいです。ゼリーはそのまま食べられるので毎日続けられます",
+        "translation": "The acai berry flavor is sweet and tangy, and it tastes great. The jelly's ready to eat straight out of the pack, so it's easy to keep up daily."
+      },
+      {
+        "japanese": "もっちりしたしっかりめの食感で、味も食感も個人的には好きなほうです",
+        "translation": "It has a chewy, substantial texture — honestly, I like both the taste and the texture."
+      },
+      {
+        "japanese": "コラーゲンというかゼラチンの味が主張強めなのが苦手ポイント1で、人工甘味料の味が舌に残るのが苦手ポイント2",
+        "translation": "The gelatin taste comes through stronger than the collagen itself, which is one thing I don't love, and the artificial sweetener lingers on my tongue afterward — that's the other."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}
