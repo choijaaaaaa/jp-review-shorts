@@ -1,0 +1,60 @@
+{
+  "hook_lines": [
+    "This suisai wash is a hit in Japan",
+    "stacks up to 269 Tokyo Towers"
+  ],
+  "product_tag": "suisai Beauty Clear Paste Wash",
+  "product_photo": {
+    "clip": "raw_footage/폴더 1/20260810_171658.mp4",
+    "at": 3.0
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140653.mp4",
+      "in": 0.5,
+      "out": 5.0
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_160543.mp4",
+      "in": 0.0,
+      "out": 4.0
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_171658.mp4",
+    "in": 1.0,
+    "out": 5.0,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "suisai launched in 2005 under Kanebo (now part of Kao) — 2025 marks 20 years, and it's held the #1 sales spot in Japan's counseling-cosmetics face-wash market for 11 straight years, with the original powder wash alone topping 30 million units sold",
+      "This paste wash hit shelves September 16, 2025, and within 6 months it picked up 11 Best Cosme awards plus shipped over 539,000 units — stack them up and that's roughly 269 Tokyo Towers",
+      "Popular beauty YouTuber Hiro Odagiri posted a recommendation video that sparked the buzz, and plenty of real @cosme reviews mention buying it specifically because of that video",
+      "Formula: 2 enzymes (protease for protein, lipase for sebum) plus 2 micro-clays (Moroccan lava clay and kaolin); 2 ways to use it — work into foam, or apply directly and massage",
+      "Reviews are mixed: some say it doesn't get skin instantly smooth like the original powder wash, but plenty note it leaves skin moisturized with zero tightness"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 페이스트워시를 손에 덜어 거품 내거나(또는 그대로 발라 마사지) 세안하는 장면. 튜브에서 짜낸 페이스트 질감, 거품망으로 거품 내는 과정, 세안 후 피부 클로즈업 반응 위주. 10~15초 분량이면 충분.",
+    "xiaohongshu_query": "日本 suisai 洗顔膏 酵素洗顔 试用",
+    "source_url": "https://www.cosme.net/reviews/515781137/",
+    "quotes": [
+      {
+        "japanese": "小田切ヒロさんがYoutubeでオススメ品として紹介されていたので購入しました。酵素洗顔だけど毎日使っても大丈夫だそうです。泡立てネットで泡立てるとかなり泡は細かいです。洗い上がりはパウダーの酵素洗顔ほどツルっと感はありませんが、もこもこの泡が出来るのでお気に入りです！！",
+        "translation": "I bought it because Hiro Odagiri recommended it on YouTube. It's an enzyme wash, but apparently it's fine to use every day. Foam it up with a net and the bubbles get really fine. It doesn't leave skin as slick as the powder enzyme wash, but I love how fluffy the foam gets!!"
+      },
+      {
+        "japanese": "小田切ヒロさんがオススメしたので買ってみました。小さなケースに入った粉末タイプが好きで幾度となく使ったことがあります。こちらの洗顔フォームは、粉末タイプのように使ったあとにすぐにツルツルした手触りを感じることはできませんでした。使い心地は、使った後の肌は割としっとりしています。私は、つっぱり感はありません。",
+        "translation": "I tried it because Hiro Odagiri recommended it. I've used the powder type in the little cases many times and really like it. With this one, I didn't get that instantly smooth feeling right after use like I do with the powder version. As for how it feels, my skin is pretty moisturized afterward, and I don't get any tightness."
+      },
+      {
+        "japanese": "小田切ヒロさんのYouTubeを観て購入してみました！テクスチャーはちょっと不思議な感覚！泡立てるともっちり柔らかくて顔への刺激もないです。これは定期的に使いたいかも！",
+        "translation": "I bought it after watching Hiro Odagiri's YouTube video! The texture feels a little strange at first. Once you foam it up it's soft and fluffy, with zero irritation on my face. I might want to keep using this regularly!"
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}
