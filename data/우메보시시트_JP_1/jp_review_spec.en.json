@@ -1,0 +1,64 @@
+{
+  "hook_lines": [
+    "This plum candy at Don Quijote in Osaka —",
+    "why is it THIS sour?!"
+  ],
+  "product_tag": "Umeboshi Sheet",
+  "product_photo": {
+    "clip": "raw_footage/폴더 1/20260810_171933.mp4",
+    "at": 52.0
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_141943.mp4",
+      "in": 4.5,
+      "out": 8.0
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_171933.mp4",
+      "in": 120.0,
+      "out": 124.0
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_171933.mp4",
+    "in": 51.0,
+    "out": 54.5,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "Made by Inaba Peanuts (founded 1918, brand: i Factory) — a candy maker over a century old",
+      "Ingredients are just plum, sugar, salt, and starch — sold at 7-Eleven, FamilyMart, and other convenience stores nationwide",
+      "A plum pressed into a thin candy sheet is a format Korean plum products (pickled plum, plum syrup) simply don't have",
+      "Real reviews split: 'cute packaging but surprisingly sour' vs. 'expected more, kind of a letdown'",
+      "Some reviewers say about 1 in 10,000 sheets comes out heart-shaped"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 梅ぼしのシート를 먹는 리액션 영상. 시트 한 장을 떼어 입에 넣고 신맛에 놀라거나 인상 쓰는 표정 위주 클로즈업, 씹으면서 부드러운 식감을 보여주는 장면이 있으면 더 좋음. 10~15초 분량이면 충분.",
+    "xiaohongshu_query": "日本 梅干し シート 试吃 酸",
+    "source_url": "https://mognavi.jp/product/28524",
+    "quotes": [
+      {
+        "japanese": "デザインがかわいらしい感じなので油断していたが、けっこう酸っぱい。柔らかめなのも手伝って、生っぽく感じる。",
+        "translation": "The design looked so cute I let my guard down, and then it hit way sourer than I expected. That softness makes it feel almost like biting into a fresh plum."
+      },
+      {
+        "japanese": "口に入れた瞬間は粉っぽさと甘味料が少しだけ気になりますが、甘酸っぱい梅味がクセになってどんどん食べてしまいます。1万枚に1枚と言われているハートのシート",
+        "translation": "The first bite feels a little powdery and the sweetener is faintly noticeable, but the sweet-sour plum flavor gets addictive fast — you just keep reaching for more. Supposedly 1 in 10,000 sheets comes out heart-shaped."
+      },
+      {
+        "japanese": "シートなだけあって袋も真っ平ら～酢こんぶのような食感で、初めに甘みがきて後から梅の酸味がきます。",
+        "translation": "Being a sheet, the bag lies completely flat. Texture-wise it's kind of like vinegared kelp — sweet up front, then the plum sourness kicks in after."
+      },
+      {
+        "japanese": "なんか変な味がしました、梅干しのしょっぱさとなんかの味でそんなに美味しくなかった、、ちょっと期待してたけど期待はずれで残念でした。",
+        "translation": "It tasted kind of off to me — the salty umeboshi note mixed with something else and it just wasn't that good. I'd expected more, so it was a bit of a letdown."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}
