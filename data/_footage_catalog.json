@@ -2,9 +2,9 @@
   "segments": [
     {
       "id": "street_shutter_arcade_01",
-      "clip": "raw_footage/_general/20260809_140627.mp4",
-      "in": 0.5,
-      "out": 6.0,
+      "clip": "footage_clips/street_shutter_arcade_01.mp4",
+      "in": 0.0,
+      "out": 5.533,
       "tags": [
         "street",
         "shutter_arcade",
@@ -28,9 +28,9 @@
     },
     {
       "id": "street_arcade_empty_01",
-      "clip": "raw_footage/_general/20260809_140653.mp4",
-      "in": 0.5,
-      "out": 5.0,
+      "clip": "footage_clips/street_arcade_empty_01.mp4",
+      "in": 0.0,
+      "out": 4.5,
       "tags": [
         "street",
         "arcade_interior",
@@ -48,9 +48,9 @@
     },
     {
       "id": "street_crosswalk_01",
-      "clip": "raw_footage/_general/20260809_141943.mp4",
-      "in": 1.0,
-      "out": 8.0,
+      "clip": "footage_clips/street_crosswalk_01.mp4",
+      "in": 0.0,
+      "out": 7.0,
       "tags": [
         "street",
         "crosswalk",
@@ -67,9 +67,9 @@
     },
     {
       "id": "street_crossing_wide_01",
-      "clip": "raw_footage/_general/20260809_142016.mp4",
-      "in": 2.0,
-      "out": 10.0,
+      "clip": "footage_clips/street_crossing_wide_01.mp4",
+      "in": 0.0,
+      "out": 8.0,
       "tags": [
         "street",
         "intersection",
@@ -88,9 +88,9 @@
     },
     {
       "id": "street_arcade_empty_02",
-      "clip": "raw_footage/_general/20260809_142257.mp4",
-      "in": 0.3,
-      "out": 4.0,
+      "clip": "footage_clips/street_arcade_empty_02.mp4",
+      "in": 0.0,
+      "out": 3.7,
       "tags": [
         "street",
         "arcade_interior",
@@ -165,9 +165,9 @@
     },
     {
       "id": "joshin_street_signage_01",
-      "clip": "raw_footage/xiaohongshu/joshin_hobby_01.mp4",
-      "in": 2.0,
-      "out": 9.0,
+      "clip": "footage_clips/joshin_street_signage_01.mp4",
+      "in": 0.0,
+      "out": 7.0,
       "tags": [
         "street_exterior",
         "storefront_signage",
@@ -183,9 +183,9 @@
     },
     {
       "id": "joshin_figure_display_case_01",
-      "clip": "raw_footage/xiaohongshu/joshin_hobby_01.mp4",
-      "in": 9.0,
-      "out": 13.0,
+      "clip": "footage_clips/joshin_figure_display_case_01.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "figure_display",
         "glass_case",
@@ -219,9 +219,9 @@
     },
     {
       "id": "joshin_collectible_figure_case_01",
-      "clip": "raw_footage/xiaohongshu/joshin_hobby_01.mp4",
-      "in": 23.0,
-      "out": 25.0,
+      "clip": "footage_clips/joshin_collectible_figure_case_01.mp4",
+      "in": 0.0,
+      "out": 2.0,
       "tags": [
         "figure_display",
         "collectible",
@@ -238,9 +238,9 @@
     },
     {
       "id": "joshin_model_car_display_01",
-      "clip": "raw_footage/xiaohongshu/joshin_hobby_01.mp4",
-      "in": 25.0,
-      "out": 43.0,
+      "clip": "footage_clips/joshin_model_car_display_01.mp4",
+      "in": 0.0,
+      "out": 18.0,
       "tags": [
         "model_car_display",
         "diecast",
@@ -402,9 +402,9 @@
     },
     {
       "id": "day2_20260810_205623_01",
-      "clip": "raw_footage/폴더 1/20260810_205623.mp4",
-      "in": 1.08,
-      "out": 3.54,
+      "clip": "footage_clips/day2_20260810_205623_01.mp4",
+      "in": 0.0,
+      "out": 2.467,
       "tags": [
         "street",
         "night",
@@ -439,9 +439,9 @@
     },
     {
       "id": "day2_20260810_202940_01",
-      "clip": "raw_footage/폴더 1/20260810_202940.mp4",
-      "in": 1.31,
-      "out": 4.37,
+      "clip": "footage_clips/day2_20260810_202940_01.mp4",
+      "in": 0.0,
+      "out": 3.067,
       "tags": [
         "street",
         "night",
@@ -457,9 +457,9 @@
     },
     {
       "id": "day2_20260810_205607_01",
-      "clip": "raw_footage/폴더 1/20260810_205607.mp4",
-      "in": 1.51,
-      "out": 5.01,
+      "clip": "footage_clips/day2_20260810_205607_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "bridge",
         "waterway",
@@ -477,9 +477,9 @@
     },
     {
       "id": "day2_DJI_20260810140738_0001_D_01",
-      "clip": "raw_footage/ojmo/DJI_20260810140738_0001_D.MP4",
-      "in": 1.89,
-      "out": 5.39,
+      "clip": "footage_clips/day2_DJI_20260810140738_0001_D_01.mp4",
+      "in": 0.0,
+      "out": 3.503,
       "tags": [
         "street",
         "intersection",
@@ -496,9 +496,9 @@
     },
     {
       "id": "day2_20260810_204345_01",
-      "clip": "raw_footage/폴더 1/20260810_204345.mp4",
-      "in": 2.01,
-      "out": 5.51,
+      "clip": "footage_clips/day2_20260810_204345_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "river",
         "night",
@@ -515,9 +515,9 @@
     },
     {
       "id": "day2_20260810_174436_01",
-      "clip": "raw_footage/폴더 1/20260810_174436.mp4",
-      "in": 2.08,
-      "out": 5.58,
+      "clip": "footage_clips/day2_20260810_174436_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf",
         "snack_toy_aisle",
@@ -534,9 +534,9 @@
     },
     {
       "id": "day2_20260810_203004_01",
-      "clip": "raw_footage/폴더 1/20260810_203004.mp4",
-      "in": 2.09,
-      "out": 5.59,
+      "clip": "footage_clips/day2_20260810_203004_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "street",
         "intersection",
@@ -553,9 +553,9 @@
     },
     {
       "id": "day2_20260810_204032_01",
-      "clip": "raw_footage/폴더 1/20260810_204032.mp4",
-      "in": 2.43,
-      "out": 5.93,
+      "clip": "footage_clips/day2_20260810_204032_01.mp4",
+      "in": 0.0,
+      "out": 3.539,
       "tags": [
         "street",
         "night",
@@ -571,9 +571,9 @@
     },
     {
       "id": "day2_20260810_204944_01",
-      "clip": "raw_footage/폴더 1/20260810_204944.mp4",
-      "in": 2.61,
-      "out": 6.11,
+      "clip": "footage_clips/day2_20260810_204944_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "street",
         "night",
@@ -589,9 +589,9 @@
     },
     {
       "id": "day2_20260810_203311_01",
-      "clip": "raw_footage/폴더 1/20260810_203311.mp4",
-      "in": 3.09,
-      "out": 6.59,
+      "clip": "footage_clips/day2_20260810_203311_01.mp4",
+      "in": 0.0,
+      "out": 3.525,
       "tags": [
         "riverside_park",
         "night",
@@ -608,9 +608,9 @@
     },
     {
       "id": "day2_20260810_204103_01",
-      "clip": "raw_footage/폴더 1/20260810_204103.mp4",
-      "in": 3.1,
-      "out": 6.6,
+      "clip": "footage_clips/day2_20260810_204103_01.mp4",
+      "in": 0.0,
+      "out": 3.539,
       "tags": [
         "park_path",
         "night",
@@ -627,9 +627,9 @@
     },
     {
       "id": "day2_20260810_203603_01",
-      "clip": "raw_footage/폴더 1/20260810_203603.mp4",
-      "in": 3.17,
-      "out": 6.67,
+      "clip": "footage_clips/day2_20260810_203603_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "bridge",
         "night",
@@ -646,9 +646,9 @@
     },
     {
       "id": "day2_20260810_205355_01",
-      "clip": "raw_footage/폴더 1/20260810_205355.mp4",
-      "in": 3.45,
-      "out": 6.95,
+      "clip": "footage_clips/day2_20260810_205355_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "storefront",
         "convenience_store",
@@ -665,9 +665,9 @@
     },
     {
       "id": "day2_20260810_174545_01",
-      "clip": "raw_footage/폴더 1/20260810_174545.mp4",
-      "in": 3.5,
-      "out": 7.0,
+      "clip": "footage_clips/day2_20260810_174545_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf",
         "candy_toy_aisle",
@@ -684,9 +684,9 @@
     },
     {
       "id": "day2_20260810_211057_01",
-      "clip": "raw_footage/폴더 1/20260810_211057.mp4",
-      "in": 3.53,
-      "out": 7.03,
+      "clip": "footage_clips/day2_20260810_211057_01.mp4",
+      "in": 0.0,
+      "out": 3.533,
       "tags": [
         "street",
         "night",
@@ -702,9 +702,9 @@
     },
     {
       "id": "day2_20260810_165307_01",
-      "clip": "raw_footage/폴더 1/20260810_165307.mp4",
-      "in": 3.77,
-      "out": 7.27,
+      "clip": "footage_clips/day2_20260810_165307_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf",
         "drink_snack_aisle",
@@ -721,9 +721,9 @@
     },
     {
       "id": "day2_20260810_173706_01",
-      "clip": "raw_footage/폴더 1/20260810_173706.mp4",
-      "in": 3.82,
-      "out": 7.32,
+      "clip": "footage_clips/day2_20260810_173706_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf",
         "gachapon_capsule_toy",
@@ -740,9 +740,9 @@
     },
     {
       "id": "day2_20260810_203638_01",
-      "clip": "raw_footage/폴더 1/20260810_203638.mp4",
-      "in": 3.89,
-      "out": 7.39,
+      "clip": "footage_clips/day2_20260810_203638_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "park_path",
         "night",
@@ -759,9 +759,9 @@
     },
     {
       "id": "day2_20260810_203543_01",
-      "clip": "raw_footage/폴더 1/20260810_203543.mp4",
-      "in": 3.98,
-      "out": 7.48,
+      "clip": "footage_clips/day2_20260810_203543_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "bridge",
         "river",
@@ -779,9 +779,9 @@
     },
     {
       "id": "day2_20260810_152455_01",
-      "clip": "raw_footage/폴더 1/20260810_152455.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_152455_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf",
         "convenience_store_aisle",
@@ -798,9 +798,9 @@
     },
     {
       "id": "day2_20260810_165738_01",
-      "clip": "raw_footage/폴더 1/20260810_165738.mp4",
-      "in": 6.0,
-      "out": 9.5,
+      "clip": "footage_clips/day2_20260810_165738_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "storefront_entrance",
         "donki",
@@ -816,30 +816,10 @@
       "footage_role": "broll"
     },
     {
-      "id": "day2_DJI_20260810180355_0004_D_01",
-      "clip": "raw_footage/ojmo/DJI_20260810180355_0004_D.MP4",
-      "in": 9.0,
-      "out": 11.5,
-      "tags": [
-        "street",
-        "landmark",
-        "shopping_district",
-        "day",
-        "crowded",
-        "face_visible_risk"
-      ],
-      "brand": null,
-      "product_line": "에비스바시_오사카_랜드마크거리",
-      "scent": null,
-      "source": "own",
-      "used_in": [],
-      "footage_role": "broll"
-    },
-    {
       "id": "day2_20260810_174515_01",
-      "clip": "raw_footage/폴더 1/20260810_174515.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_174515_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf",
         "tool_blade_aisle",
@@ -856,9 +836,9 @@
     },
     {
       "id": "day2_20260810_174341_01",
-      "clip": "raw_footage/폴더 1/20260810_174341.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_174341_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf",
         "figure_collectible",
@@ -875,9 +855,9 @@
     },
     {
       "id": "day2_20260810_164949_01",
-      "clip": "raw_footage/폴더 1/20260810_164949.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_164949_01.mp4",
+      "in": 0.0,
+      "out": 3.503,
       "tags": [
         "mall_interior",
         "day",
@@ -893,9 +873,9 @@
     },
     {
       "id": "day2_20260810_171533_01",
-      "clip": "raw_footage/폴더 1/20260810_171533.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_171533_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf_browsing",
         "mixed_snack_goods",
@@ -912,9 +892,9 @@
     },
     {
       "id": "day2_20260810_165045_01",
-      "clip": "raw_footage/폴더 1/20260810_165045.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_165045_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf_browsing",
         "character_stationery_goods",
@@ -932,9 +912,9 @@
     },
     {
       "id": "day2_20260810_170215_01",
-      "clip": "raw_footage/폴더 1/20260810_170215.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_170215_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf_browsing",
         "hand_in_frame",
@@ -951,9 +931,9 @@
     },
     {
       "id": "day2_20260810_152819_01",
-      "clip": "raw_footage/폴더 1/20260810_152819.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_152819_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf_browsing",
         "hand_in_frame",
@@ -970,9 +950,9 @@
     },
     {
       "id": "day2_20260810_174011_01",
-      "clip": "raw_footage/폴더 1/20260810_174011.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_174011_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf_browsing",
         "hand_in_frame",
@@ -989,9 +969,9 @@
     },
     {
       "id": "day2_20260810_175117_01",
-      "clip": "raw_footage/폴더 1/20260810_175117.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2_20260810_175117_01.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf_browsing",
         "cosmetic_goods",
@@ -1032,9 +1012,9 @@
     },
     {
       "id": "day2_20260810_172429_01",
-      "clip": "raw_footage/폴더 1/20260810_172429.mp4",
-      "in": 3.0,
-      "out": 6.5,
+      "clip": "footage_clips/day2_20260810_172429_01.mp4",
+      "in": 0.0,
+      "out": 3.508,
       "tags": [
         "product_shelf_browsing",
         "matcha_sweets_aisle",
@@ -1073,9 +1053,9 @@
     },
     {
       "id": "day2_20260810_173053_02",
-      "clip": "raw_footage/폴더 1/20260810_173053.mp4",
-      "in": 36.0,
-      "out": 40.0,
+      "clip": "footage_clips/day2_20260810_173053_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "hand_in_frame",
@@ -1114,9 +1094,9 @@
     },
     {
       "id": "day2_20260810_162627_02",
-      "clip": "raw_footage/폴더 1/20260810_162627.mp4",
-      "in": 60.0,
-      "out": 64.0,
+      "clip": "footage_clips/day2_20260810_162627_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "pet_snack_aisle",
@@ -1133,9 +1113,9 @@
     },
     {
       "id": "day2_20260810_170728_01",
-      "clip": "raw_footage/폴더 1/20260810_170728.mp4",
-      "in": 10.0,
-      "out": 14.0,
+      "clip": "footage_clips/day2_20260810_170728_01.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "hand_in_frame",
@@ -1153,9 +1133,9 @@
     },
     {
       "id": "day2_20260810_173349_04",
-      "clip": "raw_footage/폴더 1/20260810_173349.mp4",
-      "in": 133.0,
-      "out": 137.0,
+      "clip": "footage_clips/day2_20260810_173349_04.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "cosmetic_goods",
@@ -1234,9 +1214,9 @@
     },
     {
       "id": "day2_DJI_20260810141200_0002_D_04",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.MP4",
-      "in": 175.0,
-      "out": 179.0,
+      "clip": "footage_clips/day2_DJI_20260810141200_0002_D_04.mp4",
+      "in": 0.0,
+      "out": 4.004,
       "tags": [
         "product_shelf",
         "character_goods",
@@ -1296,9 +1276,9 @@
     },
     {
       "id": "day2_20260810_154859_03",
-      "clip": "raw_footage/폴더 1/20260810_154859.mp4",
-      "in": 128.0,
-      "out": 132.0,
+      "clip": "footage_clips/day2_20260810_154859_03.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "chocolate_nut_snack_aisle",
@@ -1376,9 +1356,9 @@
     },
     {
       "id": "day2_20260810_171933_02",
-      "clip": "raw_footage/폴더 1/20260810_171933.mp4",
-      "in": 120.0,
-      "out": 124.0,
+      "clip": "footage_clips/day2_20260810_171933_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "souvenir_snack_aisle",
@@ -1395,9 +1375,9 @@
     },
     {
       "id": "day2_20260810_155252_01",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 46.0,
-      "out": 50.0,
+      "clip": "footage_clips/day2_20260810_155252_01.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "candy_snack_aisle",
@@ -1415,9 +1395,9 @@
     },
     {
       "id": "day2_20260810_155252_02",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 185.0,
-      "out": 189.0,
+      "clip": "footage_clips/day2_20260810_155252_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "snack_aisle",
@@ -1473,9 +1453,9 @@
     },
     {
       "id": "day2_DJI_20260810204150_0006_D_05",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.MP4",
-      "in": 252.0,
-      "out": 256.0,
+      "clip": "footage_clips/day2_DJI_20260810204150_0006_D_05.mp4",
+      "in": 0.0,
+      "out": 4.004,
       "tags": [
         "street",
         "night",
@@ -1513,9 +1493,9 @@
     },
     {
       "id": "day2_20260810_160543_01",
-      "clip": "raw_footage/폴더 1/20260810_160543.mp4",
-      "in": 8.0,
-      "out": 13.0,
+      "clip": "footage_clips/day2_20260810_160543_01.mp4",
+      "in": 0.0,
+      "out": 5.0,
       "tags": [
         "product_shelf_browsing",
         "skincare_aisle",
@@ -1552,9 +1532,9 @@
     },
     {
       "id": "day2_20260810_160543_06",
-      "clip": "raw_footage/폴더 1/20260810_160543.mp4",
-      "in": 495.0,
-      "out": 500.0,
+      "clip": "footage_clips/day2_20260810_160543_06.mp4",
+      "in": 0.0,
+      "out": 5.0,
       "tags": [
         "product_shelf_browsing",
         "cosmetic_goods",
@@ -1572,9 +1552,9 @@
     },
     {
       "id": "day2_20260810_151422_02",
-      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
-      "in": 77.0,
-      "out": 82.0,
+      "clip": "footage_clips/day2_20260810_151422_02.mp4",
+      "in": 0.0,
+      "out": 5.0,
       "tags": [
         "product_shelf",
         "dagashi_candy",
@@ -1592,9 +1572,9 @@
     },
     {
       "id": "day2_20260810_151422_06",
-      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
-      "in": 550.0,
-      "out": 555.0,
+      "clip": "footage_clips/day2_20260810_151422_06.mp4",
+      "in": 0.0,
+      "out": 5.0,
       "tags": [
         "product_shelf_browsing",
         "mixed_goods_aisle",
@@ -1612,9 +1592,9 @@
     },
     {
       "id": "day2_20260810_153542_04",
-      "clip": "raw_footage/폴더 1/20260810_153542.mp4",
-      "in": 170.0,
-      "out": 175.0,
+      "clip": "footage_clips/day2_20260810_153542_04.mp4",
+      "in": 0.0,
+      "out": 5.0,
       "tags": [
         "product_shelf",
         "seasoning_condiment_aisle",
@@ -1671,9 +1651,9 @@
     },
     {
       "id": "day2d_20260810_162854_01",
-      "clip": "raw_footage/폴더 1/20260810_162854.mp4",
-      "in": 6.0,
-      "out": 10.0,
+      "clip": "footage_clips/day2d_20260810_162854_01.mp4",
+      "in": 0.0,
+      "out": 4.033,
       "tags": [
         "product_shelf",
         "figure_model_toy",
@@ -1691,9 +1671,9 @@
     },
     {
       "id": "day2d_20260810_162854_02",
-      "clip": "raw_footage/폴더 1/20260810_162854.mp4",
-      "in": 24.0,
-      "out": 28.0,
+      "clip": "footage_clips/day2d_20260810_162854_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "figure_model_toy",
@@ -1711,9 +1691,9 @@
     },
     {
       "id": "day2d_20260810_162854_03",
-      "clip": "raw_footage/폴더 1/20260810_162854.mp4",
-      "in": 44.0,
-      "out": 48.0,
+      "clip": "footage_clips/day2d_20260810_162854_03.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "figure_model_toy",
@@ -1730,9 +1710,9 @@
     },
     {
       "id": "day2d_20260810_162854_04",
-      "clip": "raw_footage/폴더 1/20260810_162854.mp4",
-      "in": 58.0,
-      "out": 62.0,
+      "clip": "footage_clips/day2d_20260810_162854_04.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "tool_blade_aisle",
@@ -1749,9 +1729,9 @@
     },
     {
       "id": "day2d_20260810_162854_05",
-      "clip": "raw_footage/폴더 1/20260810_162854.mp4",
-      "in": 82.0,
-      "out": 86.0,
+      "clip": "footage_clips/day2d_20260810_162854_05.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "marker_pen_aisle",
@@ -1828,9 +1808,9 @@
     },
     {
       "id": "day2d_20260810_162854_09",
-      "clip": "raw_footage/폴더 1/20260810_162854.mp4",
-      "in": 144.0,
-      "out": 148.0,
+      "clip": "footage_clips/day2d_20260810_162854_09.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "marker_pen_aisle",
@@ -1847,9 +1827,9 @@
     },
     {
       "id": "day2d_20260810_151422_01",
-      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
-      "in": 4.0,
-      "out": 8.0,
+      "clip": "footage_clips/day2d_20260810_151422_01.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "cosmetic_gift_box",
@@ -1890,9 +1870,9 @@
     },
     {
       "id": "day2d_20260810_151422_03",
-      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
-      "in": 45.0,
-      "out": 49.0,
+      "clip": "footage_clips/day2d_20260810_151422_03.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "snack_package",
@@ -1909,9 +1889,9 @@
     },
     {
       "id": "day2d_20260810_151422_04",
-      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
-      "in": 68.0,
-      "out": 72.0,
+      "clip": "footage_clips/day2d_20260810_151422_04.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "mixed_goods",
@@ -1929,9 +1909,9 @@
     },
     {
       "id": "day2d_20260810_151422_05",
-      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
-      "in": 86.0,
-      "out": 90.0,
+      "clip": "footage_clips/day2d_20260810_151422_05.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "cosmetic_gift_box",
@@ -1990,9 +1970,9 @@
     },
     {
       "id": "day2d_20260810_151422_08",
-      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
-      "in": 143.0,
-      "out": 147.0,
+      "clip": "footage_clips/day2d_20260810_151422_08.mp4",
+      "in": 0.0,
+      "out": 4.033,
       "tags": [
         "product_shelf",
         "cosmetic_goods",
@@ -2009,9 +1989,9 @@
     },
     {
       "id": "day2d_20260810_155252_01",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 4.0,
-      "out": 8.0,
+      "clip": "footage_clips/day2d_20260810_155252_01.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf_browsing",
         "candy_snack_aisle",
@@ -2028,9 +2008,9 @@
     },
     {
       "id": "day2d_20260810_155252_02",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 22.0,
-      "out": 26.0,
+      "clip": "footage_clips/day2d_20260810_155252_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "candy_snack_aisle",
@@ -2047,9 +2027,9 @@
     },
     {
       "id": "day2d_20260810_155252_03",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 45.0,
-      "out": 49.0,
+      "clip": "footage_clips/day2d_20260810_155252_03.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "candy_box",
@@ -2066,9 +2046,9 @@
     },
     {
       "id": "day2d_20260810_155252_04",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 63.0,
-      "out": 67.0,
+      "clip": "footage_clips/day2d_20260810_155252_04.mp4",
+      "in": 0.0,
+      "out": 4.033,
       "tags": [
         "product_shelf",
         "mt_fuji_themed_snack",
@@ -2085,9 +2065,9 @@
     },
     {
       "id": "day2d_20260810_155252_05",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 84.0,
-      "out": 88.0,
+      "clip": "footage_clips/day2d_20260810_155252_05.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "candy_snack_aisle",
@@ -2124,9 +2104,9 @@
     },
     {
       "id": "day2d_20260810_155252_07",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 126.0,
-      "out": 130.0,
+      "clip": "footage_clips/day2d_20260810_155252_07.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "candy_snack_aisle",
@@ -2162,9 +2142,9 @@
     },
     {
       "id": "day2d_20260810_155252_09",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 163.0,
-      "out": 167.0,
+      "clip": "footage_clips/day2d_20260810_155252_09.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "snack_aisle",
@@ -2260,9 +2240,9 @@
     },
     {
       "id": "day2d_20260810_155252_14",
-      "clip": "raw_footage/폴더 1/20260810_155252.mp4",
-      "in": 258.0,
-      "out": 262.0,
+      "clip": "footage_clips/day2d_20260810_155252_14.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "gummy_candy_pouch",
@@ -2337,9 +2317,9 @@
     },
     {
       "id": "day2d_20260810_171658_03",
-      "clip": "raw_footage/폴더 1/20260810_171658.mp4",
-      "in": 71.0,
-      "out": 75.0,
+      "clip": "footage_clips/day2d_20260810_171658_03.mp4",
+      "in": 0.0,
+      "out": 4.033,
       "tags": [
         "product_shelf",
         "mixed_goods_aisle",
@@ -2356,9 +2336,9 @@
     },
     {
       "id": "day2d_20260810_171658_04",
-      "clip": "raw_footage/폴더 1/20260810_171658.mp4",
-      "in": 78.0,
-      "out": 82.0,
+      "clip": "footage_clips/day2d_20260810_171658_04.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "mixed_goods_aisle",
@@ -2415,9 +2395,9 @@
     },
     {
       "id": "day2d_20260810_175117_03",
-      "clip": "raw_footage/폴더 1/20260810_175117.mp4",
-      "in": 24.0,
-      "out": 28.0,
+      "clip": "footage_clips/day2d_20260810_175117_03.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "sunscreen",
@@ -2434,9 +2414,9 @@
     },
     {
       "id": "day2d_20260810_175117_04",
-      "clip": "raw_footage/폴더 1/20260810_175117.mp4",
-      "in": 36.0,
-      "out": 40.0,
+      "clip": "footage_clips/day2d_20260810_175117_04.mp4",
+      "in": 0.0,
+      "out": 4.033,
       "tags": [
         "product_shelf",
         "skincare_aisle",
@@ -2453,9 +2433,9 @@
     },
     {
       "id": "day2d_20260810_175117_05",
-      "clip": "raw_footage/폴더 1/20260810_175117.mp4",
-      "in": 55.0,
-      "out": 59.0,
+      "clip": "footage_clips/day2d_20260810_175117_05.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "cosmetic_goods_aisle",
@@ -2491,9 +2471,9 @@
     },
     {
       "id": "day2d_20260810_175117_07",
-      "clip": "raw_footage/폴더 1/20260810_175117.mp4",
-      "in": 74.0,
-      "out": 78.0,
+      "clip": "footage_clips/day2d_20260810_175117_07.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "skincare_haircare_goods",
@@ -2510,9 +2490,9 @@
     },
     {
       "id": "day2d_20260810_174011_01",
-      "clip": "raw_footage/폴더 1/20260810_174011.mp4",
-      "in": 4.0,
-      "out": 8.0,
+      "clip": "footage_clips/day2d_20260810_174011_01.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "electronics_home_appliance",
@@ -2529,9 +2509,9 @@
     },
     {
       "id": "day2d_20260810_174011_02",
-      "clip": "raw_footage/폴더 1/20260810_174011.mp4",
-      "in": 18.0,
-      "out": 22.0,
+      "clip": "footage_clips/day2d_20260810_174011_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "electronics_aisle",
@@ -2548,9 +2528,9 @@
     },
     {
       "id": "day2d_20260810_174011_03",
-      "clip": "raw_footage/폴더 1/20260810_174011.mp4",
-      "in": 32.0,
-      "out": 36.0,
+      "clip": "footage_clips/day2d_20260810_174011_03.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "trading_card_box",
@@ -2591,9 +2571,9 @@
     },
     {
       "id": "day2d_20260810_174011_05",
-      "clip": "raw_footage/폴더 1/20260810_174011.mp4",
-      "in": 55.0,
-      "out": 59.0,
+      "clip": "footage_clips/day2d_20260810_174011_05.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "trading_card_box",
@@ -2610,9 +2590,9 @@
     },
     {
       "id": "day2d_20260810_174011_06",
-      "clip": "raw_footage/폴더 1/20260810_174011.mp4",
-      "in": 60.0,
-      "out": 64.0,
+      "clip": "footage_clips/day2d_20260810_174011_06.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "candy_snack",
@@ -2629,9 +2609,9 @@
     },
     {
       "id": "day2d_20260810_174011_07",
-      "clip": "raw_footage/폴더 1/20260810_174011.mp4",
-      "in": 70.0,
-      "out": 74.0,
+      "clip": "footage_clips/day2d_20260810_174011_07.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "trading_card_box",
@@ -2668,9 +2648,9 @@
     },
     {
       "id": "day2d_20260810_152819_02",
-      "clip": "raw_footage/폴더 1/20260810_152819.mp4",
-      "in": 6.0,
-      "out": 10.0,
+      "clip": "footage_clips/day2d_20260810_152819_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "plush_toy",
@@ -2707,9 +2687,9 @@
     },
     {
       "id": "day2d_20260810_152819_04",
-      "clip": "raw_footage/폴더 1/20260810_152819.mp4",
-      "in": 44.0,
-      "out": 48.0,
+      "clip": "footage_clips/day2d_20260810_152819_04.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "trading_card",
@@ -2727,9 +2707,9 @@
     },
     {
       "id": "day2d_20260810_152819_05",
-      "clip": "raw_footage/폴더 1/20260810_152819.mp4",
-      "in": 53.0,
-      "out": 57.0,
+      "clip": "footage_clips/day2d_20260810_152819_05.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "snack_aisle",
@@ -2746,9 +2726,9 @@
     },
     {
       "id": "day2d_20260810_152819_06",
-      "clip": "raw_footage/폴더 1/20260810_152819.mp4",
-      "in": 70.0,
-      "out": 74.0,
+      "clip": "footage_clips/day2d_20260810_152819_06.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "mixed_goods",
@@ -2785,9 +2765,9 @@
     },
     {
       "id": "day2d_20260810_171933_01",
-      "clip": "raw_footage/폴더 1/20260810_171933.mp4",
-      "in": 6.0,
-      "out": 10.0,
+      "clip": "footage_clips/day2d_20260810_171933_01.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "dried_snack_aisle",
@@ -2804,9 +2784,9 @@
     },
     {
       "id": "day2d_20260810_171933_02",
-      "clip": "raw_footage/폴더 1/20260810_171933.mp4",
-      "in": 14.0,
-      "out": 18.0,
+      "clip": "footage_clips/day2d_20260810_171933_02.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "food_package",
@@ -2843,9 +2823,9 @@
     },
     {
       "id": "day2d_20260810_171933_04",
-      "clip": "raw_footage/폴더 1/20260810_171933.mp4",
-      "in": 39.0,
-      "out": 43.0,
+      "clip": "footage_clips/day2d_20260810_171933_04.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "dried_meat_snack",
@@ -2884,9 +2864,9 @@
     },
     {
       "id": "day2d_20260810_171933_06",
-      "clip": "raw_footage/폴더 1/20260810_171933.mp4",
-      "in": 126.0,
-      "out": 130.0,
+      "clip": "footage_clips/day2d_20260810_171933_06.mp4",
+      "in": 0.0,
+      "out": 4.033,
       "tags": [
         "product_shelf",
         "food_box",
@@ -2903,9 +2883,9 @@
     },
     {
       "id": "day2d_20260810_171933_07",
-      "clip": "raw_footage/폴더 1/20260810_171933.mp4",
-      "in": 132.0,
-      "out": 136.0,
+      "clip": "footage_clips/day2d_20260810_171933_07.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "daifuku",
@@ -2923,9 +2903,9 @@
     },
     {
       "id": "day2d_20260810_171933_08",
-      "clip": "raw_footage/폴더 1/20260810_171933.mp4",
-      "in": 144.0,
-      "out": 148.0,
+      "clip": "footage_clips/day2d_20260810_171933_08.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "snack_aisle",
@@ -2982,9 +2962,9 @@
     },
     {
       "id": "day2d_20260810_163545_03",
-      "clip": "raw_footage/폴더 1/20260810_163545.mp4",
-      "in": 53.0,
-      "out": 57.0,
+      "clip": "footage_clips/day2d_20260810_163545_03.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "skincare_aisle",
@@ -3001,9 +2981,9 @@
     },
     {
       "id": "day2d_20260810_163545_04",
-      "clip": "raw_footage/폴더 1/20260810_163545.mp4",
-      "in": 76.0,
-      "out": 80.0,
+      "clip": "footage_clips/day2d_20260810_163545_04.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "foot_care",
@@ -3059,9 +3039,9 @@
     },
     {
       "id": "day2d_20260810_163545_07",
-      "clip": "raw_footage/폴더 1/20260810_163545.mp4",
-      "in": 145.0,
-      "out": 149.0,
+      "clip": "footage_clips/day2d_20260810_163545_07.mp4",
+      "in": 0.0,
+      "out": 4.0,
       "tags": [
         "product_shelf",
         "skincare_aisle",
@@ -3118,9 +3098,9 @@
     },
     {
       "id": "day2d_20260810_171100_03",
-      "clip": "raw_footage/폴더 1/20260810_171100.mp4",
-      "in": 30.0,
-      "out": 36.0,
+      "clip": "footage_clips/day2d_20260810_171100_03.mp4",
+      "in": 0.0,
+      "out": 6.006,
       "tags": [
         "product_shelf",
         "otc_drug",
@@ -3178,9 +3158,9 @@
     },
     {
       "id": "day2d_20260810_171100_06",
-      "clip": "raw_footage/폴더 1/20260810_171100.mp4",
-      "in": 100.0,
-      "out": 104.0,
+      "clip": "footage_clips/day2d_20260810_171100_06.mp4",
+      "in": 0.0,
+      "out": 4.004,
       "tags": [
         "product_shelf",
         "otc_drug",
@@ -3198,9 +3178,9 @@
     },
     {
       "id": "day2d_20260810_171100_07",
-      "clip": "raw_footage/폴더 1/20260810_171100.mp4",
-      "in": 125.0,
-      "out": 131.0,
+      "clip": "footage_clips/day2d_20260810_171100_07.mp4",
+      "in": 0.0,
+      "out": 6.006,
       "tags": [
         "product_shelf",
         "otc_drug",
@@ -3218,9 +3198,9 @@
     },
     {
       "id": "day2d_20260810_171100_08",
-      "clip": "raw_footage/폴더 1/20260810_171100.mp4",
-      "in": 150.0,
-      "out": 155.0,
+      "clip": "footage_clips/day2d_20260810_171100_08.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "product_shelf",
         "otc_drug",
@@ -3357,9 +3337,9 @@
     },
     {
       "id": "day2d_20260810_154859_10",
-      "clip": "raw_footage/폴더 1/20260810_154859.mp4",
-      "in": 150.0,
-      "out": 156.0,
+      "clip": "footage_clips/day2d_20260810_154859_10.mp4",
+      "in": 0.0,
+      "out": 6.0,
       "tags": [
         "product_shelf",
         "chocolate_nut_snack_aisle",
@@ -3376,9 +3356,9 @@
     },
     {
       "id": "day2d_20260810_154859_11",
-      "clip": "raw_footage/폴더 1/20260810_154859.mp4",
-      "in": 200.0,
-      "out": 206.0,
+      "clip": "footage_clips/day2d_20260810_154859_11.mp4",
+      "in": 0.0,
+      "out": 6.0,
       "tags": [
         "product_shelf",
         "snack_aisle",
@@ -3587,9 +3567,9 @@
     },
     {
       "id": "day2d_20260810_165808_09",
-      "clip": "raw_footage/폴더 1/20260810_165808.mp4",
-      "in": 59.0,
-      "out": 62.1,
+      "clip": "footage_clips/day2d_20260810_165808_09.mp4",
+      "in": 0.0,
+      "out": 3.1,
       "tags": [
         "product_shelf",
         "day",
@@ -3605,9 +3585,9 @@
     },
     {
       "id": "day2d_20260810_170524_01",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 3.0,
-      "out": 6.0,
+      "clip": "footage_clips/day2d_20260810_170524_01.mp4",
+      "in": 0.0,
+      "out": 3.036,
       "tags": [
         "hand_hold",
         "supplement",
@@ -3626,9 +3606,9 @@
     },
     {
       "id": "day2d_20260810_170524_02",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 15.0,
-      "out": 18.0,
+      "clip": "footage_clips/day2d_20260810_170524_02.mp4",
+      "in": 0.0,
+      "out": 3.003,
       "tags": [
         "hand_hold",
         "supplement",
@@ -3647,9 +3627,9 @@
     },
     {
       "id": "day2d_20260810_170524_03",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 24.5,
-      "out": 28.0,
+      "clip": "footage_clips/day2d_20260810_170524_03.mp4",
+      "in": 0.0,
+      "out": 3.503,
       "tags": [
         "hand_hold",
         "supplement",
@@ -3668,9 +3648,9 @@
     },
     {
       "id": "day2d_20260810_170524_04",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 51.0,
-      "out": 55.0,
+      "clip": "footage_clips/day2d_20260810_170524_04.mp4",
+      "in": 0.0,
+      "out": 4.004,
       "tags": [
         "hand_hold",
         "pain_relief_patch",
@@ -3709,9 +3689,9 @@
     },
     {
       "id": "day2d_20260810_170524_06",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 71.5,
-      "out": 75.0,
+      "clip": "footage_clips/day2d_20260810_170524_06.mp4",
+      "in": 0.0,
+      "out": 3.503,
       "tags": [
         "hand_hold",
         "foot_care",
@@ -3729,9 +3709,9 @@
     },
     {
       "id": "day2d_20260810_170524_07",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 76.5,
-      "out": 78.5,
+      "clip": "footage_clips/day2d_20260810_170524_07.mp4",
+      "in": 0.0,
+      "out": 2.002,
       "tags": [
         "hand_hold",
         "warming_patch",
@@ -3750,9 +3730,9 @@
     },
     {
       "id": "day2d_20260810_170524_08",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 80.0,
-      "out": 83.5,
+      "clip": "footage_clips/day2d_20260810_170524_08.mp4",
+      "in": 0.0,
+      "out": 3.503,
       "tags": [
         "hand_hold",
         "warming_patch",
@@ -3791,9 +3771,9 @@
     },
     {
       "id": "day2d_20260810_170524_10",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 91.8,
-      "out": 93.2,
+      "clip": "footage_clips/day2d_20260810_170524_10.mp4",
+      "in": 0.0,
+      "out": 1.401,
       "tags": [
         "hand_hold",
         "eye_mask",
@@ -3812,9 +3792,9 @@
     },
     {
       "id": "day2d_20260810_170524_11",
-      "clip": "raw_footage/폴더 1/20260810_170524.mp4",
-      "in": 109.75,
-      "out": 113.0,
+      "clip": "footage_clips/day2d_20260810_170524_11.mp4",
+      "in": 0.0,
+      "out": 3.27,
       "tags": [
         "hand_hold",
         "eye_mask",
@@ -4375,9 +4355,9 @@
     },
     {
       "id": "day2d_20260810_160543_08",
-      "clip": "raw_footage/폴더 1/20260810_160543.mp4",
-      "in": 68.0,
-      "out": 71.0,
+      "clip": "footage_clips/day2d_20260810_160543_08.mp4",
+      "in": 0.0,
+      "out": 3.0,
       "tags": [
         "product_shelf",
         "makeup",
@@ -4394,9 +4374,9 @@
     },
     {
       "id": "day2d_20260810_160543_09",
-      "clip": "raw_footage/폴더 1/20260810_160543.mp4",
-      "in": 75.0,
-      "out": 78.0,
+      "clip": "footage_clips/day2d_20260810_160543_09.mp4",
+      "in": 0.0,
+      "out": 3.0,
       "tags": [
         "product_shelf",
         "bath_salt",
@@ -4756,9 +4736,9 @@
     },
     {
       "id": "day2d_20260810_160543_28",
-      "clip": "raw_footage/폴더 1/20260810_160543.mp4",
-      "in": 276.0,
-      "out": 279.0,
+      "clip": "footage_clips/day2d_20260810_160543_28.mp4",
+      "in": 0.0,
+      "out": 3.0,
       "tags": [
         "product_shelf",
         "bath_salt",
@@ -5493,9 +5473,9 @@
     },
     {
       "id": "day2d_20260810_161812_11",
-      "clip": "raw_footage/폴더 1/20260810_161812.mp4",
-      "in": 88.3,
-      "out": 91.8,
+      "clip": "footage_clips/day2d_20260810_161812_11.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf_closeup",
         "facial_wash",
@@ -5730,9 +5710,9 @@
     },
     {
       "id": "day2d_20260810_161812_22",
-      "clip": "raw_footage/폴더 1/20260810_161812.mp4",
-      "in": 204.0,
-      "out": 207.5,
+      "clip": "footage_clips/day2d_20260810_161812_22.mp4",
+      "in": 0.0,
+      "out": 3.5,
       "tags": [
         "product_shelf_closeup",
         "hair_treatment",
@@ -7853,9 +7833,9 @@
     },
     {
       "id": "day2d_20260810_151422_42",
-      "clip": "raw_footage/폴더 1/20260810_151422.mp4",
-      "in": 489.0,
-      "out": 491.5,
+      "clip": "footage_clips/day2d_20260810_151422_42.mp4",
+      "in": 0.0,
+      "out": 2.5,
       "tags": [
         "product_shelf",
         "throat_lozenge",
@@ -7953,9 +7933,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_01",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 18.5,
-      "out": 24.0,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_01.mp4",
+      "in": 0.0,
+      "out": 5.505,
       "tags": [
         "street_scene",
         "night",
@@ -7973,9 +7953,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_02",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 25.0,
-      "out": 30.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_02.mp4",
+      "in": 0.0,
+      "out": 5.505,
       "tags": [
         "street_scene",
         "night",
@@ -7993,9 +7973,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_03",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 33.0,
-      "out": 38.0,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_03.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8014,9 +7994,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_04",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 39.5,
-      "out": 44.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_04.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8035,9 +8015,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_05",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 45.5,
-      "out": 50.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_05.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "broll",
         "riverside",
@@ -8056,9 +8036,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_06",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 51.5,
-      "out": 56.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_06.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "broll",
         "riverside",
@@ -8078,9 +8058,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_07",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 60.5,
-      "out": 65.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_07.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "bridge",
@@ -8099,9 +8079,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_08",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 69.0,
-      "out": 74.0,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_08.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8120,9 +8100,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_09",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 78.5,
-      "out": 83.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_09.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8140,9 +8120,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_10",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 96.5,
-      "out": 101.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_10.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8161,9 +8141,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_11",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 105.5,
-      "out": 110.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_11.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "broll",
         "park",
@@ -8182,9 +8162,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_12",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 132.5,
-      "out": 137.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_12.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "store_exterior",
         "night",
@@ -8202,9 +8182,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_13",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 141.5,
-      "out": 146.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_13.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8222,9 +8202,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_14",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 150.5,
-      "out": 155.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_14.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "store_exterior",
         "convenience_store",
@@ -8242,31 +8222,10 @@
       "footage_role": "broll"
     },
     {
-      "id": "day2d_DJI_20260810204150_0006_D_15",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 165.5,
-      "out": 170.5,
-      "tags": [
-        "street_scene",
-        "night",
-        "broll",
-        "shutter",
-        "no_people",
-        "safe"
-      ],
-      "brand": null,
-      "product_line": "지하주차장 입구, 셔터 상점가",
-      "scent": null,
-      "source": "own",
-      "used_in": [],
-      "speed": 3.0,
-      "footage_role": "broll"
-    },
-    {
       "id": "day2d_DJI_20260810204150_0006_D_16",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 186.5,
-      "out": 191.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_16.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "broll",
         "landmark",
@@ -8285,9 +8244,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_17",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 195.5,
-      "out": 200.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_17.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "broll",
         "riverside",
@@ -8307,9 +8266,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_18",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 201.5,
-      "out": 206.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_18.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "broll",
         "park",
@@ -8328,9 +8287,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_19",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 210.5,
-      "out": 215.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_19.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8349,9 +8308,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_20",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 228.5,
-      "out": 233.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_20.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "broll",
         "bridge",
@@ -8370,9 +8329,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_21",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 243.5,
-      "out": 248.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_21.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8392,9 +8351,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_22",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 276.5,
-      "out": 281.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_22.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8413,9 +8372,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_23",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 285.5,
-      "out": 290.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_23.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "night",
@@ -8434,9 +8393,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_24",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 291.5,
-      "out": 296.5,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_24.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "broll",
         "shopping_street",
@@ -8454,9 +8413,9 @@
     },
     {
       "id": "day2d_DJI_20260810204150_0006_D_25",
-      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
-      "in": 297.0,
-      "out": 300.9,
+      "clip": "footage_clips/day2d_DJI_20260810204150_0006_D_25.mp4",
+      "in": 0.0,
+      "out": 3.904,
       "tags": [
         "store_exterior",
         "night",
@@ -8475,9 +8434,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_01",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_01.mp4",
       "in": 0.0,
-      "out": 5.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "day",
@@ -8495,9 +8454,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_02",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 6.0,
-      "out": 11.0,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_02.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "store_exterior",
         "day",
@@ -8515,9 +8474,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_03",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 12.0,
-      "out": 17.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_03.mp4",
+      "in": 0.0,
+      "out": 5.505,
       "tags": [
         "broll",
         "bridge",
@@ -8536,9 +8495,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_04",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 21.0,
-      "out": 26.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_04.mp4",
+      "in": 0.0,
+      "out": 5.505,
       "tags": [
         "street_scene",
         "day",
@@ -8557,9 +8516,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_05",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 27.0,
-      "out": 32.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_05.mp4",
+      "in": 0.0,
+      "out": 5.505,
       "tags": [
         "street_scene",
         "day",
@@ -8577,30 +8536,10 @@
       "footage_role": "broll"
     },
     {
-      "id": "day2d_DJI_20260810141200_0002_D_06",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 39.0,
-      "out": 44.0,
-      "tags": [
-        "street_scene",
-        "day",
-        "broll",
-        "no_people",
-        "safe"
-      ],
-      "brand": null,
-      "product_line": "교차로 원경 차량, 소방차",
-      "scent": null,
-      "source": "own",
-      "used_in": [],
-      "speed": 3.0,
-      "footage_role": "broll"
-    },
-    {
       "id": "day2d_DJI_20260810141200_0002_D_07",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 45.0,
-      "out": 50.0,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_07.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "street_scene",
         "day",
@@ -8619,9 +8558,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_08",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 51.0,
-      "out": 57.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_08.mp4",
+      "in": 0.0,
+      "out": 6.506,
       "tags": [
         "street_scene",
         "day",
@@ -8639,30 +8578,10 @@
       "footage_role": "broll"
     },
     {
-      "id": "day2d_DJI_20260810141200_0002_D_09",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 63.5,
-      "out": 68.5,
-      "tags": [
-        "street_scene",
-        "day",
-        "broll",
-        "no_people",
-        "safe"
-      ],
-      "brand": null,
-      "product_line": "한적한 보행로, 자전거",
-      "scent": null,
-      "source": "own",
-      "used_in": [],
-      "speed": 3.0,
-      "footage_role": "broll"
-    },
-    {
       "id": "day2d_DJI_20260810141200_0002_D_10",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 69.0,
-      "out": 75.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_10.mp4",
+      "in": 0.0,
+      "out": 6.506,
       "tags": [
         "street_scene",
         "day",
@@ -8681,9 +8600,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_11",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 81.0,
-      "out": 87.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_11.mp4",
+      "in": 0.0,
+      "out": 6.506,
       "tags": [
         "store_exterior",
         "day",
@@ -8701,9 +8620,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_12",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 90.0,
-      "out": 96.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_12.mp4",
+      "in": 0.0,
+      "out": 6.506,
       "tags": [
         "street_scene",
         "day",
@@ -8721,9 +8640,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_13",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 99.0,
-      "out": 105.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_13.mp4",
+      "in": 0.0,
+      "out": 6.506,
       "tags": [
         "street_scene",
         "day",
@@ -8741,9 +8660,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_14",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 111.0,
-      "out": 115.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_14.mp4",
+      "in": 0.0,
+      "out": 4.505,
       "tags": [
         "street_scene",
         "day",
@@ -8761,9 +8680,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_15",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 126.0,
-      "out": 131.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_15.mp4",
+      "in": 0.0,
+      "out": 5.505,
       "tags": [
         "street_scene",
         "day",
@@ -8781,9 +8700,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_16",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 150.0,
-      "out": 156.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_16.mp4",
+      "in": 0.0,
+      "out": 6.506,
       "tags": [
         "street_scene",
         "day",
@@ -8801,9 +8720,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_17",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 162.0,
-      "out": 166.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_17.mp4",
+      "in": 0.0,
+      "out": 4.505,
       "tags": [
         "street_scene",
         "day",
@@ -8821,9 +8740,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_18",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 180.0,
-      "out": 185.0,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_18.mp4",
+      "in": 0.0,
+      "out": 5.005,
       "tags": [
         "store_interior",
         "drugstore",
@@ -8841,9 +8760,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_19",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 189.0,
-      "out": 193.5,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_19.mp4",
+      "in": 0.0,
+      "out": 4.505,
       "tags": [
         "store_interior",
         "drugstore",
@@ -8861,9 +8780,9 @@
     },
     {
       "id": "day2d_DJI_20260810141200_0002_D_20",
-      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
-      "in": 195.0,
-      "out": 198.0,
+      "clip": "footage_clips/day2d_DJI_20260810141200_0002_D_20.mp4",
+      "in": 0.0,
+      "out": 3.003,
       "tags": [
         "store_interior",
         "drugstore",
@@ -9728,9 +9647,9 @@
     },
     {
       "id": "day2d_20260810_173349_05",
-      "clip": "raw_footage/폴더 1/20260810_173349.mp4",
-      "in": 21.0,
-      "out": 23.5,
+      "clip": "footage_clips/day2d_20260810_173349_05.mp4",
+      "in": 0.0,
+      "out": 2.5,
       "tags": [
         "product_shelf_browsing",
         "character_goods",
@@ -9999,9 +9918,9 @@
     },
     {
       "id": "day2d_20260810_173349_18",
-      "clip": "raw_footage/폴더 1/20260810_173349.mp4",
-      "in": 128.0,
-      "out": 130.5,
+      "clip": "footage_clips/day2d_20260810_173349_18.mp4",
+      "in": 0.0,
+      "out": 2.5,
       "tags": [
         "product_shelf_browsing",
         "stationery",
@@ -15078,9 +14997,9 @@
     },
     {
       "id": "day2d_20260810_173053_07",
-      "clip": "raw_footage/폴더 1/20260810_173053.mp4",
-      "in": 66.8,
-      "out": 69.0,
+      "clip": "footage_clips/day2d_20260810_173053_07.mp4",
+      "in": 0.0,
+      "out": 2.2,
       "tags": [
         "product_shelf_browsing",
         "hand_in_frame",
@@ -15122,9 +15041,9 @@
     },
     {
       "id": "day2d_20260810_173053_09",
-      "clip": "raw_footage/폴더 1/20260810_173053.mp4",
-      "in": 85.6,
-      "out": 88.6,
+      "clip": "footage_clips/day2d_20260810_173053_09.mp4",
+      "in": 0.0,
+      "out": 3.0,
       "tags": [
         "product_shelf_browsing",
         "hand_in_frame",
@@ -15162,7 +15081,7 @@
     },
     {
       "id": "day2d_20260810_174607_01",
-      "clip": "raw_footage/폴더 1/20260810_174607.mp4",
+      "clip": "footage_clips/day2d_20260810_174607_01.mp4",
       "in": 0.0,
       "out": 3.0,
       "tags": [
@@ -15182,9 +15101,9 @@
     },
     {
       "id": "day2d_20260810_174607_02",
-      "clip": "raw_footage/폴더 1/20260810_174607.mp4",
-      "in": 23.0,
-      "out": 26.0,
+      "clip": "footage_clips/day2d_20260810_174607_02.mp4",
+      "in": 0.0,
+      "out": 3.033,
       "tags": [
         "broll",
         "store_interior",
@@ -15302,9 +15221,9 @@
     },
     {
       "id": "day2d_DJI_20260810144631_0003_D_01",
-      "clip": "raw_footage/ojmo/DJI_20260810144631_0003_D.mp4",
-      "in": 0.3,
-      "out": 3.3,
+      "clip": "footage_clips/day2d_DJI_20260810144631_0003_D_01.mp4",
+      "in": 0.0,
+      "out": 3.003,
       "tags": [
         "broll",
         "store_interior",
@@ -15322,9 +15241,9 @@
     },
     {
       "id": "day2d_DJI_20260810144631_0003_D_02",
-      "clip": "raw_footage/ojmo/DJI_20260810144631_0003_D.mp4",
-      "in": 5.2,
-      "out": 9.6,
+      "clip": "footage_clips/day2d_DJI_20260810144631_0003_D_02.mp4",
+      "in": 0.0,
+      "out": 4.404,
       "tags": [
         "broll",
         "store_interior",
@@ -15342,9 +15261,9 @@
     },
     {
       "id": "day2d_DJI_20260810144631_0003_D_03",
-      "clip": "raw_footage/ojmo/DJI_20260810144631_0003_D.mp4",
-      "in": 10.3,
-      "out": 12.7,
+      "clip": "footage_clips/day2d_DJI_20260810144631_0003_D_03.mp4",
+      "in": 0.0,
+      "out": 2.402,
       "tags": [
         "broll",
         "store_interior",
@@ -15362,9 +15281,9 @@
     },
     {
       "id": "day2d_DJI_20260810144631_0003_D_04",
-      "clip": "raw_footage/ojmo/DJI_20260810144631_0003_D.mp4",
-      "in": 22.0,
-      "out": 23.8,
+      "clip": "footage_clips/day2d_DJI_20260810144631_0003_D_04.mp4",
+      "in": 0.0,
+      "out": 1.802,
       "tags": [
         "broll",
         "store_interior",
@@ -15381,30 +15300,10 @@
       "footage_role": "broll"
     },
     {
-      "id": "day2d_DJI_20260810144631_0003_D_05",
-      "clip": "raw_footage/ojmo/DJI_20260810144631_0003_D.mp4",
-      "in": 44.3,
-      "out": 46.6,
-      "tags": [
-        "broll",
-        "store_interior",
-        "bags",
-        "day",
-        "people_present",
-        "safe"
-      ],
-      "brand": "COACH",
-      "product_line": "COACH 가방 매대를 지나 돈키호테 미도스지(MIDOSUJI)점 브랜드 사인이 붙은 에스컬레이터로 이어지는 워킹샷(먼 배경에 뒷모습 인물 소수)",
-      "scent": null,
-      "source": "own",
-      "used_in": [],
-      "footage_role": "broll"
-    },
-    {
       "id": "day2d_DJI_20260810144631_0003_D_06",
-      "clip": "raw_footage/ojmo/DJI_20260810144631_0003_D.mp4",
-      "in": 46.8,
-      "out": 47.9,
+      "clip": "footage_clips/day2d_DJI_20260810144631_0003_D_06.mp4",
+      "in": 0.0,
+      "out": 1.101,
       "tags": [
         "broll",
         "store_interior",
@@ -15422,9 +15321,9 @@
     },
     {
       "id": "day2d_DJI_20260810144631_0003_D_07",
-      "clip": "raw_footage/ojmo/DJI_20260810144631_0003_D.mp4",
-      "in": 48.7,
-      "out": 49.9,
+      "clip": "footage_clips/day2d_DJI_20260810144631_0003_D_07.mp4",
+      "in": 0.0,
+      "out": 1.201,
       "tags": [
         "broll",
         "store_interior",
@@ -15820,9 +15719,9 @@
     },
     {
       "id": "day2d_20260810_203334_01",
-      "clip": "raw_footage/폴더 1/20260810_203334.mp4",
-      "in": 1.0,
-      "out": 4.5,
+      "clip": "footage_clips/day2d_20260810_203334_01.mp4",
+      "in": 0.0,
+      "out": 3.506,
       "tags": [
         "scenery",
         "riverside_walkway",
@@ -15839,9 +15738,9 @@
     },
     {
       "id": "day2d_20260810_203334_02",
-      "clip": "raw_footage/폴더 1/20260810_203334.mp4",
-      "in": 7.5,
-      "out": 10.5,
+      "clip": "footage_clips/day2d_20260810_203334_02.mp4",
+      "in": 0.0,
+      "out": 3.0,
       "tags": [
         "scenery",
         "riverside_walkway",
@@ -15858,9 +15757,9 @@
     },
     {
       "id": "day2d_20260810_203334_03",
-      "clip": "raw_footage/폴더 1/20260810_203334.mp4",
-      "in": 16.5,
-      "out": 19.8,
+      "clip": "footage_clips/day2d_20260810_203334_03.mp4",
+      "in": 0.0,
+      "out": 3.303,
       "tags": [
         "scenery",
         "riverside_walkway",
@@ -15878,9 +15777,9 @@
     },
     {
       "id": "day2d_20260810_203334_04",
-      "clip": "raw_footage/폴더 1/20260810_203334.mp4",
-      "in": 21.0,
-      "out": 24.5,
+      "clip": "footage_clips/day2d_20260810_203334_04.mp4",
+      "in": 0.0,
+      "out": 3.539,
       "tags": [
         "scenery",
         "riverside_walkway",
@@ -15898,9 +15797,9 @@
     },
     {
       "id": "day2d_20260810_203334_05",
-      "clip": "raw_footage/폴더 1/20260810_203334.mp4",
-      "in": 33.0,
-      "out": 36.5,
+      "clip": "footage_clips/day2d_20260810_203334_05.mp4",
+      "in": 0.0,
+      "out": 3.506,
       "tags": [
         "scenery",
         "riverside_walkway",
@@ -15917,9 +15816,9 @@
     },
     {
       "id": "day2d_20260810_140938_01",
-      "clip": "raw_footage/폴더 1/20260810_140938.mp4",
-      "in": 0.5,
-      "out": 3.5,
+      "clip": "footage_clips/day2d_20260810_140938_01.mp4",
+      "in": 0.0,
+      "out": 3.0,
       "tags": [
         "broll",
         "street_scene",
@@ -15936,9 +15835,9 @@
     },
     {
       "id": "day2d_20260810_152404_01",
-      "clip": "raw_footage/폴더 1/20260810_152404.mp4",
-      "in": 5.3,
-      "out": 8.3,
+      "clip": "footage_clips/day2d_20260810_152404_01.mp4",
+      "in": 0.0,
+      "out": 3.0,
       "tags": [
         "broll",
         "store_interior",
@@ -16233,9 +16132,9 @@
     },
     {
       "id": "day2d_20260810_165738_01",
-      "clip": "raw_footage/폴더 1/20260810_165738.mp4",
+      "clip": "footage_clips/day2d_20260810_165738_01.mp4",
       "in": 0.0,
-      "out": 1.8,
+      "out": 1.833,
       "tags": [
         "broll",
         "street_scene",
@@ -16468,9 +16367,9 @@
     },
     {
       "id": "day2d_20260810_204356_01",
-      "clip": "raw_footage/폴더 1/20260810_204356.mp4",
+      "clip": "footage_clips/day2d_20260810_204356_01.mp4",
       "in": 0.0,
-      "out": 4.3,
+      "out": 4.315,
       "tags": [
         "broll",
         "street_scene",
@@ -16488,9 +16387,9 @@
     },
     {
       "id": "day2d_20260810_204356_02",
-      "clip": "raw_footage/폴더 1/20260810_204356.mp4",
-      "in": 15.0,
-      "out": 21.6,
+      "clip": "footage_clips/day2d_20260810_204356_02.mp4",
+      "in": 0.0,
+      "out": 6.64,
       "tags": [
         "broll",
         "street_scene",
@@ -16508,7 +16407,7 @@
     },
     {
       "id": "day2d_20260810_205748_01",
-      "clip": "raw_footage/폴더 1/20260810_205748.mp4",
+      "clip": "footage_clips/day2d_20260810_205748_01.mp4",
       "in": 0.0,
       "out": 4.6,
       "tags": [
@@ -16528,9 +16427,9 @@
     },
     {
       "id": "day2d_20260810_205748_02",
-      "clip": "raw_footage/폴더 1/20260810_205748.mp4",
-      "in": 11.3,
-      "out": 16.6,
+      "clip": "footage_clips/day2d_20260810_205748_02.mp4",
+      "in": 0.0,
+      "out": 5.3,
       "tags": [
         "broll",
         "street_scene",
@@ -16548,9 +16447,9 @@
     },
     {
       "id": "day2d_DJI_20260810180355_0004_D_01",
-      "clip": "raw_footage/ojmo/DJI_20260810180355_0004_D.MP4",
+      "clip": "footage_clips/day2d_DJI_20260810180355_0004_D_01.mp4",
       "in": 0.0,
-      "out": 1.6,
+      "out": 1.602,
       "tags": [
         "broll",
         "street_scene",
@@ -16568,9 +16467,9 @@
     },
     {
       "id": "day2d_DJI_20260810181150_0005_D_01",
-      "clip": "raw_footage/ojmo/DJI_20260810181150_0005_D.MP4",
+      "clip": "footage_clips/day2d_DJI_20260810181150_0005_D_01.mp4",
       "in": 0.0,
-      "out": 1.6,
+      "out": 1.602,
       "tags": [
         "broll",
         "street_scene",
@@ -16588,9 +16487,9 @@
     },
     {
       "id": "day2d_DJI_20260810181150_0005_D_02",
-      "clip": "raw_footage/ojmo/DJI_20260810181150_0005_D.MP4",
-      "in": 21.2,
-      "out": 23.4,
+      "clip": "footage_clips/day2d_DJI_20260810181150_0005_D_02.mp4",
+      "in": 0.0,
+      "out": 2.202,
       "tags": [
         "broll",
         "store_interior",
@@ -16621,7 +16520,47 @@
       "clip": "raw_footage/20260809_141932.mp4",
       "reason": "근거리에서 지나가는 흰색 SUV 앞번호판 노출 구간 포함 — 얼굴/번호판 규칙 위반, 사용 금지",
       "excluded_at": "2026-08-09"
+    },
+    {
+      "id": "day2_DJI_20260810180355_0004_D_01",
+      "clip": "raw_footage/ojmo/DJI_20260810180355_0004_D.MP4",
+      "in": 9.0,
+      "out": 11.5,
+      "reason": "에비스바시 거리 컷 — 구간 후반부(9~11.5초 중 약 10초 이후)에서 카메라가 행인과 가까워지며 얼굴 다수 식별 가능(2026-08-15 자동검사+육안 재확인). 이미 렌더링됐던 4개 topic은 안전한 세그먼트(street_shutter_arcade_01)로 교체 후 재렌더링 완료.",
+      "excluded_at": "2026-08-15"
+    },
+    {
+      "id": "day2d_DJI_20260810204150_0006_D_15",
+      "clip": "raw_footage/ojmo/DJI_20260810204150_0006_D.mp4",
+      "in": 165.5,
+      "out": 170.5,
+      "reason": "보행 중인 여성이 카메라에 가깝게 잡혀 식별 가능(경미한 모션블러 있으나 안전하지 않다고 판단) — 자동검사(얼굴 비율 6.9%)+육안 확인.",
+      "excluded_at": "2026-08-15"
+    },
+    {
+      "id": "day2d_DJI_20260810141200_0002_D_06",
+      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
+      "in": 39.0,
+      "out": 44.0,
+      "reason": "자전거 탄 남성(안경) 정면 얼굴이 가깝고 선명하게 식별 가능 — 자동검사(얼굴 비율 7.3%)+육안 확인.",
+      "excluded_at": "2026-08-15"
+    },
+    {
+      "id": "day2d_DJI_20260810141200_0002_D_09",
+      "clip": "raw_footage/ojmo/DJI_20260810141200_0002_D.mp4",
+      "in": 63.5,
+      "out": 68.5,
+      "reason": "모자 쓴 남성 + 자녀로 보이는 인물 정면 얼굴이 가깝고 선명하게 식별 가능 — 자동검사(얼굴 비율 11%)+육안 확인.",
+      "excluded_at": "2026-08-15"
+    },
+    {
+      "id": "day2d_DJI_20260810144631_0003_D_05",
+      "clip": "raw_footage/ojmo/DJI_20260810144631_0003_D.mp4",
+      "in": 44.3,
+      "out": 46.6,
+      "reason": "가방 매장 내 여성 얼굴이 매우 가깝고 선명하게 식별 가능 — 자동검사(얼굴 비율 7.7%)+육안 확인.",
+      "excluded_at": "2026-08-15"
     }
   ],
-  "registered_segments": 817
+  "registered_segments": 812
 }

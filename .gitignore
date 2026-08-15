@@ -13,5 +13,12 @@ raw_footage/
 output/**/_footage_frames/
 output/**/*.mp4
 
+# WHY footage_clips/도 로컬 전용(2026-08-15): 카탈로그 세그먼트를 물리적으로
+# 미리 잘라둔 캐시본 — lib/vet_and_extract_catalog.py로 언제든 원본
+# raw_footage/에서 재생성 가능하니 git에 올릴 필요 없음. 얼굴 검사 리뷰용
+# 썸네일(output/_face_review/)도 같은 이유로 로컬 전용.
+footage_clips/
+output/_face_review/
+
 .vercel
 .env*
