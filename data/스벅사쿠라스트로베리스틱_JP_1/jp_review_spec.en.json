@@ -1,0 +1,75 @@
+{
+  "hook_lines": [
+    "Found this Starbucks drink at Japan's Don Quijote",
+    "Korea doesn't sell this flavor at all"
+  ],
+  "product_tag": "Starbucks Sakura Strawberry Latte",
+  "product_photo": {
+    "clip": "raw_footage/폴더 1/20260810_172429.mp4",
+    "at": 62.0
+  },
+  "intro_broll": [
+    {
+      "clip": "raw_footage/_general/20260809_140627.mp4",
+      "in": 0.5,
+      "out": 6.0,
+      "tags": [
+        "street",
+        "shutter_arcade",
+        "day",
+        "no_people",
+        "safe"
+      ]
+    },
+    {
+      "clip": "raw_footage/폴더 1/20260810_173053.mp4",
+      "in": 81.8,
+      "out": 85.3
+    }
+  ],
+  "item_clip": {
+    "clip": "raw_footage/폴더 1/20260810_172429.mp4",
+    "in": 61.3,
+    "out": 67.0,
+    "round_trips": 1
+  },
+  "chalkboard": {
+    "title": "What People Are Saying",
+    "bullets": [
+      "Released only around February 15th each year, alongside Starbucks' Spring Blend beans",
+      "Starbucks reworked the sakura-strawberry scent blend in 2023 after complaints it was unbalanced",
+      "Korea's official Starbucks At Home lineup has matcha latte but never this flavor — everything sold in Korea is a personal import",
+      "Average review rating is 3.92 out of 5 — 71% gave 4 or 5 stars, but 19% gave just 1 or 2",
+      "Zero real fruit juice — the sakura and strawberry taste is entirely from flavoring"
+    ]
+  },
+  "usage_placeholder": {
+    "description": "실제로 사쿠라 스트로베리 라테를 물에 타서 마시는 리액션 영상. 스틱을 뜯어서 붓는 장면, 완성된 분홍빛 라떼를 한 모금 마시고 반응하는 표정 위주 클로즈업이 있으면 더 좋음. 10~15초 분량이면 충분.",
+    "xiaohongshu_query": "星巴克 樱花草莓拿铁 日本限定 试喝",
+    "source_url": "https://monolog.r-n-i.jp/item/4902201435437",
+    "quotes": [
+      {
+        "japanese": "思っていたより桜の香りが強すぎて、私は具合がわるくなりました",
+        "translation": "The sakura scent was way stronger than I expected, and it actually made me feel sick."
+      },
+      {
+        "japanese": "春らしいイメージにつられて買ってみましたが、なんとも言えない香りが好みではありませんでした。濃すぎるのでお湯を多めに入れてやっと飲める感じです。",
+        "translation": "I bought it because the spring packaging looked so appealing, but the smell wasn't really my thing — hard to describe. It's so concentrated I had to add extra hot water just to make it drinkable."
+      },
+      {
+        "japanese": "この時期になると飲みたくなる。桜は感じないけど、ストロベリーとコーヒーのほろ苦さが美味しい",
+        "translation": "I crave this every year around this time. I don't really taste the sakura, but the strawberry and the coffee's bitter edge together are delicious."
+      },
+      {
+        "japanese": "海外の友人へのお土産用に購入。人気らしく、棚の目立つところにたくさん置いてあった。",
+        "translation": "Bought it as a souvenir for a friend overseas. It looked popular — there was a big stack right at eye level on the shelf."
+      },
+      {
+        "japanese": "また買いたいのに、もう店頭にないですね。",
+        "translation": "I want to buy it again, but it's already gone from stores."
+      }
+    ]
+  },
+  "hook_cue_count": 1,
+  "item_cue_count": 1
+}
