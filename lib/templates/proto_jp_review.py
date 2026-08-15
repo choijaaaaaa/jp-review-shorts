@@ -1485,6 +1485,14 @@ if __name__ == "__main__":
     parser.add_argument("spec_path")
     parser.add_argument("out_path")
     parser.add_argument("--ad-tag", action="store_true")
+    # WHY(2026-08-15): render_single_product()는 내부적으로 lang을 모든 드로잉
+    # 함수에 정확히 전달하지만, 이 CLI는 --lang을 노출한 적이 없어서 en/zh-TW
+    # spec을 넘겨도 항상 기본값 "kor"로 검증·렌더링되고 있었다 — 라틴 문자는
+    # 한국어 폰트에도 있어서 조용히 통과했지만, zh-TW 훅 문구에 '清真' 같은
+    # 한국어 상용 한자 밖 문자가 있으면 글리프 검증에서 막힌다(실측: 베릴스
+    # 마카다미아 topic). spec 파일 자체가 언어를 명시하므로 --lang을 명시적으로
+    # 받게 고쳤다(기본값은 기존 동작과 동일하게 "kor" 유지).
+    parser.add_argument("--lang", default="kor")
     args = parser.parse_args()
     render_single_product(args.topic_dir, args.audio_path, args.srt_path, args.spec_path,
-                           args.out_path, ad_tag=args.ad_tag)
+                           args.out_path, ad_tag=args.ad_tag, lang=args.lang)
