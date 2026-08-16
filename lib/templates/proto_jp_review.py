@@ -786,36 +786,46 @@ _DESKTOP_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.
 # "fulfilled_via_research"로 기록됐지만 실제 칠판 씬 위쪽은 텅 빈 흰 배경
 # 이었다. UA를 일반 데스크톱 브라우저로 바꾸니 같은 URL이 정상 캡처됨
 # (1.6MB, 실제 상품 사진·후기 텍스트 포함) — 직접 재현·검증함.
-def _capture_source_screenshot(url: str, out_path: Path) -> bool:
+def _capture_source_screenshot(url: str, out_path: Path, attempts: int = 3) -> bool:
     """헤드리스 크롬으로 출처 URL을 길게(스크롤 가능한 세로 길이로) 캡처한다.
-    네트워크 실패·타임아웃 등 뭐든 실패하면 조용히 False만 반환 — 렌더
-    파이프라인 전체를 막으면 안 되고, 호출부가 정지컷 폴백으로 넘어간다."""
-    try:
-        subprocess.run(
-            [CHROME_BIN, "--headless", "--disable-gpu", "--no-sandbox",
-             f"--window-size={W},{_SCROLL_CAPTURE_HEIGHT}", "--hide-scrollbars",
-             f"--user-agent={_DESKTOP_UA}",
-             f"--screenshot={out_path}", url],
-            check=True, capture_output=True, timeout=30,
-        )
-        if not (out_path.exists() and out_path.stat().st_size > 10_000):
+    최대 `attempts`번 재시도(2026-08-17 추가) — 리뷰 스크롤 씬은 이제 정지컷
+    폴백을 쓰지 않는 필수 요소로 확정됐는데("정지 사진 넣고 넘어가는 게
+    아니라 무조건 들어가야 한다"), 실측해보니 실패의 상당수가 사이트 차단이
+    아니라 타임아웃·일시적 네트워크 오류 같은 일시적 문제였다(같은 URL을
+    몇 분 뒤 재시도하면 성공). 그래도 정말 다 실패하면(사이트가 진짜로
+    막혀있는 등) False를 반환 — 호출부(`_build_chalkboard_scene`)가 더 이상
+    정지컷으로 조용히 넘어가지 않고 예외를 던진다."""
+    for attempt in range(attempts):
+        try:
+            subprocess.run(
+                [CHROME_BIN, "--headless", "--disable-gpu", "--no-sandbox",
+                 f"--window-size={W},{_SCROLL_CAPTURE_HEIGHT}", "--hide-scrollbars",
+                 f"--user-agent={_DESKTOP_UA}",
+                 f"--screenshot={out_path}", url],
+                check=True, capture_output=True, timeout=30,
+            )
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError):
+            continue
+        if out_path.exists() and out_path.stat().st_size > 10_000 and _screenshot_looks_valid(out_path):
+            return True
+    return False
+
+
+def _screenshot_looks_valid(out_path: Path) -> bool:
+    """WHY 밝기 체크가 추가로 필요한지: UA 위장으로도 못 뚫는 사이트(JS
+    챌린지·Cloudflare 차단 등)는 여전히 있을 수 있고, 그런 차단 페이지도
+    크기 기준(>10_000, 호출부에서 이미 확인)은 우연히 넘길 수 있다(실제
+    사고 전례). 실제 상품 리뷰 페이지는 사진·색색의 UI가 섞여 있어 거의 흰
+    화면일 수가 없다는 점을 2차 안전망으로 쓴다 — 정상 캡처를 오탐할
+    여지를 남기려고 기준을 널널하게(98%) 잡았다."""
+    with Image.open(out_path) as img:
+        gray = img.convert("L")
+        hist = gray.histogram()
+        near_white = sum(hist[250:])
+        total = gray.width * gray.height
+        if total > 0 and near_white / total > 0.98:
             return False
-        # WHY 밝기 체크가 추가로 필요한지: UA 위장으로도 못 뚫는 사이트(JS
-        # 챌린지·Cloudflare 차단 등)는 여전히 있을 수 있고, 그런 차단
-        # 페이지도 크기 기준(>10_000)은 우연히 넘길 수 있다(위 사고 전례).
-        # 실제 상품 리뷰 페이지는 사진·색색의 UI가 섞여 있어 거의 흰
-        # 화면일 수가 없다는 점을 2차 안전망으로 쓴다 — 정상 캡처를
-        # 오탐할 여지를 남기려고 기준을 널널하게(98%) 잡았다.
-        with Image.open(out_path) as img:
-            gray = img.convert("L")
-            hist = gray.histogram()
-            near_white = sum(hist[250:])
-            total = gray.width * gray.height
-            if total > 0 and near_white / total > 0.98:
-                return False
-        return True
-    except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError):
-        return False
+    return True
 
 
 def _build_research_scroll_top(screenshot_path: Path, top_h: int, target_duration: float, out_path: Path) -> None:
@@ -1085,19 +1095,23 @@ def _build_chalkboard_scene(spec: dict, topic_dir: Path, product_photo: Image.Im
             _overlay_quote_cards(scroll_raw, quotes, target_duration, top_h, tmp_path, top_video, lang=lang)
             _write_pending_clip_status(topic_dir, spec, status="fulfilled_via_research")
         else:
-            # 실사용 영상도, 캡처 가능한 출처 URL도 없으면 상품 사진 정지컷으로
-            # 대체(최후 폴백) — pending_clips.json에 설명+샤오홍슈 검색어를
-            # 남겨서 lib.local_studio UI가 "채워야 할 자리"로 보여줄 수 있게 한다.
-            with tempfile.TemporaryDirectory() as ph_tmp:
-                ph_img = _square_crop(product_photo, min(W, top_h)).resize((W, top_h), Image.LANCZOS)
-                ph_path = Path(ph_tmp) / "placeholder.jpg"
-                ph_img.save(ph_path, quality=92)
-                subprocess.run(
-                    ["ffmpeg", "-y", "-loop", "1", "-i", str(ph_path), "-t", f"{target_duration:.3f}",
-                     "-r", str(FPS), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-color_range", "tv", str(top_video)],
-                    check=True, capture_output=True,
-                )
+            # WHY 정지컷 폴백을 없앴는지(2026-08-17, "리뷰 사이트 스크롤링
+            # 씬은 무조건 들어가야 한다는거야" — 명시적 확정): 예전엔 실사용
+            # 영상도 캡처 가능한 출처 URL도 없으면 상품 사진 정지컷으로 조용히
+            # 대체했는데, 이게 "리뷰가 없는 topic도 그냥 넘어가서 완성된 것처럼
+            # 보이는" 상태를 만들었다 — 리뷰 스크롤 씬은 이 포맷의 핵심
+            # 콘텐츠라 없으면 렌더 자체를 막아야 한다(위 "안전영역" 하드
+            # 체크와 동일 원칙: 조용히 저품질로 넘어가는 것보다 실패해서
+            # 눈에 띄는 게 낫다). pending_clips.json 기록은 유지해서
+            # lib.local_studio UI가 "채워야 할 자리"로 계속 보여줄 수 있게 한다.
             _write_pending_clip_status(topic_dir, spec, status="pending")
+            reason = "source_url 없음" if not source_url else "스크린샷 캡처 실패(재시도 3회 모두 실패)"
+            raise RuntimeError(
+                f"[proto_jp_review] {topic_dir.name}: 실사용 영상도 리뷰 스크롤 캡처도 없음 "
+                f"({reason}) — 정지컷으로 대체하지 않고 렌더를 막음. "
+                f"usage_placeholder.source_url을 실제 리뷰가 있는 페이지로 바꾸거나, "
+                f"lib.local_studio로 실사용 영상을 채운 뒤 다시 렌더할 것."
+            )
 
     slab = _build_chalkboard_slab(spec["chalkboard"], W, board_h, lang=lang)
     slab_path = tmp_path / "chalkboard_slab.jpg"
