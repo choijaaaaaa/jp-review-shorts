@@ -80,13 +80,32 @@ _INTRO_CAPTION_FONT_SIZE = 70  # WHY 60→70(2026-08-14, "썸네일도 간결하
 # 자막도 `_make_caption_png` 기본값(60)보다 키운다).
 _INTRO_CAPTION_MAX_W = 940  # `_make_caption_png` 기본 max_width와 동일 —
 # 분할 판정에 쓰는 폭이 실제 렌더링 폭과 어긋나면 줄바꿈 지점이 달라진다.
-_CHALKBOARD_BOARD_RATIO = 0.36  # WHY 0.30→0.36(2026-08-13, "위 스크롤 영상
+_CHALKBOARD_BOARD_RATIO = 0.42  # WHY 0.30→0.36(2026-08-13, "위 스크롤 영상
 # Height 좀더 줄이고... 자막 위치랑 맞추라했는데 왜 위에있냐" 피드백) — 칠판
 # 판을 더 키워서 top_video를 줄이면 그만큼 자막 밴드 시작 y가 위로
 # 당겨져서(밴드는 top_video 바로 다음이라) 인트로/아이템 자막(y=820)과의
-# 간격이 좁혀진다.
+# 간격이 좁혀진다. WHY 0.36→0.42(2026-08-16, 안전영역 실측 버그 수정과
+# 함께) — 판 하단 320px가 유튜브 UI에 가려지는 게 확인되면서(위
+# `_CHALKBOARD_SAFE_LOCAL_Y1` 참고) 실제 쓸 수 있는 안전 높이가 372px밖에
+# 안 됐다. 15개 topic 전수 실측 결과 불릿 5개 안팎 topic은 이 정도로도
+# 최소폰트(아래 bullet_font_size 하한 참고)에서 들어오지만, 여유가 너무
+# 없어서(available_h≈237px) 살짝만 길어져도 렌더가 실패한다 — 0.42로
+# 키워 안전 높이를 351px까지 확보. top_video(review-scroll) 영역이 그만큼
+# 줄지만(top_h 1048→934px) 리뷰 스크롤 자체가 안 보이는 것보다는 낫다.
 _CHALKBOARD_BOARD_H = round(H * _CHALKBOARD_BOARD_RATIO / 2) * 2
 _CHALKBOARD_TOP_H = H - _CHALKBOARD_BOARD_H - _CAPTION_BAND_H
+
+# WHY 이 두 상수(2026-08-16, 실기기 스크린샷 실측 버그 수정 — "모바일에서 볼때
+# 덮이는 아래쪽, 우측하단의 버튼이나 텍스트들이 칠판의 자막을 가려버리는데")
+# — 칠판 판(board)은 vstack의 마지막 요소라 프레임 최하단(H)까지 이어진다.
+# 그런데 `_build_chalkboard_slab`은 여태 board_w/board_h만 보고 불릿을
+# 채웠지, 위에서 정의된 SAFE_X1/SAFE_Y1(유튜브 쇼츠 좋아요·공유·리믹스·
+# 채널명 UI가 차지하는 우측 150px·하단 320px)을 전혀 참조하지 않았다 —
+# `_assert_within_safe_area`가 정의만 되고 이 파일 어디서도 호출되지 않고
+# 있었던 것도 같은 결함의 증상. 실측: board_h=692px 중 로컬 좌표 372px까지만
+# 진짜 안전 영역이고 나머지 320px(거의 절반)이 화면에서 유튜브 UI에 가려짐.
+_CHALKBOARD_BOARD_START_Y = _CHALKBOARD_TOP_H + _CAPTION_BAND_H  # == H - _CHALKBOARD_BOARD_H
+_CHALKBOARD_SAFE_LOCAL_Y1 = SAFE_Y1 - _CHALKBOARD_BOARD_START_Y
 
 RAW_FOOTAGE_DIR = PROJECT_ROOT / "raw_footage"
 USER_TRIM_DIR = RAW_FOOTAGE_DIR / "user_trim"  # lib.local_studio 트림 툴 출력 위치
@@ -341,25 +360,43 @@ def _draw_product_tag_pill(canvas: Image.Image, product_photo: Image.Image,
 
 
 def _draw_hook_chip(canvas: Image.Image, hook_lines: list[str], center_x: int, center_y: int,
-                     font_size: int = 58, lang: str = "kor") -> tuple[int, int]:
+                     font_size: int = 130, lang: str = "kor", max_width: int | None = None) -> tuple[int, int]:
     """두 줄 훅 텍스트(1번째=흰색, 2번째=골드) 칩을 center_y 중심으로 그린다.
-    (칩 top_y, 칩 bottom_y) 반환. WHY 폭 넘치면 폰트 자동 축소(2026-08-13): 훅
-    문구 길이는 topic마다 세션/에이전트가 자유롭게 쓰는데, 긴 줄이 세이프
-    영역(우측 150px)까지 침범한 적이 실측으로 발견됨 — 고정폭 줄바꿈 대신
-    한 줄 유지가 임팩트상 낫다고 판단해 줄바꿈 대신 폰트를 줄인다."""
+    (칩 top_y, 칩 bottom_y) 반환. WHY 58→130(2026-08-14, "화면에 딱 떠서 바로
+    인지될 정도로 크게" — 58→80 1차 수정도 부족하다는 반복 피드백, 게다가
+    이 파일이 git 관리가 안 되는 프로젝트라 다른 세션의 동시 편집에 58로
+    덮어써진 적도 있었음) — 시작 font_size만 올리는 걸론 부족했다. 실측해보니
+    카레("한국 브랜드, 한국엔 없다?!" 등 긴 줄)처럼 폭이 넓은 훅 문구는 시작값이
+    80이든 130이든 아래 축소 루프가 결국 같은 값(≈86)으로 수렴해버려서 체감상
+    안 커졌다 — 진짜 병목은 시작값이 아니라 `max_width`(허용 폭) 자체였다.
+    `max_width` 인자를 새로 받아 호출부가 용도별로 다르게 줄 수 있게 하고
+    (Scene0 순수 썸네일은 실제 재생 UI가 안 겹치니 훨씬 넓게, Scene1 재생 중
+    오버레이는 기존처럼 좁게), 칩 좌우 패딩도 42→28로 줄여 텍스트에 쓸 폭을
+    더 확보했다. WHY 폭 넘치면 폰트 자동 축소(2026-08-13): 훅 문구 길이는
+    topic마다 세션/에이전트가 자유롭게 쓰는데, 긴 줄이 세이프 영역까지
+    침범한 적이 실측으로 발견됨 — 고정폭 줄바꿈 대신 한 줄 유지가 임팩트상
+    낫다고 판단해 줄바꿈 대신 폰트를 줄인다. ⚠️ **축소 하한은 70이 아니라
+    40(2026-08-14 정정)** — 처음엔 한국어 실측(가장 긴 줄도 94까지만 축소)만
+    보고 70으로 올렸는데, 영어 훅 문구는 같은 의미도 문자 수가 훨씬 많아서
+    (예: "This KitKat is from Don Quijote Osaka") 실제로 50까지 축소해야
+    프레임을 안 넘어가는 topic이 있었다 — 70 바닥에 막혀 글자가 화면 밖으로
+    잘려나가는 사고가 실측 확인됨. 하한은 "안 작아 보이게"보다 "절대 안
+    잘리게"가 항상 우선이라 여유 있게 40으로 낮춤(언어별 실측 최소값: 한국어
+    86~114, 영어 50~62, 대만어 74~88 — 전부 40보다 크므로 이 바닥엔 안 걸림)."""
     draw = ImageDraw.Draw(canvas, "RGBA")
     tmp_draw = ImageDraw.Draw(Image.new("RGB", (4, 4)))
-    max_block_w = SAFE_X1 - _SAFE_LEFT - 84  # 칩 좌우 패딩(42*2) 제외한 텍스트 여유폭
+    pad_x, pad_y = 28, 30
+    if max_width is None:
+        max_width = SAFE_X1 - _SAFE_LEFT - pad_x * 2  # 재생 중 오버레이용 — 세이프 영역 준수
     while True:
         font = _load_font(font_size, lang)
         line_h = round(font_size * 1.35)
         bboxes = [tmp_draw.textbbox((0, 0), ln, font=font) for ln in hook_lines]
         block_w = max(b[2] - b[0] for b in bboxes)
-        if block_w <= max_block_w or font_size <= 30:
+        if block_w <= max_width or font_size <= 40:
             break
         font_size -= 4
     block_h = line_h * len(hook_lines)
-    pad_x, pad_y = 42, 30
     chip_w, chip_h = block_w + pad_x * 2, block_h + pad_y * 2
     chip_x0 = center_x - chip_w // 2
     chip_y0 = center_y - chip_h // 2
@@ -404,7 +441,13 @@ def _build_cover_scene(spec: dict, product_photo: Image.Image, out_path: Path, l
     cover = Image.blend(bg.convert("RGB"), Image.new("RGB", bg.size, (0, 0, 0)), 0.18)
     canvas = Image.new("RGBA", (W, H), (0, 0, 0, 255))
     canvas.paste(cover, (0, 0))
-    _, chip_bottom = _draw_hook_chip(canvas, spec["hook_lines"], W // 2, H // 2 - 60, lang=lang)
+    # WHY max_width를 넓게 따로 주는지(2026-08-14): 이 씬(Scene0)은 실제
+    # 재생 중 노출되는 게 아니라 정지 썸네일이라 YouTube 재생 UI(우측 150px
+    # 세이프 영역)와 겹칠 일이 없다 — Scene1(재생 중 오버레이)과 같은 좁은
+    # 폭 제약을 그대로 쓰면 썸네일 텍스트가 필요 이상으로 작아진다.
+    cover_max_width = W - 24 * 2 - 28 * 2  # 캔버스 양쪽 24px 여백만 남기고 칩 패딩(28*2) 제외
+    _, chip_bottom = _draw_hook_chip(canvas, spec["hook_lines"], W // 2, H // 2 - 60,
+                                      lang=lang, max_width=cover_max_width)
     _draw_product_tag_pill(canvas, product_photo, spec["product_tag"], W // 2, chip_bottom + 34, lang=lang)
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -583,9 +626,22 @@ def _build_chalkboard_slab(chalkboard: dict, board_w: int, board_h: int, lang: s
 
     bullet_x = frame_left + 34
     text_x = bullet_x + 50
-    max_text_w = board_w - frame_left - 30 - text_x
-    bullet_gap = 16
-    available_h = board_h - frame_left - (underline_y + 34) - 20  # 아래쪽 여백 20px 확보
+    # WHY min()으로 SAFE_X1도 같이 재는지(2026-08-16 버그 수정): 기존 계산은
+    # 프레임 장식 여백(30px)만 뺐지 유튜브 UI 세이프 영역(SAFE_X1)은 아예 몰랐다
+    # — board_w(=W, 전체 프레임 폭)를 그대로 쓰다 보니 텍스트가 우측 150px
+    # 안전 영역을 넘어가는 게 실측으로 확인됐다.
+    max_text_w = min(board_w - frame_left - 30 - text_x, SAFE_X1 - text_x)
+    bullet_gap = 10  # WHY 16→10(2026-08-16, 안전영역 버그 수정과 함께) —
+    # 안전 높이가 좁아진 만큼 불릿 사이 여백도 줄여서 조금이라도 더 확보.
+    # WHY min()으로 _CHALKBOARD_SAFE_LOCAL_Y1도 같이 재는지(2026-08-16 버그
+    # 수정): board_h 전체(프레임 최하단까지)를 여유 공간으로 썼는데, board
+    # 하단 320px는 유튜브 UI(좋아요·공유·리믹스·"비공개" 배지 등)에 실제로
+    # 가려지는 영역이다 — 이 로컬 안전한계선을 넘지 않게 강제해야 폰트
+    # 축소 루프가 실제로 안전한 높이 안으로 수렴한다.
+    available_h = min(
+        board_h - frame_left - (underline_y + 34) - 20,  # 아래쪽 장식 여백 20px 확보
+        _CHALKBOARD_SAFE_LOCAL_Y1 - (underline_y + 34),
+    )
 
     # ⚠️ 사용법/복용법 섹션(2026-08-13 도입, "사용법도 칠판이랑 Summary
     # 사이에... 인터넷에 다 있잖아" 피드백) — 리뷰 불릿과는 시각적으로
@@ -601,7 +657,13 @@ def _build_chalkboard_slab(chalkboard: dict, board_w: int, board_h: int, lang: s
     # 나가는 걸 실측으로 발견함(포키아마오우_JP_1) — 안 맞으면 최소 크기까지
     # 폰트를 줄여서 항상 판 안에 들어오게 강제한다. 사용법 섹션이 있으면
     # 같은 축소 루프 안에서 같이 재서(공유 폰트 크기) 전체가 한 번에
-    # available_h 안에 맞게 한다.
+    # available_h 안에 맞게 한다. ⚠️ 하한 28→20(2026-08-16, 안전영역 버그
+    # 수정과 함께 재실측) — 15개 topic 전수 시뮬레이션 결과 하한을 28로 두면
+    # 불릿 5개 이상인 topic 대부분이 새로 좁아진 available_h(위 "안전영역"
+    # 주석 참고)를 못 맞춰서 마지막에 아래 `_assert_within_safe_area`가
+    # 렌더 자체를 실패시킨다 — "작아 보여도 실제로 다 보이는" 쪽이 "적당한
+    # 크기인데 절반이 유튜브 UI에 가려지는" 쪽보다 항상 낫다는 이 파일의
+    # 기존 원칙(축소 하한 관련 다른 주석들 참고) 그대로 20까지 더 낮춘다.
     bullet_font_size = 46
     while True:
         bullet_font = _load_font(bullet_font_size, lang)
@@ -616,9 +678,9 @@ def _build_chalkboard_slab(chalkboard: dict, board_w: int, board_h: int, lang: s
             usage_h = (label_font_size + 18) + sum(len(w) * single_line_h + 10 for w in wrapped_steps)
             total_h += 26 + usage_h  # 구분 간격 26px
 
-        if total_h <= available_h or bullet_font_size <= 28:
+        if total_h <= available_h or bullet_font_size <= 20:
             break
-        bullet_font_size -= 3
+        bullet_font_size -= 2
 
     cur_y = underline_y + 34
     for wrapped in wrapped_bullets:
@@ -638,6 +700,19 @@ def _build_chalkboard_slab(chalkboard: dict, board_w: int, board_h: int, lang: s
                 draw.text((text_x, cur_y), wline, font=bullet_font, fill=(255, 255, 255))
                 cur_y += single_line_h
             cur_y += 10
+
+    # WHY 여기서 하드 체크(2026-08-16): 위 축소 루프는 bullet_font_size<=28에서
+    # 멈추므로, 콘텐츠가 극단적으로 길면(불릿 개수 많고 사용법까지 있는 topic)
+    # 최소 폰트로도 여전히 안전 영역을 넘을 수 있다 — 그 경우 조용히 잘리게
+    # 두지 말고 렌더 자체를 실패시켜서(narration.txt/불릿 분량을 줄이라는
+    # 신호) 유튜브 UI에 가려진 채 배포되는 사고를 막는다. board 로컬 좌표를
+    # 프레임 절대 좌표로 환산(x 오프셋은 0 — board가 프레임 전체 폭을 그대로 씀,
+    # y 오프셋은 _CHALKBOARD_BOARD_START_Y).
+    _assert_within_safe_area(
+        "chalkboard bullets/usage_steps",
+        (text_x, underline_y + 34 + _CHALKBOARD_BOARD_START_Y,
+         text_x + max_text_w, cur_y + _CHALKBOARD_BOARD_START_Y),
+    )
     return img
 
 
