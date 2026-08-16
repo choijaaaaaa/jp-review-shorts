@@ -277,10 +277,22 @@ Stage 5에서 타임스탬프를 직접 기입하던 구 방식은 없어졌다.
 7. `python3 -m lib.jp_review_footage assemble <topic>`(또는
    `lib.templates.proto_jp_review.render_single_product()` 직접 호출) —
    TTS(없으면 생성) → 4씬 조립 → BGM 믹스 → 인스타그램 세이프 버전까지 한
-   번에. 실사용 영상(`raw_footage/user_trim/<topic>_usage.mp4`)이 아직
-   없으면 상품 사진 정지컷 플레이스홀더로 대체하고 `data/<topic>/
-   pending_clips.json`에 "채워야 할 자리"를 자동 기록 — `lib/local_studio.py`
-   (아래 "로컬 스튜디오 도구" 참고)로 채우면 자동 재조립됨.
+   번에. 실사용 영상(`raw_footage/user_trim/<topic>_usage.mp4`)이 있으면
+   그걸 쓰고, 없으면 `usage_placeholder.source_url`을 헤드리스 크롬으로
+   캡처해서 리뷰 스크롤+인용카드 씬을 만든다.
+   ⚠️ **정지컷 폴백 완전 제거(2026-08-17, "리뷰 사이트 스크롤링 씬은
+   무조건 들어가야 한다" 확정)** — 실사용 영상도 없고 리뷰 스크롤 캡처도
+   실패하면(재시도 3회 모두 실패, 또는 `source_url` 자체가 없으면) 상품
+   사진 정지컷으로 조용히 대체하지 않고 `RuntimeError`로 렌더 자체를
+   막는다. 캡처 실패는 사이트 차단보다 일시적 타임아웃인 경우가 많으니
+   (실측 확인) 몇 분 뒤 그냥 재시도하는 것만으로 해결되기도 하고, 안 되면
+   `usage_placeholder.source_url`을 실제 리뷰가 있는 다른 페이지(예:
+   LIPS·@cosme 등)로 바꿀 것 — 스펙 작성 단계 URL이 스크래핑 차단이나
+   페이지 개편으로 나중에 죽을 수 있다는 뜻이니, 렌더 직전에 항상
+   최신 상태인지 확인하는 습관을 들일 것. `data/<topic>/
+   pending_clips.json`에는 여전히 상태를 기록(`fulfilled`/
+   `fulfilled_via_research`/`pending`) — `pending`이 남아있으면 그 topic은
+   아직 렌더된 최종 영상이 없다는 뜻(렌더 자체가 실패했으므로).
 8. `platform_captions.json`은 health-shorts 한국어 topic 관례(9플랫폼
    로테이션, `[광고]` 태그, `products` 필드) 그대로 이식해서 쓴다.
 
@@ -577,6 +589,19 @@ Stage 5에서 타임스탬프를 직접 기입하던 구 방식은 없어졌다.
   가져다 쓰므로(새 TTS 호출 없음), 각 topic의 나레이션 마지막 문장은 항상
   "정리하면 ~" 식으로 실제 한 줄 요약이 되게 써야 자연스럽다(디테일 나열로
   끝내지 말 것).
+- ⚠️ **narration.txt(모든 언어)의 마지막 문장엔 반드시 실제 제품명을
+  명시할 것(2026-08-15, 사용자 피드백 — "Summary에 제품명이 없으면 사람들이
+  기억을 못 해서 돈키호테 가서 뭘 사야 할지 모른다")** — 바로 위 항목이
+  Summary 카드 = narration 마지막 문장이라고 했는데, 이 마지막 문장이 "정리하면
+  귀여운 포장 속에 신맛이 숨어있는 과자예요"처럼 일반명사로만 끝나면 시청자가
+  화면에서 유일하게 오래 머무는 이 카드를 봐도 정작 무슨 제품인지 기억을
+  못 한다. "정리하면 우메보시 시트는 ~예요"처럼 **제품명 자체를 마지막
+  문장에 반드시 포함**시킬 것 — `product_tag`에 있는 이름과 자연스럽게
+  맞아떨어지는 게 이상적. **`platform_captions.<lang>.json`의 `title`과
+  모든 플랫폼 caption/description에도 마찬가지로 제품명을 명시적으로
+  넣을 것** — 카테고리 설명("매실 시트 과자")만으로 끝내지 말고 실제
+  상품명/브랜드명까지, "이름을 보고 돈키호테 가서 찾아 살 수 있게"가
+  기준이다.
 - **narration.srt 기준 자막이 영상 전체에 자동으로 들어간다(2026-08-13
   도입, `_overlay_narration_captions` in `proto_jp_review.py`)** — 새로
   뭔가 켤 필요 없음, `render_single_product()` 마지막 단계에서 항상 굽는다.
