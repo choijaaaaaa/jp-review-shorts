@@ -247,6 +247,32 @@ def _fetch_queue_tail(lang: str) -> datetime | None:
     return latest
 
 
+# WHY 이 게이트가 필요한지(2026-08-17, 마카다미아/스이사이효소세안 topic
+# 실측 사고) — `_capture_source_screenshot()`는 ">10KB + 안 하얗다"만
+# 확인하고 실제로 리뷰 원문이 캡처됐는지는 검증하지 않는다. 그 결과
+# `pending_clips.json`이 "fulfilled_via_research"(성공)로 찍혀 있어도 실제
+# 렌더된 칠판 씬 상단이 그냥 상품 사진 정지컷인 경우가 실측으로 확인됐고
+# ("이상한 이미지만 딱 붙여놓으면 기획이랑 완전히 벗어난 거야" — 사용자
+# 확정, 리뷰 스크롤은 무조건 들어가야 함), status가 "pending"인 topic(실사용
+# 영상도 캡처 가능한 출처도 없어 정지컷으로 완전 폴백된 경우)이 아무 경고
+# 없이 그대로 backlog 업로드 후보에 낀 사고도 같이 있었다. 자동으로
+# "진짜 리뷰인지 상품사진인지" 구분하는 건 신뢰도가 낮으므로(캡처 자체는
+# 항상 "성공"으로 보일 수 있음), 렌더된 mp4의 칠판 씬을 사람이 직접 눈으로
+# 확인하고 `pending_clips.json`의 `usage_clip.human_reviewed`를 true로
+# 뒤집기 전까지는 업로드 후보에서 아예 제외한다.
+def _review_scene_verified(topic_dir_name: str) -> bool:
+    pending_path = ROOT / "data" / topic_dir_name / "pending_clips.json"
+    if not pending_path.exists():
+        return True  # usage_placeholder 자체가 없는 topic(사용법 섹션 없음 등)
+    usage_clip = json.loads(pending_path.read_text(encoding="utf-8")).get("usage_clip", {})
+    status = usage_clip.get("status")
+    if status == "fulfilled":
+        return True  # 실제 사용 영상 — 검증 불필요
+    if status == "fulfilled_via_research":
+        return bool(usage_clip.get("human_reviewed"))  # 사람이 실제로 확인한 것만 통과
+    return False  # "pending" 등 — 칠판 씬 상단이 정지컷 폴백일 게 확실
+
+
 def _candidates_for_lang(lang: str, uploaded: dict) -> list[str]:
     data_dir = ROOT / "data"
     out = []
@@ -265,6 +291,10 @@ def _candidates_for_lang(lang: str, uploaded: dict) -> list[str]:
         try:
             _find_video_file(full_topic, lang)
         except FileNotFoundError:
+            continue
+        if not _review_scene_verified(topic_dir.name):
+            print(f"[youtube_upload] {full_topic} 스킵 — 칠판 씬 리뷰 스크롤 사람 확인 안 됨"
+                  f"(pending_clips.json의 usage_clip.human_reviewed를 true로 바꿀 것)")
             continue
         out.append(full_topic)
     return out

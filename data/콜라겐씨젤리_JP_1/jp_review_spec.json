@@ -10,14 +10,14 @@
   },
   "intro_broll": [
     {
-      "clip": "raw_footage/_general/20260809_140627.mp4",
-      "in": 0.5,
-      "out": 6.0,
+      "clip": "raw_footage/_general/20260809_142344.mp4",
+      "in": 0.3,
+      "out": 5.8,
       "tags": [
         "street",
         "shutter_arcade",
         "day",
-        "no_people",
+        "distant_people_unidentifiable",
         "safe"
       ]
     },
