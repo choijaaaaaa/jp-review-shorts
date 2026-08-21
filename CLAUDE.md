@@ -40,6 +40,20 @@
     쌓이면 조정할 것) 순서대로 예약 업로드. 단일 topic은
     `python3 lib/youtube_upload.py <topic> [private|unlisted|public] [publish_at]`.
 - 이슈는 `lib/mission_control_log.py`의 `report_issue()`로 mission-control(`../../mission-control`)에도 보고됨(2026-08-15, `youtube_upload.py` 업로드 실패 시 연동 — `MISSION_CONTROL_INGEST_URL`/`_SECRET` 미설정 시 조용히 스킵).
+- ⚠️ **`lib/mission_control_sync.py`(2026-08-21, health-shorts 이식) — mission-control
+  "게시물 발행" 탭용 캡션 동기화** — `data/<topic>/platform_captions.json`(언어
+  변형 `.en.json`/`.zh-TW.json`은 대상 아님)을 스캔해 health-shorts 자신의
+  Supabase `mission_control.hs_platform_captions` 테이블(`project` 컬럼으로
+  health-shorts/jp-review-shorts/1bite-history 세 프로젝트가 공유)에
+  `project="jp-review-shorts"`로 upsert한다. **YouTube Shorts는 `lib/youtube_upload.py
+  --backlog`로 자동 업로드되니 동기화 대상에서 뺀다**(수동 포스팅 UI가 필요
+  없다는 뜻이라 mission-control에도 안 보여줘도 됨) — 네이버 블로그/네이버
+  클립/페이스북/인스타그램 릴스만 포함. 자격증명(`SUPABASE_URL`/
+  `SUPABASE_SERVICE_ROLE_KEY`)은 이 프로젝트 자체 Supabase가 없어
+  health-shorts `.env`에서 복사해 씀. 사용법:
+  `python3 -m lib.mission_control_sync [--commit]`(기본 dry-run) — 새 topic을
+  만들거나 캡션을 고친 뒤 `--commit`으로 재실행해야 mission-control에
+  반영된다(자동 트리거 없음).
 - **가격 비교 금지(2026-08-09, 사용자 확정)** — 한국 판매가를 실시간으로
   정확히 못 긁어오는데(네이버쇼핑 최저가 API 접근 불가) 부정확한 가격을
   콘텐츠에 넣으면 역효과라는 판단. 리서치 단계에서 참고용으로 가격을 확인해도
